@@ -153,6 +153,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/flo/proprietary/vendor/firmware/gss.b10:system/vendor/firmware/gss.b10 \
     vendor/asus/flo/proprietary/vendor/firmware/gss.b11:system/vendor/firmware/gss.b11 \
     vendor/asus/flo/proprietary/vendor/firmware/gss.mdt:system/vendor/firmware/gss.mdt \
+    vendor/asus/flo/proprietary/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
+    vendor/asus/flo/proprietary/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
+    vendor/asus/flo/proprietary/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
+    vendor/asus/flo/proprietary/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
+    vendor/asus/flo/proprietary/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
     vendor/asus/flo/proprietary/vendor/firmware/q6.b00:system/vendor/firmware/q6.b00 \
     vendor/asus/flo/proprietary/vendor/firmware/q6.b01:system/vendor/firmware/q6.b01 \
     vendor/asus/flo/proprietary/vendor/firmware/q6.b03:system/vendor/firmware/q6.b03 \
