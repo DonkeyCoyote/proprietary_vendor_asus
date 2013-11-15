@@ -3264,77 +3264,11 @@
       type="default"
   />
 
-  <apn carrier="b-mobile（1GB/Fair）"
+  <apn carrier="b-mobile"
       mcc="440"
       mnc="10"
       apn="bmobile.ne.jp"
-      user="bmobile@fr"
-      server=""
-      password="bmobile"
-      authtype="3"
-      mmsc=""
-  />
-
-  <apn carrier="b-mobile（U300）"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@U300"
-      server=""
-      password="bmobile"
-      authtype="3"
-      mmsc=""
-  />
-
-  <apn carrier="b-mobile（スマホ電話）"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@spd"
-      server=""
-      password="bmobile"
-      authtype="3"
-      mmsc=""
-  />
-
-  <apn carrier="b-mobile（カメレオン SIM）"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@cm"
-      server=""
-      password="bmobile"
-      authtype="3"
-      mmsc=""
-  />
-
-  <apn carrier="b-mobile（アマゾン）"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@am"
-      server=""
-      password="bmobile"
-      authtype="3"
-      mmsc=""
-  />
-
-  <apn carrier="b-mobile（ヨドバシ）"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@zsim"
-      server=""
-      password="bmobile"
-      authtype="3"
-      mmsc=""
-  />
-
-  <apn carrier="b-mobile（イオン）"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@aeon"
+      user="bmobile@nx"
       server=""
       password="bmobile"
       authtype="3"
@@ -3349,6 +3283,16 @@
       server=""
       password="iij"
       authtype="3"
+      mmsc=""
+  />
+
+  <apn carrier="plus.softbank"
+      mcc="440"
+      mnc="20"
+      apn="plus.softbank"
+      user="plus"
+      server=""
+      password="softbank"
       mmsc=""
   />
 
