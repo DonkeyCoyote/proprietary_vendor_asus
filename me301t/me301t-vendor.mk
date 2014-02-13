@@ -17,4 +17,4 @@
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/asus/me301t/overlay
 
-$(call inherit-product, vendor/asus/me301/me301t-vendor-blobs.mk)
+$(call inherit-product, vendor/asus/me301t/me301t-vendor-blobs.mk)

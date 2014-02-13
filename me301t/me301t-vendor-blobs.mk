@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/me301t/proprietary/bin/glgps:system/bin/glgps \
     vendor/asus/me301t/proprietary/etc/enctune.conf:system/etc/enctune.conf \
     vendor/asus/me301t/proprietary/etc/asound.conf:system/etc/asound.conf \
+    vendor/asus/me301t/proprietary/etc/dbus.conf:system/etc/dbus.conf \
     vendor/asus/me301t/proprietary/etc/nvaudio_conf_RT5631.xml:system/etc/nvaudio_conf_RT5631.xml \
     vendor/asus/me301t/proprietary/etc/nvaudio_conf_RT5642.xml:system/etc/nvaudio_conf_RT5642.xml \
     vendor/asus/me301t/proprietary/etc/nvaudio_conf_WM8903.xml:system/etc/nvaudio_conf_WM8903.xml \
@@ -40,8 +41,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/me301t/proprietary/etc/firmware/BCM4330B1_002.001.003.0609.0636.hcd:system/etc/firmware/BCM4330B1_002.001.003.0609.0636.hcd \
     vendor/asus/me301t/proprietary/etc/firmware/BCM4330B1_002.001.003.0967.0970.hcd:system/etc/firmware/BCM4330B1_002.001.003.0967.0970.hcd \
     vendor/asus/me301t/proprietary/etc/firmware/BCM4334B0_002.001.013.0258.0306.hcd:system/etc/firmware/BCM4334B0_002.001.013.0258.0306.hcd \
+    vendor/asus/me301t/proprietary/etc/firmware/EC/DOCK-EC20N-0207.rom:system/etc/firmware/EC/DOCK-EC20N-0207.rom \
+    vendor/asus/me301t/proprietary/etc/firmware/EC/DOCK-EC21N-0105.rom:system/etc/firmware/EC/DOCK-EC21N-0105.rom \
     vendor/asus/me301t/proprietary/etc/firmware/EC/FU-d.cfg:system/etc/firmware/EC/FU-d.cfg \
     vendor/asus/me301t/proprietary/etc/firmware/EC/OPEN-PAD-0216.rom:system/etc/firmware/EC/OPEN-PAD-0216.rom \
+    vendor/asus/me301t/proprietary/etc/firmware/camera/02-01-000128.bin:system/etc/firmware/camera/02-01-000128.bin \
+    vendor/asus/me301t/proprietary/etc/firmware/camera/02-02-000128.bin:system/etc/firmware/camera/02-02-000128.bin \
     vendor/asus/me301t/proprietary/etc/firmware/camera/0b-02-090027.bin:system/etc/firmware/camera/0b-02-090027.bin \
     vendor/asus/me301t/proprietary/etc/firmware/nvavp_aud_ucode.bin:system/etc/firmware/nvavp_aud_ucode.bin \
     vendor/asus/me301t/proprietary/etc/firmware/nvavp_os_0ff00000.bin:system/etc/firmware/nvavp_os_0ff00000.bin \
@@ -68,24 +73,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/me301t/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/asus/me301t/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
     vendor/asus/me301t/proprietary/lib/hw/lights.cardhu.so:system/lib/hw/lights.cardhu.so \
-    vendor/asus/me301t/proprietary/lib/hw/sensors.cardhu.so:system/lib/hw/sensors.cardhu.so \
-    vendor/asus/me301t/proprietary/lib/hw/sensors6050.cardhu.so:system/lib/hw/sensors6050.cardhu.so \
+    vendor/asus/me301t/proprietary/lib/hw/sensors6050.cardhu.so:system/lib/hw/sensors.cardhu.so \
     vendor/asus/me301t/proprietary/lib/hw/sensors_generic.cardhu.so:system/lib/hw/sensors_generic.cardhu.so \
-    vendor/asus/me301t/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
-    vendor/asus/me301t/proprietary/lib/libmllite3050.so:system/lib/libmllite3050.so \
-    vendor/asus/me301t/proprietary/lib/libmllite6050.so:system/lib/libmllite6050.so \
-    vendor/asus/me301t/proprietary/lib/libmlplatform3050.so:system/lib/libmlplatform3050.so \
-    vendor/asus/me301t/proprietary/lib/libmlplatform6050.so:system/lib/libmlplatform6050.so \
     vendor/asus/me301t/proprietary/lib/libmplmpu3050.so:system/lib/libmplmpu3050.so \
     vendor/asus/me301t/proprietary/lib/libmplmpu6050.so:system/lib/libmplmpu6050.so \
     vendor/asus/me301t/proprietary/lib/mpu3050/libmllite.so:system/lib/mpu3050/libmllite.so \
     vendor/asus/me301t/proprietary/lib/mpu3050/libmlplatform.so:system/lib/mpu3050/libmlplatform.so \
     vendor/asus/me301t/proprietary/lib/mpu3050/libmplmpu.so:system/lib/mpu3050/libmplmpu.so \
     vendor/asus/me301t/proprietary/lib/mpu3050/libsensors.mpl3050.so:system/lib/mpu3050/libsensors.mpl3050.so \
-    vendor/asus/me301t/proprietary/lib/mpu6050/libmllite.so:system/lib/mpu6050/libmllite.so \
-    vendor/asus/me301t/proprietary/lib/mpu6050/libmlplatform.so:system/lib/mpu6050/libmlplatform.so \
-    vendor/asus/me301t/proprietary/lib/mpu6050/libmplmpu.so:system/lib/mpu6050/libmplmpu.so \
-    vendor/asus/me301t/proprietary/lib/mpu6050/libsensors.mpl6050.so:system/lib/mpu6050/libsensors.mpl6050.so \
+    vendor/asus/me301t/proprietary/lib/mpu6050/libmllite.so:system/lib/libmllite.so \
+    vendor/asus/me301t/proprietary/lib/mpu6050/libmlplatform.so:system/lib/libmlplatform.so \
+    vendor/asus/me301t/proprietary/lib/mpu6050/libmplmpu.so:system/lib/libmplmpu.so \
+    vendor/asus/me301t/proprietary/lib/mpu6050/libsensors.mpl6050.so:system/lib/libsensors.mpl6050.so \
     vendor/asus/me301t/proprietary/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
     vendor/asus/me301t/proprietary/lib/libtbb.so:system/lib/libtbb.so \
     vendor/asus/me301t/proprietary/lib/libasound.so:system/lib/libasound.so \
@@ -190,6 +189,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/me301t/proprietary/vendor/lib/hw/power.cardhu.so:system/vendor/lib/hw/power.cardhu.so \
     vendor/asus/me301t/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/asus/me301t/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/asus/me301t/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/asus/me301t/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/asus/me301t/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/asus/me301t/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
     vendor/asus/me301t/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
