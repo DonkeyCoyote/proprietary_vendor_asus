@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Call makefiles
-$(call inherit-product-if-exists, vendor/asus/flo/broadcom/broadcom.mk)
 $(call inherit-product-if-exists, vendor/asus/flo/asus/asus.mk)
+$(call inherit-product-if-exists, vendor/asus/flo/broadcom/broadcom.mk)
 $(call inherit-product-if-exists, vendor/asus/flo/qcom/qcom.mk)
