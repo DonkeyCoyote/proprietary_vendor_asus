@@ -191,6 +191,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so:qcom \
     vendor/asus/flo/qcom/libmmstillomx.so:system/vendor/lib/libmmstillomx.so:qcom \
     vendor/asus/flo/qcom/liboemcamera.so:system/vendor/lib/liboemcamera.so:qcom \
-    vendor/asus/flo/qcom/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so:qcom
+    vendor/asus/flo/qcom/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so:qcom \
 
 PRODUCT_PACKAGES := libacdbloader tzapps.mdt
