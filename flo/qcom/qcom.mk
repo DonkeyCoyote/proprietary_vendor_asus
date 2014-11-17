@@ -85,7 +85,8 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/libgsl.so:system/lib/libgsl.so:qcom \
     vendor/asus/flo/qcom/libI420colorconvert.so:system/lib/libI420colorconvert.so:qcom \
     vendor/asus/flo/qcom/libidl.so:system/lib/libidl.so:qcom \
-    vendor/asus/flo/qcom/libllvm-a3xx.so:system/lib/libllvm-a3xx.so:qcom \
+    vendor/asus/flo/qcom/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so:qcom \
+    vendor/asus/flo/qcom/libbccQTI.so:system/vendor/lib/libbccQTI.so:qcom \
     vendor/asus/flo/qcom/libloc_core.so:system/lib/libloc_core.so:qcom \
     vendor/asus/flo/qcom/libloc_eng.so:system/lib/libloc_eng.so:qcom \
     vendor/asus/flo/qcom/libmm-abl.so:system/lib/libmm-abl.so:qcom \
