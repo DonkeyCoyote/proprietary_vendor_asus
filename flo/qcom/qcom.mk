@@ -50,22 +50,22 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/vidcfw.elf:system/etc/firmware/vidcfw.elf:qcom \
     vendor/asus/flo/qcom/vidc.mdt:system/etc/firmware/vidc.mdt:qcom \
     vendor/asus/flo/qcom/gps.conf:system/etc/gps.conf:qcom \
-    vendor/asus/flo/qcom/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so:qcom \
-    vendor/asus/flo/qcom/libEGL_adreno.so:system/lib/egl/libEGL_adreno.so:qcom \
-    vendor/asus/flo/qcom/libGLESv1_CM_adreno.so:system/lib/egl/libGLESv1_CM_adreno.so:qcom \
-    vendor/asus/flo/qcom/libGLESv2_adreno.so:system/lib/egl/libGLESv2_adreno.so:qcom \
-    vendor/asus/flo/qcom/libplayback_adreno.so:system/lib/egl/libplayback_adreno.so:qcom \
-    vendor/asus/flo/qcom/libq3dtools_adreno.so:system/lib/egl/libq3dtools_adreno.so:qcom \
+    vendor/asus/flo/qcom/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so:qcom \
+    vendor/asus/flo/qcom/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so:qcom \
+    vendor/asus/flo/qcom/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so:qcom \
+    vendor/asus/flo/qcom/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so:qcom \
+    vendor/asus/flo/qcom/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so:qcom \
+    vendor/asus/flo/qcom/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so:qcom \
     vendor/asus/flo/qcom/flp.msm8960.so:system/lib/hw/flp.msm8960.so:qcom \
     vendor/asus/flo/qcom/gps.msm8960.so:system/lib/hw/gps.msm8960.so:qcom \
     vendor/asus/flo/qcom/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so:qcom \
-    vendor/asus/flo/qcom/libadreno_utils.so:system/lib/libadreno_utils.so:qcom \
+    vendor/asus/flo/qcom/libadreno_utils.so:system/vendor/lib/libadreno_utils.so:qcom \
     vendor/asus/flo/qcom/libaudcal.so:system/lib/libaudcal.so:qcom \
     vendor/asus/flo/qcom/libaudioalsa.so:system/lib/libaudioalsa.so:qcom \
-    vendor/asus/flo/qcom/libC2D2.so:system/lib/libC2D2.so:qcom \
-    vendor/asus/flo/qcom/libc2d30-a3xx.so:system/lib/libc2d30-a3xx.so:qcom \
-    vendor/asus/flo/qcom/libc2d30.so:system/lib/libc2d30.so:qcom \
-    vendor/asus/flo/qcom/libCB.so:system/lib/libCB.so:qcom \
+    vendor/asus/flo/qcom/libC2D2.so:system/vendor/lib/libC2D2.so:qcom \
+    vendor/asus/flo/qcom/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so:qcom \
+    vendor/asus/flo/qcom/libc2d30.so:system/vendor/lib/libc2d30.so:qcom \
+    vendor/asus/flo/qcom/libCB.so:system/vendor/lib/libCB.so:qcom \
     vendor/asus/flo/qcom/libchromatix_ov5693_common.so:system/lib/libchromatix_ov5693_common.so:qcom \
     vendor/asus/flo/qcom/libchromatix_ov5693_default_video.so:system/lib/libchromatix_ov5693_default_video.so:qcom \
     vendor/asus/flo/qcom/libchromatix_ov5693_preview.so:system/lib/libchromatix_ov5693_preview.so:qcom \
@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/libdsucsd.so:system/lib/libdsucsd.so:qcom \
     vendor/asus/flo/qcom/libdsutils.so:system/lib/libdsutils.so:qcom \
     vendor/asus/flo/qcom/libgps.utils.so:system/lib/libgps.utils.so:qcom \
-    vendor/asus/flo/qcom/libgsl.so:system/lib/libgsl.so:qcom \
+    vendor/asus/flo/qcom/libgsl.so:system/vendor/lib/libgsl.so:qcom \
     vendor/asus/flo/qcom/libI420colorconvert.so:system/lib/libI420colorconvert.so:qcom \
     vendor/asus/flo/qcom/libidl.so:system/lib/libidl.so:qcom \
     vendor/asus/flo/qcom/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so:qcom \
@@ -109,10 +109,10 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/libqmiservices.so:system/lib/libqmiservices.so:qcom \
     vendor/asus/flo/qcom/libqmi.so:system/lib/libqmi.so:qcom \
     vendor/asus/flo/qcom/libQSEEComAPI.so:system/lib/libQSEEComAPI.so:qcom \
-    vendor/asus/flo/qcom/librs_adreno_sha1.so:system/lib/librs_adreno_sha1.so:qcom \
-    vendor/asus/flo/qcom/librs_adreno.so:system/lib/librs_adreno.so:qcom \
-    vendor/asus/flo/qcom/libRSDriver_adreno.so:system/lib/libRSDriver_adreno.so:qcom \
-    vendor/asus/flo/qcom/libsc-a3xx.so:system/lib/libsc-a3xx.so:qcom \
+    vendor/asus/flo/qcom/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so:qcom \
+    vendor/asus/flo/qcom/librs_adreno.so:system/vendor/lib/librs_adreno.so:qcom \
+    vendor/asus/flo/qcom/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so:qcom \
+    vendor/asus/flo/qcom/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so:qcom \
     vendor/asus/flo/qcom/libsensor1.so:system/lib/libsensor1.so:qcom \
     vendor/asus/flo/qcom/libsensor_reg.so:system/lib/libsensor_reg.so:qcom \
     vendor/asus/flo/qcom/libsensor_user_cal.so:system/lib/libsensor_user_cal.so:qcom \
