@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf700t/proprietary/bin/glgps:system/bin/glgps \
     vendor/asus/tf700t/proprietary/bin/pppd_btdun:system/bin/pppd_btdun \
     vendor/asus/tf700t/proprietary/bin/rild:system/bin/rild \
-    vendor/asus/tf700t/proprietary/bin/rm_ts_server:system/bin/rm_ts_server \
     vendor/asus/tf700t/proprietary/bin/sensors-config:system/bin/sensors-config \
     vendor/asus/tf700t/proprietary/bin/tf_daemon:system/bin/tf_daemon \
     vendor/asus/tf700t/proprietary/bin/touch_fw_update:system/bin/touch_fw_update \
