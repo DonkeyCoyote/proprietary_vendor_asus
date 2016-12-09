@@ -117,6 +117,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/libsensor_reg.so:system/lib/libsensor_reg.so:qcom \
     vendor/asus/flo/qcom/libsensor_user_cal.so:system/lib/libsensor_user_cal.so:qcom \
     vendor/asus/flo/qcom/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so:qcom \
+    vendor/asus/flo/qcom/libwvm.so:system/vendor/lib/libwvm.so:qcom \
     vendor/asus/flo/qcom/libxml.so:system/lib/libxml.so:qcom \
     vendor/asus/flo/qcom/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw:qcom \
     vendor/asus/flo/qcom/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw:qcom \
