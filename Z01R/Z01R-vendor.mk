@@ -322,4 +322,5 @@ PRODUCT_PACKAGES += \
     xtra_t_app \
     WfdCommon \
     com.qti.location.sdk \
-    izat.xt.srv
+    izat.xt.srv \
+    libril-qc-hal-qmi

@@ -335,4 +335,15 @@ LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := libril-qc-hal-qmi
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES_64 := proprietary/lib64/libril-qc-hal-qmi.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libril-qc-hal-qmi.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
 endif
