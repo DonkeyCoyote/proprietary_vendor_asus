@@ -30,18 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z01R/proprietary/etc/nqnfcse_access.xml:system/etc/nqnfcse_access.xml \
     vendor/asus/Z01R/proprietary/etc/permissions/RemoteSimlock.xml:system/etc/permissions/RemoteSimlock.xml \
     vendor/asus/Z01R/proprietary/etc/permissions/UimService.xml:system/etc/permissions/UimService.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.hardware.display.pq_chip.xml:system/etc/permissions/asus.hardware.display.pq_chip.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.hardware.display.splendid.reading_mode.xml:system/etc/permissions/asus.hardware.display.splendid.reading_mode.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.hardware.display.splendid.xml:system/etc/permissions/asus.hardware.display.splendid.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.hardware.fingerprint_earlywakeup.xml:system/etc/permissions/asus.hardware.fingerprint_earlywakeup.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.hardware.glove.xml:system/etc/permissions/asus.hardware.glove.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.hardware.touchgesture.double_tap.xml:system/etc/permissions/asus.hardware.touchgesture.double_tap.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.hardware.touchgesture.launch_app.xml:system/etc/permissions/asus.hardware.touchgesture.launch_app.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.hardware.touchgesture.swipe_up.xml:system/etc/permissions/asus.hardware.touchgesture.swipe_up.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.software.smart.reading.xml:system/etc/permissions/asus.software.smart.reading.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.software.smartgallery.xml:system/etc/permissions/asus.software.smartgallery.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.software.vibration.intensity.xml:system/etc/permissions/asus.software.vibration.intensity.xml \
-    vendor/asus/Z01R/proprietary/etc/permissions/asus.software.zenimoji.obj.xml:system/etc/permissions/asus.software.zenimoji.obj.xml \
     vendor/asus/Z01R/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/asus/Z01R/proprietary/etc/permissions/com.nxp.nfc.nq.xml:system/etc/permissions/com.nxp.nfc.nq.xml \
     vendor/asus/Z01R/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -297,19 +285,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libantradio \
     vendor.qti.hardware.fm@1.0 \
-    AsusSplendidCommandAgent \
     DynamicDDSService \
     QdcmFF \
     QtiSystemService \
     QtiTelephonyService \
-    aptxui \
     datastatusnotification \
     embms \
     imssettings \
     remotesimlockservice \
     uimlpaservice \
-    AsusSplendid \
-    AsusVisualMaster \
     CNEService \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentTGoogleWCD9340 \
