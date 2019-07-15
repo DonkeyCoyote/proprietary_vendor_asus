@@ -160,6 +160,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z01R/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/asus/Z01R/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
     vendor/asus/Z01R/proprietary/lib/librcc.so:system/lib/librcc.so \
+    vendor/asus/Z01R/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
+    vendor/asus/Z01R/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
     vendor/asus/Z01R/proprietary/lib/libwfdaac.so:system/lib/libwfdaac.so \
     vendor/asus/Z01R/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
     vendor/asus/Z01R/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
@@ -265,6 +267,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z01R/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/asus/Z01R/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
     vendor/asus/Z01R/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/asus/Z01R/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
+    vendor/asus/Z01R/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/asus/Z01R/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/asus/Z01R/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/asus/Z01R/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
