@@ -272,6 +272,15 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z01R/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/asus/Z01R/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/asus/Z01R/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.color@1.2.so:system/lib64/vendor.display.color@1.2.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.config@1.0.so:system/lib64/vendor.display.config@1.0.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.config@1.1.so:system/lib64/vendor.display.config@1.1.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.config@1.2.so:system/lib64/vendor.display.config@1.2.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.config@1.3.so:system/lib64/vendor.display.config@1.3.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.config@1.4.so:system/lib64/vendor.display.config@1.4.so \
+    vendor/asus/Z01R/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/asus/Z01R/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
     vendor/asus/Z01R/proprietary/lib64/vendor.qti.gnss@1.1.so:system/lib64/vendor.qti.gnss@1.1.so \
     vendor/asus/Z01R/proprietary/lib64/vendor.qti.gnss@1.2.so:system/lib64/vendor.qti.gnss@1.2.so \
