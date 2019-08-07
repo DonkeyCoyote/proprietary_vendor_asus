@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/framework/com.quicinc.cne.server-V2.0-java.jar:system/framework/com.quicinc.cne.server-V2.0-java.jar \
     vendor/asus/zenfone6/proprietary/framework/com.quicinc.cne.server-V2.1-java.jar:system/framework/com.quicinc.cne.server-V2.1-java.jar \
     vendor/asus/zenfone6/proprietary/framework/com.quicinc.cne.server-V2.2-java.jar:system/framework/com.quicinc.cne.server-V2.2-java.jar \
+    vendor/asus/zenfone6/proprietary/framework/com.quicinc.cne.server-V2.3-java.jar:system/framework/com.quicinc.cne.server-V2.3-java.jar \
     vendor/asus/zenfone6/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/asus/zenfone6/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/asus/zenfone6/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
@@ -50,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/zenfone6/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/zenfone6/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
+    vendor/asus/zenfone6/proprietary/lib/com.quicinc.cne.server@2.3.so:system/lib/com.quicinc.cne.server@2.3.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
@@ -58,6 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
+    vendor/asus/zenfone6/proprietary/lib64/com.quicinc.cne.server@2.3.so:system/lib64/com.quicinc.cne.server@2.3.so \
     vendor/asus/zenfone6/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/asus/zenfone6/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/asus/zenfone6/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
