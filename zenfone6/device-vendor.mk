@@ -18,7 +18,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/asus/zenfone6/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/asus/zenfone6/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/asus/zenfone6/proprietary/etc/nqnfcee_access.xml:system/etc/nqnfcee_access.xml \
+    vendor/asus/zenfone6/proprietary/etc/nqnfcse_access.xml:system/etc/nqnfcse_access.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/asus/zenfone6/proprietary/etc/permissions/com.gsma.services.nfc.xml:system/etc/permissions/com.gsma.services.nfc.xml \
+    vendor/asus/zenfone6/proprietary/etc/permissions/com.nxp.nfc.nq.xml:system/etc/permissions/com.nxp.nfc.nq.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
@@ -56,8 +60,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
+    vendor/asus/zenfone6/proprietary/lib/libnqnfc-nci.so:system/lib/libnqnfc-nci.so \
     vendor/asus/zenfone6/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/asus/zenfone6/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
+    vendor/asus/zenfone6/proprietary/lib/vendor.nxp.hardware.nfc@1.0.so:system/lib/vendor.nxp.hardware.nfc@1.0.so \
     vendor/asus/zenfone6/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -76,14 +82,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
     vendor/asus/zenfone6/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/asus/zenfone6/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/asus/zenfone6/proprietary/lib64/libnqnfc-nci.so:system/lib64/libnqnfc-nci.so \
+    vendor/asus/zenfone6/proprietary/lib64/libnqnfc_nci_jni.so:system/lib64/libnqnfc_nci_jni.so \
     vendor/asus/zenfone6/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/asus/zenfone6/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/asus/zenfone6/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
+    vendor/asus/zenfone6/proprietary/lib64/vendor.nxp.hardware.nfc@1.0.so:system/lib64/vendor.nxp.hardware.nfc@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
 
 PRODUCT_PACKAGES += \
     libantradio \
+    NQNfcNci \
     QtiTelephonyService \
     aptxals \
     CNEService \
@@ -91,7 +101,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleWCD9340 \
     dpmserviceapp \
     ims \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    com.gsma.services.nfc \
+    com.nxp.nfc.nq
 
 ifeq ($(QCPATH),)
 endif
