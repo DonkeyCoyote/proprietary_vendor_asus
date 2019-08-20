@@ -96,7 +96,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.nxp.hardware.nfc@1.0.so:system/lib64/vendor.nxp.hardware.nfc@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/asus/zenfone6/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
+    vendor/asus/zenfone6/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
+    vendor/asus/zenfone6/proprietary/priv-app/MotorService/lib/arm64/libAsusLaserSensorHAL.so:system/priv-app/MotorService/lib/arm64/libAsusLaserSensorHAL.so \
+    vendor/asus/zenfone6/proprietary/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so:system/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so \
+    vendor/asus/zenfone6/proprietary/priv-app/MotorService/lib/arm64/libjni_laser.so:system/priv-app/MotorService/lib/arm64/libjni_laser.so \
+    vendor/asus/zenfone6/proprietary/priv-app/MotorService/lib/arm64/libjni_motor.so:system/priv-app/MotorService/lib/arm64/libjni_motor.so
 
 PRODUCT_PACKAGES += \
     libantradio \
@@ -106,6 +110,7 @@ PRODUCT_PACKAGES += \
     CNEService \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    MotorService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
