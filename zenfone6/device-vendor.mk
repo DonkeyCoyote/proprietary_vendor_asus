@@ -55,10 +55,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/zenfone6/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
     vendor/asus/zenfone6/proprietary/lib/com.quicinc.cne.server@2.3.so:system/lib/com.quicinc.cne.server@2.3.so \
+    vendor/asus/zenfone6/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
     vendor/asus/zenfone6/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
+    vendor/asus/zenfone6/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/asus/zenfone6/proprietary/lib/libnqnfc-nci.so:system/lib/libnqnfc-nci.so \
     vendor/asus/zenfone6/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/asus/zenfone6/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
@@ -72,6 +74,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/com.quicinc.cne.server@2.3.so:system/lib64/com.quicinc.cne.server@2.3.so \
+    vendor/asus/zenfone6/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
     vendor/asus/zenfone6/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/asus/zenfone6/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/asus/zenfone6/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
@@ -83,6 +86,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
     vendor/asus/zenfone6/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
     vendor/asus/zenfone6/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
+    vendor/asus/zenfone6/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/asus/zenfone6/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/asus/zenfone6/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/asus/zenfone6/proprietary/lib64/libnqnfc-nci.so:system/lib64/libnqnfc-nci.so \
@@ -104,6 +108,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libantradio \
+    vendor.qti.hardware.fm@1.0 \
     NQNfcNci \
     QtiTelephonyService \
     aptxals \
