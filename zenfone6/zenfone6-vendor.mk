@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/asus/zenfone6/proprietary/etc/permissions/privapp-permissions-ASUS_I01WD.xml:system/etc/permissions/privapp-permissions-ASUS_I01WD.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
@@ -71,9 +72,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/asus/zenfone6/proprietary/lib/vendor.nxp.hardware.nfc@1.0.so:system/lib/vendor.nxp.hardware.nfc@1.0.so \
     vendor/asus/zenfone6/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/asus/zenfone6/proprietary/lib64/DataSet/arch/DIT_List.cfg:system/lib64/DataSet/arch/DIT_List.cfg \
-    vendor/asus/zenfone6/proprietary/lib64/DataSet/ditSCidGen/msgchk.db:system/lib64/DataSet/ditSCidGen/msgchk.db \
-    vendor/asus/zenfone6/proprietary/lib64/DataSet/ispDB/ParameterDB.db:system/lib64/DataSet/ispDB/ParameterDB.db \
     vendor/asus/zenfone6/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
@@ -100,13 +98,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/asus/zenfone6/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/asus/zenfone6/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_DIT_MSMv1.so:system/lib64/libxditk_DIT_MSMv1.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_DIT_Manager.so:system/lib64/libxditk_DIT_Manager.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_ISP.so:system/lib64/libxditk_ISP.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_arch.so:system/lib64/libxditk_arch.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_ditArchLIB.so:system/lib64/libxditk_ditArchLIB.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_ditBSP.so:system/lib64/libxditk_ditBSP.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_ditBSP_JNI.so:system/lib64/libxditk_ditBSP_JNI.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.display.color@1.2.so:system/lib64/vendor.display.color@1.2.so \
@@ -114,6 +105,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib64/vendor.nxp.hardware.nfc@1.0.so:system/lib64/vendor.nxp.hardware.nfc@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/asus/zenfone6/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libUndistort.so:system/priv-app/AsusCamera/lib/arm64/libUndistort.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so:system/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so:system/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_undistort.so:system/priv-app/AsusCamera/lib/arm64/libarcsoft_undistort.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so:system/priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so:system/priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so:system/priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libasusundistort.so:system/priv-app/AsusCamera/lib/arm64/libasusundistort.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libbitmap.so:system/priv-app/AsusCamera/lib/arm64/libbitmap.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libmpbase.so:system/priv-app/AsusCamera/lib/arm64/libmpbase.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so:system/priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so \
+    vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libyuv_util.so:system/priv-app/AsusCamera/lib/arm64/libyuv_util.so \
     vendor/asus/zenfone6/proprietary/priv-app/MotorService/lib/arm64/libAsusLaserSensorHAL.so:system/priv-app/MotorService/lib/arm64/libAsusLaserSensorHAL.so \
     vendor/asus/zenfone6/proprietary/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so:system/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so \
     vendor/asus/zenfone6/proprietary/priv-app/MotorService/lib/arm64/libjni_laser.so:system/priv-app/MotorService/lib/arm64/libjni_laser.so \
@@ -125,6 +128,7 @@ PRODUCT_PACKAGES += \
     NQNfcNci \
     QtiTelephonyService \
     aptxals \
+    AsusCamera \
     CNEService \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
