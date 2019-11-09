@@ -33,8 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
     vendor/asus/zenfone6/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/asus/zenfone6/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
-    vendor/asus/zenfone6/proprietary/lib64/libAsusRGBSensorHAL.so:system/lib64/libAsusRGBSensorHAL.so \
-    vendor/asus/zenfone6/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/asus/zenfone6/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/asus/zenfone6/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/asus/zenfone6/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
@@ -85,6 +83,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:system/product/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:system/product/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.fm@1.0.so:system/product/lib/vendor.qti.hardware.fm@1.0.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/libAsusRGBSensorHAL.so:system/product/lib64/libAsusRGBSensorHAL.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/libaptXHD_encoder.so:system/product/lib64/libaptXHD_encoder.so \
     vendor/asus/zenfone6/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:system/product/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/product/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/com.quicinc.cne.api@1.0.so:system/product/lib64/com.quicinc.cne.api@1.0.so \
