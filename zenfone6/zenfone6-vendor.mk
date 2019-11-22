@@ -28,9 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/asus/zenfone6/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
     vendor/asus/zenfone6/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/asus/zenfone6/proprietary/framework/com.qti.location.sdk.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.qti.location.sdk.jar \
-    vendor/asus/zenfone6/proprietary/framework/izat.xt.srv.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/izat.xt.srv.jar \
-    vendor/asus/zenfone6/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/asus/zenfone6/proprietary/lib/DataSet/ispDB/ASUS_UNDI.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ASUS_UNDI.bin \
     vendor/asus/zenfone6/proprietary/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin \
     vendor/asus/zenfone6/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
@@ -90,17 +87,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
     vendor/asus/zenfone6/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/asus/zenfone6/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
-    vendor/asus/zenfone6/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qti.dpmframework.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/com.quicinc.cne.api-V1.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.quicinc.cne.api-V1.1-java.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/com.quicinc.cne.constants-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.quicinc.cne.constants-V1.0-java.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/com.quicinc.cne.constants-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.quicinc.cne.constants-V2.0-java.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/com.quicinc.cne.constants-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.quicinc.cne.constants-V2.1-java.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/dpmapi.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar \
-    vendor/asus/zenfone6/proprietary/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar \
     vendor/asus/zenfone6/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.api@1.0.so \
@@ -177,7 +163,22 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleWCD9340 \
     dpmserviceapp \
     ims \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    com.qti.location.sdk \
+    izat.xt.srv \
+    tcmclient \
+    QtiTelephonyServicelibrary \
+    com.qti.dpmframework \
+    com.quicinc.cne.api-V1.1-java \
+    com.quicinc.cne.constants-V1.0-java \
+    com.quicinc.cne.constants-V2.0-java \
+    com.quicinc.cne.constants-V2.1-java \
+    dpmapi \
+    qcrilhook \
+    qti-telephony-common \
+    vendor.qti.hardware.data.cne.internal.api-V1.0-java \
+    vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
+    vendor.qti.hardware.data.iwlan-V1.0-java
 
 ifeq ($(QCPATH),)
 endif
