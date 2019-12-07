@@ -19,11 +19,4 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),zenfone6)
 
 
-ifeq ($(QCPATH),)
-endif
-
-ifneq ($(TARGET_HAVE_QC_PERF),true)
-
-endif
-
 endif

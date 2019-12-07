@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<preferred-activities>
+    <item name="com.asus.gallery/.app.EPhotoActivity">
+        <filter>
+              <action name="android.intent.action.MAIN" />
+              <cat name="android.intent.category.APP_GALLERY" />
+              <cat name="android.intent.category.DEFAULT" />
+         </filter>
+    </item>
+</preferred-activities>
