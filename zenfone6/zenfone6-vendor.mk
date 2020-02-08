@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 The LineageOS Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -120,6 +120,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin \
     vendor/asus/zenfone6/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
     vendor/asus/zenfone6/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
+    vendor/asus/zenfone6/proprietary/lib64/DataSet/arch/DIT_List.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/arch/DIT_List.cfg \
+    vendor/asus/zenfone6/proprietary/lib64/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ditSCidGen/msgchk.db \
+    vendor/asus/zenfone6/proprietary/lib64/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ispDB/ParameterDB.db \
     vendor/asus/zenfone6/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/asus/zenfone6/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
     vendor/asus/zenfone6/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
@@ -254,6 +257,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/asus/zenfone6/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/asus/zenfone6/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
+    vendor/asus/zenfone6/proprietary/product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
@@ -272,8 +276,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.1.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.2.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.3.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.0.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.1.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.2.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.3.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.4.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.5.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.6.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.7.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.postproc@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.alarm@1.0.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.audiohalext@1.0.so \
+    vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.cvp@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.iop@2.0.so \
@@ -293,6 +307,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.0.so \
     vendor/asus/zenfone6/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.1.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
@@ -311,8 +326,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
     vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.2.so \
     vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.3.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.0.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.1.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.2.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.3.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.4.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.5.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.6.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.7.so \
     vendor/asus/zenfone6/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
+    vendor/asus/zenfone6/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/asus/zenfone6/proprietary/product/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.perf@2.0.so \
