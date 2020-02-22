@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -120,19 +120,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin \
     vendor/asus/zenfone6/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
     vendor/asus/zenfone6/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
-    vendor/asus/zenfone6/proprietary/lib64/DataSet/arch/DIT_List.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/arch/DIT_List.cfg \
-    vendor/asus/zenfone6/proprietary/lib64/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ditSCidGen/msgchk.db \
-    vendor/asus/zenfone6/proprietary/lib64/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ispDB/ParameterDB.db \
     vendor/asus/zenfone6/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/asus/zenfone6/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
     vendor/asus/zenfone6/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_DIT_MSMv1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_DIT_MSMv1.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_DIT_Manager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_DIT_Manager.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_ISP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ISP.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_arch.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_arch.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_ditArchLIB.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditArchLIB.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_ditBSP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP.so \
-    vendor/asus/zenfone6/proprietary/lib64/libxditk_ditBSP_JNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP_JNI.so \
     vendor/asus/zenfone6/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
     vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libUndistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libUndistort.so \
     vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_distortion_correction.so \
