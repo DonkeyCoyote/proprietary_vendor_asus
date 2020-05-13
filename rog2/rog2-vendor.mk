@@ -27,8 +27,15 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
     vendor/asus/rog2/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
     vendor/asus/rog2/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
+    vendor/asus/rog2/proprietary/etc/hardcore_X1.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X1.json \
+    vendor/asus/rog2/proprietary/etc/hardcore_X2.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X2.json \
+    vendor/asus/rog2/proprietary/etc/hardcore_X3.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X3.json \
+    vendor/asus/rog2/proprietary/etc/hardcore_default.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_default.json \
     vendor/asus/rog2/proprietary/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/asus/rog2/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
+    vendor/asus/rog2/proprietary/etc/permissions/asus.software.gamewidget.zenui.rog2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.gamewidget.zenui.rog2.xml \
+    vendor/asus/rog2/proprietary/etc/permissions/asus.software.zenui.rog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.rog.xml \
+    vendor/asus/rog2/proprietary/etc/permissions/asus.software.zenui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.xml \
     vendor/asus/rog2/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/asus/rog2/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/asus/rog2/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
@@ -118,6 +125,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/etc/sensors/proto/sns_timer.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_timer.proto \
     vendor/asus/rog2/proprietary/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ultra_violet.proto \
     vendor/asus/rog2/proprietary/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
+    vendor/asus/rog2/proprietary/etc/sysconfig/ims-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/ims-hiddenapi-package-whitelist.xml \
     vendor/asus/rog2/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/asus/rog2/proprietary/etc/videoeditor/Charming.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Charming.mfim \
     vendor/asus/rog2/proprietary/etc/videoeditor/Dynamic.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Dynamic.mfim \
@@ -257,6 +265,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/priv-app/AsusGallery/lib/arm/libtensorflow_inference.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libtensorflow_inference.so \
     vendor/asus/rog2/proprietary/priv-app/AsusGallery/lib/arm/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libtensorflowlite_jni.so \
     vendor/asus/rog2/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
+    vendor/asus/rog2/proprietary/priv-app/GameBroadcaster/lib/arm64/libJniModule.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/GameBroadcaster/lib/arm64/libJniModule.so \
     vendor/asus/rog2/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
     vendor/asus/rog2/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
     vendor/asus/rog2/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
@@ -311,10 +320,15 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libantradio \
+    FocusAppListener \
+    GameBroadcasterService \
+    HardwareStub \
     aptxals \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
+    GameBroadcaster \
+    ROGGameCenter \
     WfdService \
     com.qualcomm.location \
     QtiTelephonyService \
