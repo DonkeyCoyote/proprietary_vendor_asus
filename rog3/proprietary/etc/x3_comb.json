@@ -1,0 +1,158 @@
+{
+	"displayname":"x3 comb",
+	"comb_0": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x43800000",
+					"value":"1"
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 0-3",
+					"code":"0x40800100",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies",
+					"default_value_offset":4,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 4-6",
+					"code":"0x40800000",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies",
+					"default_value_offset":5,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 7",
+					"code":"0x40800200",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu7/cpufreq/scaling_available_frequencies",
+					"default_value_offset":6,
+					"multiply":"0.001"
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+					"code":"0X42804000",
+					"value":"5"
+				}
+			]
+		}
+	],
+
+	"comb_1": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x43800000",
+					"value":"2"
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 0-3",
+					"code":"0x40800100",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies",
+					"default_value_offset":2,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 4-6",
+					"code":"0x40800000",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies",
+					"default_value_offset":3,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 7",
+					"code":"0x40800200",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu7/cpufreq/scaling_available_frequencies",
+					"default_value_offset":4,
+					"multiply":"0.001"
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+					"code":"0X42804000",
+					"value":"4"
+				}
+			]
+		}
+	],
+
+	"comb_2": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x43800000",
+					"value":"3"
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 0-3",
+					"code":"0x40800100",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies",
+					"default_value_offset":0,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 4-6",
+					"code":"0x40800000",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies",
+					"default_value_offset":0,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 7",
+					"code":"0x40800200",
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu7/cpufreq/scaling_available_frequencies",
+					"default_value_offset":0,
+					"multiply":"0.001"
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+					"code":"0X42804000",
+					"value":"3"
+				}
+			]
+		}
+	]
+}

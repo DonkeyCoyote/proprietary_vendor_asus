@@ -1,0 +1,337 @@
+{
+	"displayname":"x-mode normal",
+	"configurations": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x43800000",
+					"value":"0",
+					"valueset": [
+						"0","1","2","3"
+					]
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 0-3",
+					"code":"0x40800100",
+					"value":"614",
+					"valueset": [
+						"614", "883", "1075", "1248", "1344", "1516", "1612", "1708", "1804"
+					],
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies",
+					"default_value_offset":9,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 4-6",
+					"code":"0x40800000",
+					"value":"710",
+					"valueset": [
+						"710", "1056", "1286", "1478", "1670", "1862", "2054", "2246", "2419"
+					],
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies",
+					"default_value_offset":9,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 7",
+					"code":"0x40800200",
+					"value":"844",
+					"valueset": [
+						"844", "1075", "1401", "1632", "1862", "2073", "2265",  "2457", "2649", "2841" 
+					],
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu7/cpufreq/scaling_available_frequencies",
+					"default_value_offset":9,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 0-3",
+					"code":"0x40804100",
+					"value":"1804",
+					"valueset": [
+						"1420", "1516", "1612", "1708", "1804"
+					],
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies",
+					"default_value_offset":0,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 4-6",
+					"code":"0x40804000",
+					"value":"2419",
+					"valueset": [
+						"710", "1056", "1286", "1478", "1670", "1862", "2054", "2246", "2419"
+					],
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies",
+					"default_value_offset":0,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 7",
+					"code":"0x40804200",
+					"value":"2841",
+					"valueset": [
+						"844", "1190", "1401", "1632", "1862", "2073", "2265",  "2457", "2649", "2841" 
+					],
+					"available_num":10,
+					"availableset":"/sys/devices/system/cpu/cpu7/cpufreq/scaling_available_frequencies",
+					"default_value_offset":0,
+					"multiply":"0.001"
+				},
+				{
+					"name":"/sys/module/lpm_levels/parameters/bias_hyst",
+					"code":"0x40408000",
+					"value":"0",
+					"valueset": [
+						"0","99"
+					]
+				},
+				{
+					"name":"/dev/cpuset/top-app/cpus",
+					"code":"0x40C3C000",
+					"value":"255",
+					"valueset": [
+						"15","255", "240"
+					]
+				},
+				{
+					"name":"/dev/cpuset/system-background/cpus",
+					"code":"0x40C44000",
+					"value":"15",
+					"valueset": [
+						"15","255", "240"
+					]
+				},
+				{
+					"name":"/dev/cpuset/foreground/cpus",
+					"code":"0x40C40000",
+					"value":"255",
+					"valueset": [
+						"15","255", "240"
+					]
+				},
+				{
+					"name":"/dev/cpuset/background/cpus",
+					"code":"0x40C48000",
+					"value":"15",
+					"valueset": [
+						"15","255", "240"
+					]
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+					"code":"0X42804000",
+					"value":"5",
+					"valueset": [
+						"5", "4", "3", "2", "1", "0"
+					],
+					"gpu_available_num":"/sys/class/kgsl/kgsl-3d0/num_pwrlevels",
+					"gpu_apply_available_num":"1"
+				},
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+					"code":"0X42808000",
+					"value":"0",
+					"valueset": [
+						"5", "4", "3", "2", "1", "0"
+					],
+					"gpu_available_num":"/sys/class/kgsl/kgsl-3d0/num_pwrlevels"
+				}
+			]
+		},
+		{
+			"category":"Scheduler",
+			"items": [
+				{
+					"name":"/proc/sys/kernel/sched_downmigrate",
+					"code":"0x40C20000",
+					"value":"85",
+					"valueset": [
+						"95", "85", "75", "65", "55", "45"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_upmigrate",
+					"code":"0x40C1C000",
+					"value":"95",
+					"valueset": [
+						"95", "85", "75", "65", "55", "45"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_group_downmigrate",
+					"code":"0x40C58000",
+					"value":"85",
+					"valueset": [
+						"95", "85", "75", "65", "55", "45"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_group_upmigrate",
+					"code":"0x40C54000",
+					"value":"100",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpuX/sched_load_boost",
+					"code":"0x40C68000",
+					"value":"0",
+					"valueset": [
+						"0","10","20","30","40","50","60","70"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load",
+					"code":"0x41440000",
+					"value":"90",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq",
+					"code":"0x4143C000",
+					"value":"1574",
+					"valueset": [
+						"1574", "1862", "2150", "2419"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load",
+					"code":"0x4143C100",
+					"value":"90",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq",
+					"code":"0x4143C000",
+					"value":"1228",
+					"valueset": [
+						"1228", "1516", "1804"
+					]
+				}
+			]
+		},
+		{
+			"category":"IO",
+			"items": [
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq",
+					"code":"0x41828000",
+					"value":"2288",
+					"valueset": [
+						"2288","4577","7110","9155","12298","14236","15258"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq",
+					"code":"0x43010000",
+					"value":"762",
+					"valueset": [
+						"762","1720","2597","3879","6881","10437"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu%d-cpu-l3-lat/min_freq",
+					"code":"0x43400000",
+					"value":"3000",
+					"valueset": [
+					  "3000","4032","6144","7296","8256","10176","12288","14208","15168","16128"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil",
+					"code":"0x43404000",
+					"value":"400",
+					"valueset": [
+						"400","1000","2000","4000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil",
+					"code":"0x43408000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/ratio_ceil",
+					"code":"0x43420000",
+					"value":"400",
+					"valueset": [
+						"400","1000","2000","4000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu4-cpu-llcc-lat/mem_latency/ratio_ceil",
+					"code":"0x43424000",
+					"value":"400",
+					"valueset": [
+						"400","1000","2000","4000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/mem_latency/ratio_ceil",
+					"code":"0x43434000",
+					"value":"400",
+					"valueset": [
+						"400","1000","2000","4000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu4-llcc-ddr-lat/mem_latency/ratio_ceil",
+					"code":"0x43438000",
+					"value":"400",
+					"valueset": [
+						"400","1000","2000","4000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/io_percent",
+					"code":"0x43004000",
+					"value":"80",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent",
+					"code":"0x41808000",
+					"value":"50",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"STORAGE_CLK_SCALING_DISABLE",
+					"code":"0x42C10000",
+					"value":"0",
+					"valueset": [
+						"0", "1"
+					]
+				}
+			]
+		}
+	]
+}
