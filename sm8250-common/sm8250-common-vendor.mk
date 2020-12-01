@@ -155,9 +155,6 @@ PRODUCT_PACKAGES += \
     DeviceInfo \
     DeviceStatisticsService \
     QtiTelephonyService \
-    AndroidAutoStub \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
     dpmserviceapp \
     qcrilmsgtunnel \
     WfdCommon \
@@ -258,9 +255,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/libseccam.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libseccam.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/libseccamservice.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libseccamservice.so \
-    vendor/asus/sm8250-common/proprietary/product/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureui_svcsock_system.so \
-    vendor/asus/sm8250-common/proprietary/product/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureuisvc_jni.so \
-    vendor/asus/sm8250-common/proprietary/product/lib64/libsystemhelper_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsystemhelper_jni.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
@@ -306,8 +300,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DynamicDDSService \
     PowerOffAlarm \
-    com.qualcomm.qti.services.secureui \
-    com.qualcomm.qti.services.systemhelper \
     datastatusnotification \
     embms \
     uimgbaservice \

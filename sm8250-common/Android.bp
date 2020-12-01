@@ -103,42 +103,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "AndroidAutoStub",
-	owner: "asus",
-	apk: "proprietary/product/priv-app/AndroidAutoStub/AndroidAutoStub.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentOKGoogleHEXAGON",
-	owner: "asus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleHEXAGON",
-	owner: "asus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "dpmserviceapp",
 	owner: "asus",
 	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
@@ -284,28 +248,6 @@ android_app_import {
 	name: "PowerOffAlarm",
 	owner: "asus",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.qti.services.secureui",
-	owner: "asus",
-	apk: "proprietary/product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.qti.services.systemhelper",
-	owner: "asus",
-	apk: "proprietary/product/app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
