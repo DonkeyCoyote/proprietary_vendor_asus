@@ -48,6 +48,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "AsusVisualMaster",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusVisualMaster/AsusVisualMaster.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "WfdService",
 	owner: "asus",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
@@ -67,6 +78,28 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+}
+
+android_app_import {
+	name: "DeviceInfo",
+	owner: "asus",
+	apk: "proprietary/product/app/DeviceInfo/DeviceInfo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DeviceStatisticsService",
+	owner: "asus",
+	apk: "proprietary/product/app/DeviceStatisticsService/DeviceStatisticsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
 }
 
 android_app_import {
@@ -270,6 +303,28 @@ android_app_import {
 }
 
 android_app_import {
+	name: "com.qualcomm.qti.services.secureui",
+	owner: "asus",
+	apk: "proprietary/product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.services.systemhelper",
+	owner: "asus",
+	apk: "proprietary/product/app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "datastatusnotification",
 	owner: "asus",
 	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
@@ -314,9 +369,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QAS_DVC_MSP",
+	name: "ims",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -326,9 +381,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ims",
+	name: "seccamservice",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
+	apk: "proprietary/product/priv-app/seccamservice/seccamservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
