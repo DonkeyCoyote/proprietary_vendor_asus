@@ -92,6 +92,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 PRODUCT_PACKAGES += \
+    AsusVisualMaster \
     FocusAppListener \
     GameBroadcasterService \
     HardwareStub \

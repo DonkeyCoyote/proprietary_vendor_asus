@@ -150,7 +150,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libantradio \
     aptxals \
-    AsusVisualMaster \
     WfdService \
     com.qualcomm.location \
     DeviceInfo \
