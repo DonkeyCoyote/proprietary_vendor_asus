@@ -33,7 +33,7 @@ android_app_import {
 	name: "AsusCamera",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -44,7 +44,7 @@ android_app_import {
 	name: "AsusGallery",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -55,7 +55,7 @@ android_app_import {
 	name: "AsusGalleryBurst",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -66,7 +66,7 @@ android_app_import {
 	name: "MotorK",
 	owner: "asus",
 	apk: "proprietary/priv-app/MotorK/MotorK.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -77,7 +77,7 @@ android_app_import {
 	name: "MotorService",
 	owner: "asus",
 	apk: "proprietary/priv-app/MotorService/MotorService.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
