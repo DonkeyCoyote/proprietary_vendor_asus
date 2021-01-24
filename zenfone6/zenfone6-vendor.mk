@@ -207,7 +207,6 @@ PRODUCT_PACKAGES += \
     AsusGalleryBurst \
     MotorK \
     MotorService \
-    AndroidAutoStub \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     QtiTelephonyService \
