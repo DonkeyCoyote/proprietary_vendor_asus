@@ -109,6 +109,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "AntHalService-Soong",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/AntHalService-Soong/AntHalService-Soong.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "QtiTelephonyService",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -543,6 +554,20 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.wigig.netperftuner-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.wigig.supptunnel-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.wigig.supptunnel-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.callcapability-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
@@ -553,6 +578,20 @@ dex_import {
 	name: "vendor.qti.ims.callinfo-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -595,6 +634,13 @@ dex_import {
 	name: "vendor.qti.voiceprint-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "wigig-service",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/wigig-service.jar"],
 	system_ext_specific: true,
 }
 
