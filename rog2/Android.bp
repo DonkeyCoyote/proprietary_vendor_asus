@@ -34,37 +34,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
-}
-
-android_app_import {
-	name: "FocusAppListener",
-	owner: "asus",
-	apk: "proprietary/app/FocusAppListener/FocusAppListener.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "GameBroadcasterService",
-	owner: "asus",
-	apk: "proprietary/app/GameBroadcasterService/GameBroadcasterService.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "HardwareStub",
-	owner: "asus",
-	apk: "proprietary/app/HardwareStub/HardwareStub.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 }
 
 android_app_import {
@@ -75,72 +46,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-}
-
-android_app_import {
-	name: "AsusCamera",
-	owner: "asus",
-	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "AsusGallery",
-	owner: "asus",
-	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "AsusGalleryBurst",
-	owner: "asus",
-	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "GameBroadcaster",
-	owner: "asus",
-	apk: "proprietary/priv-app/GameBroadcaster/GameBroadcaster.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "ROGGameCenter",
-	owner: "asus",
-	apk: "proprietary/priv-app/ROGGameCenter/ROGGameCenter.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "WfdService",
-	owner: "asus",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 }
 
 android_app_import {
@@ -155,9 +60,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
+	name: "DeviceInfo",
 	owner: "asus",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/product/app/DeviceInfo/DeviceInfo.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -166,14 +71,13 @@ android_app_import {
 }
 
 android_app_import {
-	name: "AndroidAutoStub",
+	name: "QtiTelephonyService",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/AndroidAutoStub/AndroidAutoStub.apk",
-	presigned: true,
+	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
 	product_specific: true,
 }
 
@@ -223,12 +127,6 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-}
-
-dex_import {
-	name: "WfdCommon",
-	owner: "asus",
-	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 dex_import {
@@ -355,6 +253,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "com.qualcomm.qti.services.secureui",
+	owner: "asus",
+	apk: "proprietary/product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "datastatusnotification",
 	owner: "asus",
 	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
@@ -413,13 +322,13 @@ android_app_import {
 android_app_import {
 	name: "ims",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -517,6 +426,20 @@ dex_import {
 	name: "vendor.qti.hardware.alarm-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
 	product_specific: true,
 }
 
