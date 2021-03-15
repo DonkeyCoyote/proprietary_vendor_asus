@@ -39,6 +39,36 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "FocusAppListener",
+	owner: "asus",
+	apk: "proprietary/app/FocusAppListener/FocusAppListener.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "GameBroadcasterService",
+	owner: "asus",
+	apk: "proprietary/app/GameBroadcasterService/GameBroadcasterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "HardwareStub",
+	owner: "asus",
+	apk: "proprietary/app/HardwareStub/HardwareStub.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "aptxals",
 	owner: "asus",
 	apk: "proprietary/app/aptxals/aptxals.apk",
@@ -46,6 +76,50 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+}
+
+android_app_import {
+	name: "AsusGallery",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "AsusGalleryBurst",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "GameBroadcaster",
+	owner: "asus",
+	apk: "proprietary/priv-app/GameBroadcaster/GameBroadcaster.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "ROGGameCenter",
+	owner: "asus",
+	apk: "proprietary/priv-app/ROGGameCenter/ROGGameCenter.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 }
 
 android_app_import {
