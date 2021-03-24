@@ -204,6 +204,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/priv-app/AsusGallery/lib/arm/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libtensorflowlite_jni.so \
     vendor/asus/rog2/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
     vendor/asus/rog2/proprietary/priv-app/GameBroadcaster/lib/arm64/libJniModule.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/GameBroadcaster/lib/arm64/libJniModule.so \
+    vendor/asus/rog2/proprietary/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so \
     vendor/asus/rog2/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
     vendor/asus/rog2/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
     vendor/asus/rog2/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
@@ -262,6 +263,7 @@ PRODUCT_PACKAGES += \
     AsusGallery \
     AsusGalleryBurst \
     GameBroadcaster \
+    ROGAirTrigger \
     ROGGameCenter \
     com.qualcomm.location \
     DeviceInfo \
