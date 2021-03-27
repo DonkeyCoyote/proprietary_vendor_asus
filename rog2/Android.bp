@@ -79,6 +79,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "AsusCamera",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "AsusGallery",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
@@ -112,9 +123,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ROGGameCenter",
+	name: "PowerSaving2",
 	owner: "asus",
-	apk: "proprietary/priv-app/ROGGameCenter/ROGGameCenter.apk",
+	apk: "proprietary/priv-app/PowerSaving2/PowerSaving2.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -126,6 +137,17 @@ android_app_import {
 	name: "ROGAirTrigger",
 	owner: "asus",
 	apk: "proprietary/priv-app/ROGAirTrigger/ROGAirTrigger.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "ROGGameCenter",
+	owner: "asus",
+	apk: "proprietary/priv-app/ROGGameCenter/ROGGameCenter.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
