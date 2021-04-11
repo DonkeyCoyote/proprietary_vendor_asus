@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/etc/hardcore_X3.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X3.json \
     vendor/asus/rog2/proprietary/etc/hardcore_default.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_default.json \
     vendor/asus/rog2/proprietary/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
+    vendor/asus/rog2/proprietary/etc/permissions/asus.software.marketapp.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.marketapp.xml \
     vendor/asus/rog2/proprietary/etc/permissions/asus.software.gamewidget.zenui.rog2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.gamewidget.zenui.rog2.xml \
     vendor/asus/rog2/proprietary/etc/permissions/asus.software.zenui.rog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.rog.xml \
     vendor/asus/rog2/proprietary/etc/permissions/asus.software.zenui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.xml \
@@ -219,6 +220,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/priv-app/AsusGallery/lib/arm/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libtensorflowlite_jni.so \
     vendor/asus/rog2/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
     vendor/asus/rog2/proprietary/priv-app/GameBroadcaster/lib/arm64/libJniModule.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/GameBroadcaster/lib/arm64/libJniModule.so \
+    vendor/asus/rog2/proprietary/priv-app/MobileManager/lib/arm64/libavast-utils.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MobileManager/lib/arm64/libavast-utils.so \
+    vendor/asus/rog2/proprietary/priv-app/MobileManager/lib/arm64/libavast-vps-interface.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MobileManager/lib/arm64/libavast-vps-interface.so \
     vendor/asus/rog2/proprietary/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so \
     vendor/asus/rog2/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
     vendor/asus/rog2/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
@@ -274,11 +277,13 @@ PRODUCT_PACKAGES += \
     FocusAppListener \
     GameBroadcasterService \
     HardwareStub \
+    MobileManagerService \
     aptxals \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
     GameBroadcaster \
+    MobileManager \
     PowerSaving2 \
     ROGAirTrigger \
     ROGGameCenter \
