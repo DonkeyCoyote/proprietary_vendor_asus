@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2020-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,25 +19,6 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libantradio",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libantradio.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libantradio.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-}
-
 android_app_import {
 	name: "aptxals",
 	owner: "asus",
@@ -49,82 +30,119 @@ android_app_import {
 }
 
 android_app_import {
-	name: "WfdService",
+	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "asus",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	product_specific: true,
 }
 
 android_app_import {
-	name: "com.qualcomm.location",
+	name: "HotwordEnrollmentXGoogleHEXAGON",
 	owner: "asus",
-	apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
-	certificate: "platform",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "AntHalService-Soong",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/AntHalService-Soong/AntHalService-Soong.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "DeviceInfo",
 	owner: "asus",
-	apk: "proprietary/product/app/DeviceInfo/DeviceInfo.apk",
+	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "DeviceStatisticsService",
 	owner: "asus",
-	apk: "proprietary/product/app/DeviceStatisticsService/DeviceStatisticsService.apk",
+	apk: "proprietary/system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "asus",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "WfdService",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.location",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "dpmserviceapp",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -134,115 +152,107 @@ dex_import {
 }
 
 dex_import {
-	name: "audiosphere",
-	owner: "asus",
-	jars: ["proprietary/framework/audiosphere.jar"],
-}
-
-dex_import {
-	name: "com.qti.location.sdk",
-	owner: "asus",
-	jars: ["proprietary/framework/com.qti.location.sdk.jar"],
-}
-
-dex_import {
-	name: "izat.xt.srv",
-	owner: "asus",
-	jars: ["proprietary/framework/izat.xt.srv.jar"],
-}
-
-dex_import {
 	name: "tcmclient",
 	owner: "asus",
 	jars: ["proprietary/framework/tcmclient.jar"],
 }
 
 dex_import {
-	name: "QtiTelephonyServicelibrary",
+	name: "audiosphere",
 	owner: "asus",
-	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/audiosphere.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qti.dpmframework",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.qti.dpmframework.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.location.sdk",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qti.location.sdk.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.quicinc.cne.api-V1.1-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.quicinc.cne.api-V1.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.api-V1.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.quicinc.cne.constants-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.quicinc.cne.constants-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.quicinc.cne.constants-V2.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.quicinc.cne.constants-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.quicinc.cne.constants-V2.1-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.quicinc.cne.constants-V2.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "dpmapi",
 	owner: "asus",
-	jars: ["proprietary/product/framework/dpmapi.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "izat.xt.srv",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "qcrilhook",
 	owner: "asus",
-	jars: ["proprietary/product/framework/qcrilhook.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.cne.internal.api-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.cne.internal.constants-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
-	product_specific: true,
-}
-
-android_app_import {
-	name: "DynamicDDSService",
-	owner: "asus",
-	apk: "proprietary/product/app/DynamicDDSService/DynamicDDSService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -257,231 +267,286 @@ android_app_import {
 }
 
 android_app_import {
-	name: "datastatusnotification",
+	name: "DynamicDDSService",
 	owner: "asus",
-	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	apk: "proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
-	name: "embms",
+	name: "com.qualcomm.qti.services.secureui",
 	owner: "asus",
-	apk: "proprietary/product/app/embms/embms.apk",
+	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.services.systemhelper",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "datastatusnotification",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "uimgbaservice",
 	owner: "asus",
-	apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
+	apk: "proprietary/system_ext/app/uimgbaservice/uimgbaservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "uimlpaservice",
-	owner: "asus",
-	apk: "proprietary/product/app/uimlpaservice/uimlpaservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "ims",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "seccamservice",
-	owner: "asus",
-	apk: "proprietary/product/priv-app/seccamservice/seccamservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.1-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.2-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.1-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "embmslibrary",
 	owner: "asus",
-	jars: ["proprietary/product/framework/embmslibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "qti-telephony-common",
 	owner: "asus",
-	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
 	system_ext_specific: true,
 }
 
 dex_import {
 	name: "uimgbalibrary",
 	owner: "asus",
-	jars: ["proprietary/product/framework/uimgbalibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/uimgbalibrary.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "uimgbamanagerlibrary",
 	owner: "asus",
-	jars: ["proprietary/product/framework/uimgbamanagerlibrary.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "uimlpalibrary",
-	owner: "asus",
-	jars: ["proprietary/product/framework/uimlpalibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/uimgbamanagerlibrary.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "uimservicelibrary",
 	owner: "asus",
-	jars: ["proprietary/product/framework/uimservicelibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/uimservicelibrary.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.data.factory-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.data.factory-V2.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.slm-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.alarm-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.latency-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.qmi-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
-	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
+	name: "vendor.qti.ims.callcapability-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.hardware.soter-V1.0-java",
-	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.soter-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.callinfo-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.rcsconfig-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.latency-V2.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.latency-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.voiceprint-V1.0-java",
 	owner: "asus",
-	jars: ["proprietary/product/framework/vendor.qti.voiceprint-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 

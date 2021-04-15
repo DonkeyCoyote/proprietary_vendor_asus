@@ -6,7 +6,7 @@
 			"items": [
 				{
 					"name":"Temperature",
-					"code":"0x43800000",
+					"code":"0x43C00000",
 					"value":"0",
 					"valueset": [
 						"0","1","2","3"
@@ -159,19 +159,35 @@
 			"category":"Scheduler",
 			"items": [
 				{
-					"name":"/proc/sys/kernel/sched_downmigrate",
+					"name":"/proc/sys/kernel/sched_downmigrate(cpu4->0)",
 					"code":"0x40C20000",
 					"value":"85",
 					"valueset": [
-						"95", "85", "75", "65", "55", "45"
+						"85", "70", "55", "40", "25", "10"
 					]
 				},
 				{
-					"name":"/proc/sys/kernel/sched_upmigrate",
+					"name":"/proc/sys/kernel/sched_downmigrate(cpu7->4)",
+					"code":"0x40C20200",
+					"value":"85",
+					"valueset": [
+						"85", "70", "55", "40", "25", "10"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_upmigrate(cpu0->4)",
 					"code":"0x40C1C000",
 					"value":"95",
 					"valueset": [
-						"95", "85", "75", "65", "55", "45"
+						"95", "80", "65", "50", "35", "25"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_upmigrate(cpu4->7)",
+					"code":"0x40C1C200",
+					"value":"95",
+					"valueset": [
+						"95", "80", "65", "50", "35", "25"
 					]
 				},
 				{
@@ -179,7 +195,7 @@
 					"code":"0x40C58000",
 					"value":"85",
 					"valueset": [
-						"95", "85", "75", "65", "55", "45"
+						"85", "70", "55", "40", "25", "10"
 					]
 				},
 				{
@@ -187,7 +203,7 @@
 					"code":"0x40C54000",
 					"value":"100",
 					"valueset": [
-						"100", "90", "80", "70", "60", "50"
+						"100", "85", "70", "55", "40", "30"
 					]
 				},
 				{

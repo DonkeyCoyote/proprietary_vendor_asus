@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2020-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ android_app_import {
 	name: "FocusAppListener",
 	owner: "asus",
 	apk: "proprietary/app/FocusAppListener/FocusAppListener.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -33,7 +33,7 @@ android_app_import {
 	name: "GameBroadcasterService",
 	owner: "asus",
 	apk: "proprietary/app/GameBroadcasterService/GameBroadcasterService.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -43,17 +43,17 @@ android_app_import {
 	name: "HardwareStub",
 	owner: "asus",
 	apk: "proprietary/app/HardwareStub/HardwareStub.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 }
 
 android_app_import {
-	name: "AsusGallery",
+	name: "AsusCamera",
 	owner: "asus",
-	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
-	presigned: true,
+	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -61,9 +61,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "AsusVisualMaster",
+	name: "AsusGallery",
 	owner: "asus",
-	apk: "proprietary/priv-app/AsusVisualMaster/AsusVisualMaster.apk",
+	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -75,7 +75,7 @@ android_app_import {
 	name: "AsusGalleryBurst",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -86,7 +86,7 @@ android_app_import {
 	name: "GameBroadcaster",
 	owner: "asus",
 	apk: "proprietary/priv-app/GameBroadcaster/GameBroadcaster.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -97,7 +97,7 @@ android_app_import {
 	name: "ROGGameCenter",
 	owner: "asus",
 	apk: "proprietary/priv-app/ROGGameCenter/ROGGameCenter.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -107,24 +107,12 @@ android_app_import {
 android_app_import {
 	name: "colorservice",
 	owner: "asus",
-	apk: "proprietary/product/app/colorservice/colorservice.apk",
+	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "QAS_DVC_MSP",
-	owner: "asus",
-	apk: "proprietary/product/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -137,5 +125,12 @@ dex_import {
 	name: "UxPerformance",
 	owner: "asus",
 	jars: ["proprietary/framework/UxPerformance.jar"],
+}
+
+dex_import {
+	name: "com.qti.snapdragon.sdk.display",
+	owner: "asus",
+	jars: ["proprietary/product/framework/com.qti.snapdragon.sdk.display.jar"],
+	product_specific: true,
 }
 

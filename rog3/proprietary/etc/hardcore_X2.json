@@ -6,7 +6,7 @@
 			"items": [
 				{
 					"name":"Temperature",
-					"code":"0x43800000",
+					"code":"0x43C00000",
 					"value":"2",
 					"valueset": [
 					  "0","1","2","3"
