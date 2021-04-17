@@ -23,7 +23,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/etc/hardcore_X3.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X3.json \
     vendor/asus/rog3/proprietary/etc/hardcore_default.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_default.json \
     vendor/asus/rog3/proprietary/etc/permissions/asus.software.gamewidget.zenui.rog3.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.gamewidget.zenui.rog3.xml \
+    vendor/asus/rog3/proprietary/etc/permissions/asus.software.marketapp.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.marketapp.xml \
+    vendor/asus/rog3/proprietary/etc/permissions/asus.software.project.ZS661KS.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.project.ZS661KS.xml \
+    vendor/asus/rog3/proprietary/etc/permissions/asus.software.rog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.rog.xml \
+    vendor/asus/rog3/proprietary/etc/permissions/asus.software.sku.WW.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.sku.WW.xml \
     vendor/asus/rog3/proprietary/etc/permissions/asus.software.zenui.rog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.rog.xml \
+    vendor/asus/rog3/proprietary/etc/permissions/asus.software.zenui.seven.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.seven.xml \
     vendor/asus/rog3/proprietary/etc/permissions/asus.software.zenui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.xml \
     vendor/asus/rog3/proprietary/etc/sysconfig/ims-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/ims-hiddenapi-package-whitelist.xml \
     vendor/asus/rog3/proprietary/etc/videoeditor/Charming.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Charming.mfim \
@@ -88,6 +93,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so \
     vendor/asus/rog3/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
     vendor/asus/rog3/proprietary/priv-app/GameBroadcaster/lib/arm64/libJniModule.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/GameBroadcaster/lib/arm64/libJniModule.so \
+    vendor/asus/rog3/proprietary/priv-app/MobileManager/lib/arm64/libavast-utils.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MobileManager/lib/arm64/libavast-utils.so \
+    vendor/asus/rog3/proprietary/priv-app/MobileManager/lib/arm64/libavast-vps-interface.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MobileManager/lib/arm64/libavast-vps-interface.so \
+    vendor/asus/rog3/proprietary/priv-app/PowerSaving2/lib/arm64/libJniModule.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/PowerSaving2/lib/arm64/libJniModule.so \
+    vendor/asus/rog3/proprietary/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so \
     vendor/asus/rog3/proprietary/product/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/asus/rog3/proprietary/system_ext/etc/cdma_call_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cdma_call_conf.xml \
     vendor/asus/rog3/proprietary/system_ext/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libadsprpc_system.so \
@@ -107,10 +116,14 @@ PRODUCT_PACKAGES += \
     FocusAppListener \
     GameBroadcasterService \
     HardwareStub \
+    MobileManagerService \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
     GameBroadcaster \
+    MobileManager \
+    PowerSaving2 \
+    ROGAirTrigger \
     ROGGameCenter \
     colorservice \
     QPerformance \
