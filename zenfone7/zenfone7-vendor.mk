@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,12 +19,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/asus/zenfone7/proprietary/etc/permissions/asus.hardware.motor.latch_lock.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.hardware.motor.latch_lock.xml \
-    vendor/asus/zenfone7/proprietary/etc/permissions/asus.software.gamewidget.zenui.rog3.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.gamewidget.zenui.rog3.xml \
-    vendor/asus/zenfone7/proprietary/etc/permissions/asus.software.project.ZS670KS.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.project.ZS670KS.xml \
-    vendor/asus/zenfone7/proprietary/etc/permissions/asus.software.zenui.seven.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.seven.xml \
-    vendor/asus/zenfone7/proprietary/etc/permissions/asus.software.zenui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.xml \
-    vendor/asus/zenfone7/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/asus/zenfone7/proprietary/etc/sysconfig/ims-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/ims-hiddenapi-package-whitelist.xml \
     vendor/asus/zenfone7/proprietary/etc/videoeditor/Charming.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Charming.mfim \
     vendor/asus/zenfone7/proprietary/etc/videoeditor/Dynamic.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Dynamic.mfim \
     vendor/asus/zenfone7/proprietary/etc/videoeditor/Energetic.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Energetic.mfim \
@@ -94,6 +88,22 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone7/proprietary/lib64/libxditk_ditArchLIB.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditArchLIB.so \
     vendor/asus/zenfone7/proprietary/lib64/libxditk_ditBSP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP.so \
     vendor/asus/zenfone7/proprietary/lib64/libxditk_ditBSP_JNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP_JNI.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libUndistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libUndistort.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_interval_capture.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_interval_capture.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_portrait_distortion_correction_rog3.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_portrait_distortion_correction_rog3.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_portrait_distortion_correction_zf7.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_portrait_distortion_correction_zf7.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_interval_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_interval_panorama.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libasusundistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasusundistort.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libbitmap.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libbitmap.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libmpbase.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libyuv_camera.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libyuv_camera.so \
+    vendor/asus/zenfone7/proprietary/priv-app/AsusCamera/lib/arm64/libyuv_util.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libyuv_util.so \
     vendor/asus/zenfone7/proprietary/priv-app/AsusGallery/lib/arm64/libNvStreamingSdkCore.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libNvStreamingSdkCore.so \
     vendor/asus/zenfone7/proprietary/priv-app/AsusGallery/lib/arm64/libRSSupport.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libRSSupport.so \
     vendor/asus/zenfone7/proprietary/priv-app/AsusGallery/lib/arm64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libarcsoft_beautyshot.so \
@@ -121,29 +131,27 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone7/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflow_inference.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflow_inference.so \
     vendor/asus/zenfone7/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so \
     vendor/asus/zenfone7/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
-    vendor/asus/zenfone7/proprietary/priv-app/GameBroadcaster/lib/arm64/libJniModule.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/GameBroadcaster/lib/arm64/libJniModule.so \
     vendor/asus/zenfone7/proprietary/priv-app/MotorK/lib/arm64/libAsusMotorDriverHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorK/lib/arm64/libAsusMotorDriverHAL.so \
     vendor/asus/zenfone7/proprietary/priv-app/MotorK/lib/arm64/libmotork-jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorK/lib/arm64/libmotork-jni.so \
     vendor/asus/zenfone7/proprietary/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so \
     vendor/asus/zenfone7/proprietary/priv-app/MotorService/lib/arm64/libjni_motor.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorService/lib/arm64/libjni_motor.so \
-    vendor/asus/zenfone7/proprietary/product/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsdm-disp-apis.qti.so \
-    vendor/asus/zenfone7/proprietary/product/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/asus/zenfone7/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
-    vendor/asus/zenfone7/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
-    vendor/asus/zenfone7/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
-    vendor/asus/zenfone7/proprietary/product/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.2.so \
-    vendor/asus/zenfone7/proprietary/product/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.3.so \
-    vendor/asus/zenfone7/proprietary/product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+    vendor/asus/zenfone7/proprietary/product/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/libsd_sdk_display.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsd_sdk_display.qti.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdm-disp-apis.qti.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.0.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.1.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.2.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.3.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.postproc@1.0.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 PRODUCT_PACKAGES += \
-    FocusAppListener \
-    GameBroadcasterService \
-    HardwareStub \
+    AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
-    GameBroadcaster \
     MotorK \
     MotorService \
     colorservice \
     QPerformance \
-    UxPerformance
+    UxPerformance \
+    com.qti.snapdragon.sdk.display
