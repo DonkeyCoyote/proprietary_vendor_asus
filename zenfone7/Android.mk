@@ -18,4 +18,5 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),zenfone7)
 
+
 endif
