@@ -30,6 +30,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "AsusCamera",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "asus",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
