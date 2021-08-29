@@ -70,6 +70,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "AsusVisualMaster",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusVisualMaster/AsusVisualMaster.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "GameBroadcaster",
 	owner: "asus",
 	apk: "proprietary/priv-app/GameBroadcaster/GameBroadcaster.apk",
