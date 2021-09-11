@@ -30,6 +30,39 @@ android_app_import {
 }
 
 android_app_import {
+	name: "AsusCamera",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "AsusGallery",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "AsusGalleryBurst",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "AsusVisualMaster",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusVisualMaster/AsusVisualMaster.apk",
