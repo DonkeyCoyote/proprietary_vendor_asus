@@ -1,0 +1,9 @@
+echo 0x2650 > /d/regmap/spmi3-0b/address
+echo 1 > /d/regmap/spmi3-0b/count
+reg=`cat /d/regmap/spmi3-0b/data`
+
+if [ "$reg" == "2650: 00" ]; then
+	echo 0
+else
+	echo 1
+fi

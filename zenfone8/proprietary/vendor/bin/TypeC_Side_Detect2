@@ -1,0 +1,14 @@
+`echo 0x2B09 > /d/regmap/spmi0-03/address`
+echo 1 > /d/regmap/spmi0-03/count
+reg=`cat /d/regmap/spmi0-03/data`
+if [ "$reg" == "2b09: 63" ]; then
+	echo 1
+elif [ "$reg" == "2b09: 66" ]; then
+	echo 1
+elif [ "$reg" == "2b09: a3" ]; then
+	echo 2
+elif [ "$reg" == "2b09: a6" ]; then
+	echo 2
+else
+	echo 0
+fi

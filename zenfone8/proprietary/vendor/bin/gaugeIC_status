@@ -1,0 +1,9 @@
+result=0
+result=`cat /sys/class/power_supply/battery/capacity`
+if [ "$result" != "0" ] ; then
+	echo 1
+
+else 
+	echo 0
+
+fi

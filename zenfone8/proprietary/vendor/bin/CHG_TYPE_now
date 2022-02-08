@@ -1,0 +1,10 @@
+echo 0x290B > /d/regmap/spmi0-03/address
+echo 1 > /d/regmap/spmi0-03/count
+qctype=`cat /d/regmap/spmi0-03/data`
+bctype=`cat /sys/class/asuslib/get_usb_type`
+
+if [ "$qctype" == "290b: 48" ]; then
+	echo HVDCP3
+else
+	echo "$bctype"
+fi

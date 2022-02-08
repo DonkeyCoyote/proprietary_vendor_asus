@@ -1,0 +1,367 @@
+#!/system/bin/sh
+ATD_Interface_VERSION="V2.0.0"
+
+
+VERSION="V1.0"
+
+#Debug message switch
+DEBUG=0
+
+#App name
+APP="com.asus.cameratest"
+
+#unset variables
+unset flow id title value ret
+
+#Init camer id
+cameraID=0
+
+#Init DualCamera CameraID & Picture size
+FirstCameraID=-1
+SecondCameraID=-1
+jpegWidth_2=0
+jpegHeight_2=0
+is_dual=1
+ext=raw
+filename=/sdcard/xvs
+
+prefix=q
+#prefix=dit
+
+
+syslog() {
+	log -t CameraTest -p I "$@"
+	#echo "$@" >> $LOGCAT_LOG_FILE
+}
+
+_log() {
+	echo "`date` $@" >> $SCRIPT_LOG_FILE
+	test "$DEBUG" -eq "1" && echo "`date +%H:%M:%S` $@"
+}
+
+logi() {
+	_log I $@
+}
+
+logd() {
+	_log D $@
+}
+
+loge() {
+	_log E $@
+}
+
+#log success/fail message and show processing result on the consol
+#$1:success/fail $2:return string
+my_exit() {
+	rm -f $APK_LOG_FILE
+	if [ "$1" == "success" ]
+	then
+		shift 1
+		syslog "================== CameraTest command executed success, $@ ================="
+		logi "<== return success(1)"
+		ATD_ret="1"
+		ret=0
+	else
+		shift 1
+		syslog "================== CameraTest command executed failed, $@ ================="
+		loge "<### return fail(0)"
+		ATD_ret="0"
+		#ret=1
+	fi
+	
+	
+	echo $ATD_ret
+	exit $ret
+}
+
+check_log() {
+	for i in `seq 80`; do
+		if [ -f "$APK_LOG_FILE" ]; then
+			grep -w "$1" $APK_LOG_FILE &> /dev/null
+			loge "log___$1"
+	        syslog "================== CameraTest command check_log $1 ================="
+			break
+		else
+		  sleep 0.2
+		fi
+	done
+}
+
+close_camera() {
+	syslog "================== CameraTest command close_camera  E ================="
+	name="$APP org.codeaurora.snapcam com.android.camera2"
+	for i in `seq 10`; do
+		syslog "================== CameraTest command close_camera  E1================="
+		#am broadcast -a asus.camera.close -f 0x10000000 &> /dev/null
+		pid=`pidof $name`
+		if [ "$pid" ]; then
+			su -0 kill -9 $pid
+			sleep 0.1
+		else
+			syslog "================== CameraTest command close_camera  E2================="
+			break
+		fi
+	done
+	setprop vendor.camera.StreamModeIndex -1
+	setprop vendor.camera.DualStreamModeIndex -1
+	setprop camera.test.cameramode ''
+	
+	rm -f ${filename}*.jpg ${filename}*.raw
+	syslog "================== CameraTest command close_camera X ================="
+}
+
+open_camera() {
+	syslog "================== CameraTest command open_camera E ================="
+	name=$APP
+	rawneed=2
+
+	#enable CameraTest permission
+	pm grant $APP android.permission.CAMERA
+	pm grant $APP android.permission.READ_EXTERNAL_STORAGE
+	pm grant $APP android.permission.WRITE_EXTERNAL_STORAGE
+	syslog "================== CameraTest command open_camera Set ModeIndex and W/H ================="
+
+    setprop vendor.camera.StreamModeIndex 3
+    setprop vendor.camera.DualStreamModeIndex 3
+		
+	if [ "$1" -eq 4 ]; then    
+        cameraID=$1
+        cameraMode=4 #cameraMode 4 indicate dual camera
+
+        FirstCameraID=0    #IMX686
+        jpegWidth=4576
+        jpegHeight=3432
+
+        SecondCameraID=2   #IMX363
+        jpegWidth_2=4032
+        jpegHeight_2=3024
+
+	fi
+
+	#enable_touch 0
+	for i in `seq 10`; do
+		syslog "================== CameraTest command open_camera E12 ================="
+		pid=`pidof $name`
+		syslog "================== CameraTest command open_camera E13 ================="
+		if [ -z "$pid" ]; then
+			try_count=0
+			while [ true ]
+			do
+				time=`date +%T.%s`
+				seq_id=$(date +%s)
+        syslog "================== CameraTest open cameramode=$cameraMode, logpath=$APK_LOG_FILE, time=$time, seq_id=$seq_id ================="
+				syslog "CameraID: $cameraID, FirstCameraID: $FirstCameraID"
+				syslog "jpegWidth: $jpegWidth, jpegHeight: $jpegHeight"
+				syslog "SecondCameraID: $SecondCameraID"
+				syslog "jpegWidth_2: $jpegWidth_2, jpegHeight_2: $jpegHeight_2"
+				syslog "raw=$rawneed"
+				am start -S -W -n $name/.MainActivity --ei cameramode $cameraMode --esa picsize $jpegWidth,$jpegHeight,$jpegWidth_2,$jpegHeight_2 --ei rawneed "$rawneed" --es logpath "$APK_LOG_FILE" --es time "$time" --es seq_id "$seq_id" --es FirstCameraID $FirstCameraID --es SecondCameraID $SecondCameraID > /dev/null
+					
+				if check_log "$seq_id" ; then
+					syslog "============= Get app seq id $seq_id, Open Done ==========================="
+					break
+				else
+					rm -f $APK_LOG_FILE
+					(( try_count++ ))
+					syslog "============= App intent is not correct, restart it ... retry $try_count ============="
+					if [ $try_count -gt 5 ]; then
+						break
+					fi
+				fi
+				syslog "============= CameraTest open cameramode=$1  X1 ==========================="
+			done
+    	else
+			break
+		fi
+		syslog "============= CameraTest open cameramode=$1  X2 ==========================="
+	done
+	syslog "============= CameraTest open cameramode=$1  X3 ==========================="
+
+	
+	syslog "============= CameraTest open cameramode=$1  X4 ==========================="
+}
+
+
+set_timeout() {
+	syslog "============= CameraTest command  set_timeout ============="
+	if [ -z "$2" ]; then
+		let TimeOutValue=10
+	else
+		let TimeOutValue=$2
+	fi
+	logd "> set_timeout($TimeOutValue)"
+	echo time out value is $TimeOutValue >> $SCRIPT_LOG_FILE
+
+	syslog "================== CameraTest command check_log "$APK_LOG_FILE" ================="
+	for i in `seq $TimeOutValue`; do
+		if [ "$1" == "finish startPreview4" ]; then
+				if check_log "$1"; then
+					break
+				fi
+		fi
+		logd "<-time"
+		sleep 1
+	done
+	
+}
+
+######## Take Picture Function ########
+set_timeout_takepic() {
+	
+	cond="takeRawPicture"
+	
+	if check_log "$cond"; then
+		syslog "================== CameraTest command check img file ${filename}.${ext} ================="
+		pic_check=0
+
+		while [ true ]
+		do
+			logd "$cond,$pic_check"
+			if [ -f "${filename}_1.${ext}" -a -f "${filename}_2.${ext}" ];then	
+					logd "takepic is ${filename}_1.${ext},${filename}_2.${ext}" 			
+					my_exit success "for msg \"$cond\""					
+					break
+				else
+					(( pic_check++ ))
+					if [ "$pic_check" -gt 20 ]; then
+						 logd "fail,$cond,$pic_check"
+					     my_exit fail "for msg \"$cond\""
+
+					fi				
+			fi
+			sleep 0.5 #once whileloop will sleep 0.5s,totally cost 0.5*20=10s
+		done
+	else
+		my_exit fail "for msg \"$cond\""
+	fi
+	syslog "================== CameraTest command set_timeout_takepic end ================="
+}
+
+######### check_all_status ##########
+#check all status before open camera
+#check bettery capacity
+#####################################
+check_all_status() {
+	rm -f $APK_LOG_FILE
+
+	#check phone's battery
+	battery=`cat /sys/class/power_supply/battery/capacity`
+	#echo battery : $battery
+	syslog "phone's battery left = $battery"
+}
+
+########### camera preview switch ###########
+#Need to close camera and check battery, before open camera
+#Cameramode => CameraId
+#CameraID=4 -> DualCamera
+#############################################
+camera_preview_switch() {
+	#0: off
+	if [ "$2" == 0 ]; then
+		syslog "================== CameraTest disable camera $1 preview start================="
+		close_camera
+		my_exit success "close camera $1"
+	fi
+	#1: on
+	if [ "$2" == 1 ]; then
+		syslog "================== CameraTest enable camera $1 preview start================="
+		#init status before open camera
+		check_all_status
+		close_camera
+		open_camera $1
+		syslog "================== CameraTest enable camera $1 preview end================="
+	fi
+}
+
+
+take_picture() {
+	rm -f ${filename}*.jpg ${filename}*.raw
+	flashmode=0
+	focusneed=0
+	filename=/sdcard/xvs
+    
+	syslog "================== CameraTest Take picture ( flash=$flashmode, af=$focusneed,path=$filename) command start================="
+	am broadcast -a asus.camera.setsavepath --es savepath "${filename}" -f 0x10000000 > /dev/null
+	am broadcast -a asus.camera.setparameter --ei flashmode "$flashmode" -f 0x10000000 > /dev/null
+	am broadcast -a asus.camera.takepicture --ei focusneed "$focusneed" -f 0x10000000 > /dev/null
+	syslog "================== CameraTest Take picture end================="
+}
+
+check_system() {
+	#wait for system ready
+	for i in `seq 300`; do
+		test "`getprop sys.boot_completed`" -eq 1 && break
+		sleep 1
+	done
+
+}
+
+
+init() {
+	#script log file
+	SCRIPT_LOG_FILE="/sdcard/CameraTest_Script.log"
+
+	#apk log file
+	APK_LOG_FILE="/sdcard/CameraTest_Apk.log"
+
+	#locat log file
+	LOGCAT_LOG_FILE="/data/logcat_log/logcat.txt"
+
+	if [ ! -d "/data/logcat_log/" ]; then
+		mkdir /data/logcat_log/
+	fi
+
+	
+}
+
+Check_Screen() {
+	#To wakeup system, keyevent 224
+	input keyevent 224
+
+}
+
+#===============================
+#main
+#===============================
+init
+check_system
+
+#case $1$flow in
+case $1 in
+#0.DUAL: Enable/Disable Two Rear camera
+
+0 )
+
+	Check_Screen
+
+	if [ "$is_dual" -eq "1" ]; then
+		if [ $1 -eq 0 ]; then
+			id=4
+		else
+			my_exit fail "wrong id $1 for dual test"
+		fi
+	fi
+	
+	camera_preview_switch $id $2
+	
+    if [ "$2" == 0 ]; then
+		set_timeout "close camera finish" $3
+	else
+		set_timeout "finish startPreview$id" $3
+	fi
+
+	 sleep 8 #waiting Camera Preview
+ 	 take_picture	
+     sleep 1	 
+	 set_timeout_takepic $@
+
+;;
+
+*)
+echo "Invalid argument!!(par1 : commandID = $1)"
+;;
+
+esac
+
+my_exit success "Default"

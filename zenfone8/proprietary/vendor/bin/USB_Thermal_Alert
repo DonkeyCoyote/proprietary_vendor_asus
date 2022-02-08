@@ -1,0 +1,11 @@
+status=`cat /sys/bus/iio/devices/iio:device0/in_temp_pm8350b_usb_conn_therm_input`
+
+if [ "$status" -lt "75000" ]; then
+	if [ "$status" -gt "15000" ]; then
+		echo "PASS"
+	else
+		echo "FAIL"
+	fi
+else
+	echo "FAIL"
+fi

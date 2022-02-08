@@ -1,0 +1,2 @@
+echo 1 > /sys/class/asuslib/enter_ship_mode
+

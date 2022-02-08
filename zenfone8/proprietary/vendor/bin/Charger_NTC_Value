@@ -1,0 +1,2 @@
+result=`cat /sys/bus/iio/devices/iio:device0/in_temp_pm8350b_usb_conn_therm_input`
+echo `expr $((result/1000))`

@@ -1,0 +1,11 @@
+echo 1 > /sys/class/asuslib/usbin_suspend_en
+
+status=`cat /sys/class/asuslib/usbin_suspend_en`
+
+if [ "$status" -eq "1" ]; then
+	echo PASS
+
+else
+	echo FAIL
+
+fi

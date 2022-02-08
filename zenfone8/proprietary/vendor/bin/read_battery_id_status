@@ -1,0 +1,27 @@
+#!/vendor/bin/sh
+
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "Please enter Battery ID parameter!"
+	exit
+fi
+result=0
+result=`cat /sys/class/asuslib/asus_get_BattID`
+result=`expr $((result))`
+if [ "$CMD" -eq "0" ]; then
+	if [ "$result" != "0" ]; then
+		echo "PASS"
+	else
+		echo "FAIL"
+	fi
+elif [ "$CMD" -eq "1" ]; then
+	# 15% tolerance
+	if [ "115000" -ge "$result" ] && [ "$result" -ge "85000" ]; then
+		echo "cos_100K"
+	elif [ "58650" -ge "$result" ] && [ "$result" -ge "43350" ]; then
+		echo "cos_51K"
+	else
+		echo "unknown.Battery"
+	fi
+fi

@@ -1,0 +1,39 @@
+OTPPath="CameraOTP"
+FACTORY_FOLDER="/vendor/factory"
+
+fail()
+{
+  echo FAIL: wrong input Parameter
+  exit 0
+}
+
+CheckCameraOTP()
+{
+  if [ -f $FACTORY_FOLDER"/cali_"$1"key.txt" ]; then
+  for word in "`$OTPPath $2`"
+  do
+		echo $word | sed 's/\n//g' | sed 's/[[:space:]]//g' |  sed 's/0x//g' | cut -c 21-44
+	done
+  else
+	echo "GET OTP NODE FAIL" 
+  fi
+}
+
+case $1 in
+	0 )
+		CheckCameraOTP "rear" $1
+	;;
+	2 | 4 | 6 | 8)
+		CheckCameraOTP "rear"$1 $1
+	;;
+	1 )
+		CheckCameraOTP "front" $1
+	;;
+	3 | 5 | 7 | 9)
+		CheckCameraOTP "front"$1 $1
+	;;
+	*)
+	# echo Command ID wrong: 
+    fail
+    ;;
+esac

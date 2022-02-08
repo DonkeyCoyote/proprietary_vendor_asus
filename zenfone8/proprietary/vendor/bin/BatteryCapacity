@@ -1,0 +1,3 @@
+result=`cat /sys/class/power_supply/battery/capacity`
+
+echo `expr $((result))`
