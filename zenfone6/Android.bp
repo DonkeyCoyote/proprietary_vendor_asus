@@ -326,28 +326,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.qti.services.secureui",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.qti.services.systemhelper",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "datastatusnotification",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
@@ -536,20 +514,6 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.qti.hardware.wigig.netperftuner-V1.0-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.hardware.wigig.supptunnel-V1.0-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.wigig.supptunnel-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.ims.callcapability-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
@@ -616,13 +580,6 @@ dex_import {
 	name: "vendor.qti.voiceprint-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "wigig-service",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/wigig-service.jar"],
 	system_ext_specific: true,
 }
 
