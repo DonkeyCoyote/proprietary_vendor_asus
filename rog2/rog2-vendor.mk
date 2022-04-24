@@ -97,12 +97,14 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/bin/qccsyshalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshalservice \
     vendor/asus/rog2/proprietary/system_ext/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservice \
     vendor/asus/rog2/proprietary/system_ext/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice \
+    vendor/asus/rog2/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/asus/rog2/proprietary/system_ext/etc/cdma_call_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cdma_call_conf.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/asus/rog2/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/asus/rog2/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/asus/rog2/proprietary/system_ext/etc/init/qvrd_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qvrd_ext.rc \
     vendor/asus/rog2/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc \
+    vendor/asus/rog2/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -117,6 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
+    vendor/asus/rog2/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/qvr/cfg/339/0/65536/mtp855.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855.txt \
     vendor/asus/rog2/proprietary/system_ext/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/qvr/cfg/341/2/65536/svr845.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/341/2/65536/svr845.txt \
@@ -131,13 +134,37 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvr_hid_device_list.txt \
     vendor/asus/rog2/proprietary/system_ext/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvrservice_config.txt \
     vendor/asus/rog2/proprietary/system_ext/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/qvr@2.0.policy \
+    vendor/asus/rog2/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/asus/rog2/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
+    vendor/asus/rog2/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
+    vendor/asus/rog2/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/asus/rog2/proprietary/system_ext/lib/libScenescape.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libScenescape.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
     vendor/asus/rog2/proprietary/system_ext/lib/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cam_cdsp_driver_stub.so \
     vendor/asus/rog2/proprietary/system_ext/lib/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cdsp_driver_stub.so \
     vendor/asus/rog2/proprietary/system_ext/lib/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_eyetracking_plugin.so \
     vendor/asus/rog2/proprietary/system_ext/lib/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrcamera_client.qti.so \
     vendor/asus/rog2/proprietary/system_ext/lib/libqvrservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdaac.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdavenhancements.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdclient.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdcommonutils.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdconfigutils.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfddisplayconfig.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmminterface.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsink.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsrc_system.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdrtsp.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdservice.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdsinksm.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcinterface.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsink.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
     vendor/asus/rog2/proprietary/system_ext/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so \
     vendor/asus/rog2/proprietary/system_ext/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so \
     vendor/asus/rog2/proprietary/system_ext/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so \
@@ -145,6 +172,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8150.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libtracker_6dof_skel_8150.so \
     vendor/asus/rog2/proprietary/system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8250.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libtracker_6dof_skel_8250.so \
     vendor/asus/rog2/proprietary/system_ext/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/asus/rog2/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.0.so \
@@ -155,8 +183,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/fm_helium.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libadsprpc_system.so \
-    vendor/asus/rog2/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcdsprpc_system.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
@@ -165,6 +193,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfm-hci.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmdsprpc_system.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmiracastsystem.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libqcc_file_agent_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqcc_file_agent_sys.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrcamera_client.qti.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_client.qti.so \
@@ -172,6 +204,20 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/lib64/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_ov9282_hvx_tuning.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdsprpc_system.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdclient.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdcommonutils.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdconfigutils.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfddisplayconfig.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmminterface.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmmsink.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdnative.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdrtsp.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdsinksm.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcinterface.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsink.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsinkinterface.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrc.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.gnss@1.0.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.gnss@1.1.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.gnss@1.2.so \
@@ -187,7 +233,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
-    vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
+    vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 PRODUCT_PACKAGES += \
     FocusAppListener \
@@ -205,9 +252,11 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleWCD9340 \
     AntHalService-Soong \
     QtiTelephonyService \
+    WfdService \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
+    WfdCommon \
     tcmclient \
     audiosphere \
     com.android.hotwordenrollment.common.util \
