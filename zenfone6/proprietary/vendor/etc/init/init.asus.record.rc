@@ -1,0 +1,35 @@
+# for asusrecord service
+on property:persist.vendor.asus.motorservice.fallingTrigger=1
+    start asus_record
+
+# for asusrecord service (rotation)
+on property:persist.vendor.asus.motorservice.rotationTrigger=1
+    start asus_record
+
+
+# for asusrecord service (rotation)
+on property:persist.vendor.asus.motorservice.dumprecord=1
+    start asus_record
+
+on property:debug.update.asusrecord=1
+    start asus_record
+
+service asus_record /vendor/bin/asusrecord
+    user root
+    group root
+    disabled
+    oneshot
+
+
+on property:persist.vendor.asus.motorservice.firstboot=1
+	setprop persist.vendor.asus.motorservice.firstboot 0
+    setprop persist.asus.motorservice.record_rotate_0_90 ${persist.vendor.asus.rotate_0_90}
+    setprop persist.asus.motorservice.record_rotate_90_170 ${persist.vendor.asus.rotate_90_170}
+    setprop persist.asus.motorservice.record_auto_rotate_180 ${persist.vendor.asus.auto_rotate_180}
+    setprop persist.asus.motorservice.record_manual_rotate_180 ${persist.vendor.asus.manual_rotate_180}
+
+on property:persist.vendor.asus.motorservice.TriggerReset=1
+    setprop persist.vendor.asus.motorservice.TriggerReset 0
+    setprop persist.vendor.asus.motorservice.fallingTrigger 0
+    setprop persist.vendor.asus.motorservice.rotationTrigger 0
+    setprop persist.vendor.asus.motorservice.dumprecord 0

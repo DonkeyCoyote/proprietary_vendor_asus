@@ -1,0 +1,53 @@
+OTPPath_front="/proc/driver/front_otp"
+OTPPath_front2="/proc/driver/front2_otp"
+OTPPath_back="/proc/driver/rear_otp"
+OTPPath_back2="/proc/driver/rear2_otp"
+
+fail()
+{
+  echo
+  echo FAIL: wrong input Parameter
+  exit 0
+}
+
+
+CheckCameraOTP()
+{
+  if [ -f "$1" ]; then
+  for word in "$(cat $1)"
+  do
+		echo $word | sed 's/\n//g' | sed 's/[[:space:]]//g' |  sed 's/0x//g' | cut -c 21-44
+	done
+  else
+	echo "GET OTP NODE FAIL" 
+  fi
+}
+
+case "$1" in
+  "0")
+        CheckCameraOTP $OTPPath_back $1
+        exit 0
+   ;;
+
+  "1")
+	CheckCameraOTP $OTPPath_front $1
+        exit 0
+    ;;
+
+  "2")
+        CheckCameraOTP $OTPPath_back2 $1
+        exit 0
+   ;;
+
+  "3")
+	CheckCameraOTP $OTPPath_front2 $1
+        exit 0
+    ;;
+	
+  *)
+  # echo Command ID wrong: 
+    fail
+    ;;
+
+esac    
+

@@ -1,0 +1,24 @@
+#!/vendor/bin/sh
+case $1 in
+    "100")
+    laser_ATDTest golden
+    chmod 0777 /vendor/factory/LaserFocus_Calibration.txt
+    rm /vendor/factory/LaserFocus_Calibration.txt
+    cp /data/vendor/camera/LaserFocus_Golden_Calibration.txt /vendor/factory/LaserFocus_Calibration.txt
+    chmod 0666 /vendor/factory/LaserFocus_Calibration.txt
+    echo 1 > /proc/driver/st_laser
+    ;;
+    "0")
+    LaserFocus_on 0
+    ;;
+    "1")
+    LaserFocus_on 1
+    ;;
+    "2")
+    setprop vendor.debug.camera.lasercsc.laservalue $(LaserFocus_value)
+    ;;
+    *)
+		echo "Invalid argument!!(par1 : commandID = $1)"
+    ;;
+esac
+    

@@ -1,0 +1,42 @@
+#
+# rc file for goodix fingerprint
+#
+
+on fs
+    chown system root /dev/goodix_fp
+    chmod 0760 /dev/goodix_fp
+
+on post-fs-data
+    setprop ro.hardware.fp_position back
+    setprop ro.hardware.fp_shape square
+    setprop persist.sys.fp.navigation 1
+    setprop persist.asus.fp.wakeup_support true
+    setprop persist.asus.fp.wakeup true
+
+service fp_ver /vendor/bin/sh /vendor/bin/gf_ver.sh
+    class core
+    oneshot
+    disabled
+
+on property:vendor.goodix.service.ready=1
+    start fp_ver
+
+service fp_bmmi /vendor/bin/sh /vendor/bin/gf_bmmi_test.sh
+    class core
+    group root
+    user root
+    oneshot
+    disabled
+
+on property:persist.vendor.asus.fp.bmmi.test=1
+    start fp_bmmi
+
+service fp_smmi /vendor/bin/sh /vendor/bin/gf_smmi_test.sh
+    class core
+    group root
+    user root
+    oneshot
+    disabled
+
+on property:persist.vendor.asus.fp.smmi.test=1
+    start fp_smmi

@@ -1,0 +1,15 @@
+case $1 in
+	"0")
+	    # rear and rear2 camera capture raw and ae cali
+		rm /data/data/cal_dualae02_result.txt
+		rm /vendor/factory/dut_rear_ae.bin
+		test_DualCamQcomAECali 112 0 0 0 2 0 0 /sdcard/AEWHITE_1.raw /sdcard/AEWHITE_2.raw /vendor/lib/DataSet/ispDB/ParameterDB.db
+		
+	;;
+	"1")
+	    # rear and rear2 camera capture raw and ae cali
+		rm /data/data/cal_dualae13_result.txt
+		rm /vendor/factory/dut_front_ae.bin
+		test_DualCamQcomAECali 112 1 0 0 3 0 0 /sdcard/AEWHITE_1.raw /sdcard/AEWHITE_2.raw /vendor/lib/DataSet/ispDB/ParameterDB.db
+	;;
+esac

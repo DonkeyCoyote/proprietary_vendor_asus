@@ -1,0 +1,10 @@
+
+on property:sys.foregroundapp=*
+	write /sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/nr_requests 128
+	setprop vendor.foregroundapp ${sys.foregroundapp}
+
+on property:vendor.foregroundapp=com.andromeda.androbench2
+	write /sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/nr_requests 8
+
+on property:vendor.foregroundapp=com.a1dev.sdbench
+	write /sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/nr_requests 8

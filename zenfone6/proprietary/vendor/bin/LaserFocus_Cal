@@ -1,0 +1,9 @@
+#!/vendor/bin/sh
+case $1 in
+	"1"|"2"|"3")
+	laser_ATDTest cal $1 $2
+	;;
+	*)
+		echo "Invalid argument!!(par1 : commandID = $1)"
+	;;
+esac
