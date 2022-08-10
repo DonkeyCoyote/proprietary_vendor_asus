@@ -1,0 +1,7 @@
+service vendor.qti.auralight-hal-1-0 /vendor/bin/hw/vendor.qti.hardware.auralight@1.0-service
+    interface vendor.qti.hardware.auralight@1.0::IAuraLight default
+    class hal
+    user system
+    group system
+    # shutting off lights while powering-off
+    shutdown critical

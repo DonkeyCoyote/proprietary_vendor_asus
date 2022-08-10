@@ -1,0 +1,19 @@
+#!/system/bin/sh
+
+status=`getprop ro.boot.id.prj`
+
+if [ "$status" -eq "0" ]; then
+    echo ZS660KL_L
+
+elif [ "$status" -eq "1" ]; then
+    echo ZS660KL_L
+
+elif [ "$status" -eq "2" ]; then
+    echo ZS660KL
+
+elif [ "$status" -eq "3" ]; then
+    echo ZS630KL
+
+else
+    echo Unknown
+fi

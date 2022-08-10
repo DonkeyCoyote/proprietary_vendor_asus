@@ -1,0 +1,16 @@
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "Please enter NTC parameter!"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	status=`cat /sys/class/power_supply/battery/device/usb_thermal_btm`
+	echo $status
+elif [ "$CMD" -eq "1" ]; then
+	status=`cat /sys/class/power_supply/battery/device/usb_thermal_side`
+	echo $status
+else
+	echo "Invalid parameter!"
+fi

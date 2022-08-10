@@ -1,0 +1,9 @@
+ack=`cat /sys/class/i2c-adapter/i2c-7/7-0039/adc_ack`
+
+if [ "$ack" -eq "0" ]; then
+	echo 0
+
+elif [ "$ack" -eq "1" ]; then
+	echo 1
+
+fi

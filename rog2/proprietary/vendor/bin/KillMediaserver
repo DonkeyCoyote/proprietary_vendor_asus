@@ -1,0 +1,67 @@
+#!/system/bin/sh
+INDEX=0
+DEFAULT_TIMEOUT_S=30
+PROCESS_ALL_STOP=0
+
+if [ $# -eq 0 ]
+then
+	timeout_s=$DEFAULT_TIMEOUT_S
+elif [ $# -eq 1 ]
+then
+	timeout_s=$1
+else
+	echo "0"
+	usage
+	exit 1
+fi
+DELAY_INTERVAL_US=500000
+MAX_COUNT=$(( timeout_s*1000*1000/DELAY_INTERVAL_US ))
+
+count=0
+cameraserveroldPID=`pidof cameraserver`
+provideroldPID=`pidof android.hardware.camera.provider@2.4-service_64`
+while [ $count -lt $MAX_COUNT ]
+do
+	result1=`getprop init.svc.cameraserver`
+	result2=`getprop init.svc.vendor.camera-provider-2-4`
+	if [ $result1 == "running" ] && [ $result2 == "running" ] && [ $PROCESS_ALL_STOP == "0" ]; then
+		su -0 stop cameraserver
+		result1=`getprop init.svc.cameraserver`
+		su -0 stop vendor.camera-provider-2-4
+		result2=`getprop init.svc.vendor.camera-provider-2-4`
+	elif [ $result1 == "running" ] && [ $PROCESS_ALL_STOP == "0" ]; then
+		su -0 stop cameraserver
+		result1=`getprop init.svc.cameraserver`
+	elif [ $result2 == "running" ] && [ $PROCESS_ALL_STOP == "0" ]; then
+		su -0 stop vendor.camera-provider-2-4
+		result2=`getprop init.svc.vendor.camera-provider-2-4`
+	fi
+
+	if [ $result1 == "stopped" ] && [ $result2 == "stopped" ]; then
+		su -0 start cameraserver
+		su -0 start vendor.camera-provider-2-4
+		PROCESS_ALL_STOP=1
+		sleep 0.2
+		result1=`getprop init.svc.cameraserver`
+		result2=`getprop init.svc.vendor.camera-provider-2-4`
+		cameraserverPID=`pidof cameraserver`
+		providerPID=`pidof android.hardware.camera.provider@2.4-service_64`
+	fi
+
+	if [ $result1 == "running" ] && [ $result2 == "running" ] && [ $PROCESS_ALL_STOP == "1" ];then
+		log -p d -t KillMediaserver "CameraServer PID ($cameraserveroldPID)->($cameraserverPID) , CameraProvider PID ($provideroldPID)->($providerPID)"
+		sleep 2
+		echo "1"
+		exit 0
+	fi
+	usleep $DELAY_INTERVAL_US
+	(( count++ ))
+done
+
+echo "0"
+exit 0
+
+function usage()
+{
+	echo "Please input timeout value (seconds)!"
+}

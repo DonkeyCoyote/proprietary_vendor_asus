@@ -1,0 +1,266 @@
+# ASUS_BSP+++ Show_Cai
+service AThermalService /vendor/bin/init.asus.thermal_conf.sh
+        class core
+	seclabel u:r:thermal-engine:s0
+        user root
+        oneshot
+        disabled
+
+service onFgAppChanged /system/vendor/bin/onFgAppChanged
+        class core
+        user root
+        oneshot
+        disabled
+        seclabel u:r:onFgAppChanged:s0
+# ASUS_BSP--- Show_Cai
+
+service AirTriggerTest /vendor/bin/hw/airtrigger_test
+        class core
+        user root
+        oneshot
+        disabled
+        seclabel u:r:hal_sensors_default:s0
+
+# ASUS_BSP+++ Clay_Wang
+service GripCalService /vendor/bin/grip_cal.sh
+        class core
+        user root
+        oneshot
+        disabled
+# ASUS_BSP+++ Clay_Wang
+
+# ASUS_BSP +++ Clay_Wang
+service GripCheckK /vendor/bin/grip_fpc_check.sh
+        class core
+        group root
+        seclabel u:r:savelogmtp:s0
+        user root
+        oneshot
+        disabled
+#       seclabel u:r:GripInterface:s0
+# ASUS_BSP --- Clay_Wang
+
+# ASUS_BSP Clay_Wang dumpsys sensorservice
+service SENSOR_DUMP /vendor/etc/ASUS_Sensor_dump.sh
+         user root
+         group root
+         disabled
+         oneshot
+         seclabel u:r:savelogmtp:s0
+
+# ASUS_BSP+++ Clay_Wang
+on post-fs-data
+#	setprop sys.create.thermal_link 1
+#	setprop debug.create.thermal_link 1
+	setprop vendor.thermal.create.thermal_link 1
+	setprop persist.asus.thermalfan 1
+	start AThermalService
+	# BSP Clay_Wang "For SensorService Log"
+	mkdir /asdf/sensor
+	restorecon_recursive /asdf/sensor
+	chmod 0777 /asdf/sensor
+	chmod 777 /vendor/etc/ASUS_Sensor_dump.sh
+# ASUS_BSP--- Clay_Wang
+
+# ASUS_BSP+++ Clay_Wang "For external interface"
+on property:vendor.grip.checkfpc=*
+	start GripCheckK
+# ASUS_BSP--- Clay_Wang "For external interface"
+
+# ASUS_BSP+++ Clay_Wang
+on property:sys.boot_completed=1
+#	setprop sys.create.thermal_link 1
+#	setprop debug.create.thermal_link 1
+	setprop vendor.grip.checkfpc 1
+	setprop vendor.thermal.create.thermal_link 1
+	start AThermalService
+
+on property:debug.thermal_engine.reset=1
+	start AThermalService
+# ASUS_BSP--- Clay_Wang
+
+on property:debug.lmh=*
+   start AThermalService
+on property:vendor.thermal.lmh_freq1=*
+   setprop debug.thermal.lmh_freq1 ${vendor.thermal.lmh_freq1}
+on property:vendor.thermal.lmh_freq0=*
+   setprop debug.thermal.lmh_freq0 ${vendor.thermal.lmh_freq0}
+
+# =========ASUS_BSP+++ Clay_Wang "Dumpsys sensorservice"==========
+on property:sys.thermal.dumpsys=1
+        start SENSOR_DUMP
+on property:sys.thermal.dumpsys_sns=1
+        start AThermalService
+on property:persist.vendor.asus.startlog=*
+        setprop vendor.thermal.startlog ${persist.vendor.asus.startlog}
+on property:vendor.thermal.dumpsys_done=1
+        setprop sys.thermal.dumpsys 0
+# =========ASUS_BSP--- Clay_Wang "Dumpsys sensorservice"==========
+
+# ASUS_BSPShow_Cai +++ For power key turn on screen and enable touch
+on property:sys.asus.psensor.enable_touch=1
+	write /sys/class/sensors/psensor/enable_touch 1
+	setprop sys.asus.psensor.enable_touch 0
+# ASUS_BSPShow_Cai --- For power key turn on screen and enable touch
+# ASUS_BSP+++ Clay_Wang "For Grip Calibration"
+on property:debug.grip.calibration=*
+	start GripCalService
+on property:debug.grip.cal_test_result=*
+	start GripCalibration
+# ASUS_BSP--- Clay_Wang "For Grip Calibration"
+
+on property:vendor.grip.fw.version=*
+	setprop grip.fw.version ${vendor.grip.fw.version}
+on property:vendor.grip.fw.result=*
+	setprop	grip.fw.result	${vendor.grip.fw.result}
+
+
+# ASUS_BSP+++ Clay_Wang "For Grip AP interface"
+on property:persist.grip.enable=*
+	write /proc/driver/grip_en ${persist.grip.enable}
+on property:persist.grip.performance=*
+	write /proc/driver/grip_boost ${persist.grip.performance}
+on property:persist.grip.frame_rate=*
+	write /proc/driver/grip_frame_rate ${persist.grip.frame_rate}
+on property:persist.grip.raw.enable=*
+	write /proc/driver/grip_raw_en ${persist.grip.raw.enable}
+
+on property:persist.grip.squeeze.enable=*
+	write /proc/driver/grip_squeeze_en ${persist.grip.squeeze.enable}
+on property:persist.grip.squeeze.threshold=*
+	write /proc/driver/grip_squeeze_force ${persist.grip.squeeze.threshold}
+on property:persist.grip.squeeze.short.limit=*
+        write /proc/driver/grip_squeeze_short_limit ${persist.grip.squeeze.short.limit}
+on property:persist.grip.squeeze.short.duration=*
+	write /proc/driver/grip_squeeze_short_dur ${persist.grip.squeeze.short.duration}
+on property:persist.grip.squeeze.long.duration=*
+	write /proc/driver/grip_squeeze_long_dur ${persist.grip.squeeze.long.duration}
+on property:persist.grip.squeeze.up.rate=*
+	write /proc/driver/grip_squeeze_up_rate ${persist.grip.squeeze.up.rate}
+on property:persist.grip.squeeze.up.total=*
+	write /proc/driver/grip_squeeze_up_total ${persist.grip.squeeze.up.total}
+on property:persist.grip.squeeze.drop.rate=*
+	write /proc/driver/grip_squeeze_drop_rate ${persist.grip.squeeze.drop.rate}
+on property:persist.grip.squeeze.drop.total=*
+	write /proc/driver/grip_squeeze_drop_total ${persist.grip.squeeze.drop.total}
+
+on property:persist.grip.squeeze1.enable=*
+	write /proc/driver/grip_squeeze1_en ${persist.grip.squeeze1.enable}
+on property:persist.grip.squeeze1.threshold=*
+	write /proc/driver/grip_squeeze1_force ${persist.grip.squeeze1.threshold}
+on property:persist.grip.squeeze1.short.limit=*
+        write /proc/driver/grip_squeeze1_short_limit ${persist.grip.squeeze1.short.limit}
+on property:persist.grip.squeeze1.short.duration=*
+	write /proc/driver/grip_squeeze1_short_dur ${persist.grip.squeeze1.short.duration}
+on property:persist.grip.squeeze1.long.duration=*
+	write /proc/driver/grip_squeeze1_long_dur ${persist.grip.squeeze1.long.duration}
+on property:persist.grip.squeeze1.up.rate=*
+	write /proc/driver/grip_squeeze1_up_rate ${persist.grip.squeeze1.up.rate}
+on property:persist.grip.squeeze1.up.total=*
+	write /proc/driver/grip_squeeze1_up_total ${persist.grip.squeeze1.up.total}
+on property:persist.grip.squeeze1.drop.rate=*
+	write /proc/driver/grip_squeeze1_drop_rate ${persist.grip.squeeze1.drop.rate}
+on property:persist.grip.squeeze1.drop.total=*
+	write /proc/driver/grip_squeeze1_drop_total ${persist.grip.squeeze1.drop.total}
+
+on property:persist.grip.squeeze2.enable=*
+	write /proc/driver/grip_squeeze2_en ${persist.grip.squeeze2.enable}
+on property:persist.grip.squeeze2.threshold=*
+	write /proc/driver/grip_squeeze2_force ${persist.grip.squeeze2.threshold}
+on property:persist.grip.squeeze2.short.limit=*
+        write /proc/driver/grip_squeeze2_short_limit ${persist.grip.squeeze2.short.limit}
+on property:persist.grip.squeeze2.short.duration=*
+	write /proc/driver/grip_squeeze2_short_dur ${persist.grip.squeeze2.short.duration}
+on property:persist.grip.squeeze2.long.duration=*
+	write /proc/driver/grip_squeeze2_long_dur ${persist.grip.squeeze2.long.duration}
+on property:persist.grip.squeeze2.up.rate=*
+	write /proc/driver/grip_squeeze2_up_rate ${persist.grip.squeeze2.up.rate}
+on property:persist.grip.squeeze2.up.total=*
+	write /proc/driver/grip_squeeze2_up_total ${persist.grip.squeeze2.up.total}
+on property:persist.grip.squeeze2.drop.rate=*
+	write /proc/driver/grip_squeeze2_drop_rate ${persist.grip.squeeze2.drop.rate}
+on property:persist.grip.squeeze2.drop.total=*
+	write /proc/driver/grip_squeeze2_drop_total ${persist.grip.squeeze2.drop.total}
+
+
+on property:persist.grip.tap1.enable=*
+	write /proc/driver/grip_tap1_en ${persist.grip.tap1.enable}
+on property:persist.grip.tap2.enable=*
+	write /proc/driver/grip_tap2_en ${persist.grip.tap2.enable}
+on property:persist.grip.tap3.enable=*
+	write /proc/driver/grip_tap3_en ${persist.grip.tap3.enable}
+on property:persist.grip.tap1.threshold=*
+	write /proc/driver/grip_tap1_force ${persist.grip.tap1.threshold}
+on property:persist.grip.tap2.threshold=*
+	write /proc/driver/grip_tap2_force ${persist.grip.tap2.threshold}
+on property:persist.grip.tap3.threshold=*
+	write /proc/driver/grip_tap3_force ${persist.grip.tap3.threshold}
+
+on property:persist.grip.tap1.vibrator.enable=*
+        write /proc/driver/grip_tap1_vib_en ${persist.grip.tap1.vibrator.enable}
+on property:persist.grip.tap2.vibrator.enable=*
+        write /proc/driver/grip_tap2_vib_en ${persist.grip.tap2.vibrator.enable}
+
+on property:persist.grip.tap1.finger.resting.enable=*
+        write /proc/driver/grip_tap1_rest_en ${persist.grip.tap1.finger.resting.enable}
+on property:persist.grip.tap2.finger.resting.enable=*
+        write /proc/driver/grip_tap2_rest_en ${persist.grip.tap2.finger.resting.enable}
+
+on property:persist.grip.tap1.min.position=*
+        write proc/driver/grip_tap1_min_position ${persist.grip.tap1.min.position}
+on property:persist.grip.tap2.min.position=*
+        write proc/driver/grip_tap2_min_position ${persist.grip.tap2.min.position}
+on property:persist.grip.tap1.max.position=*
+        write proc/driver/grip_tap1_max_position ${persist.grip.tap1.max.position}
+on property:persist.grip.tap2.max.position=*
+        write proc/driver/grip_tap2_max_position ${persist.grip.tap2.max.position}
+on property:persist.grip.tap1.slope.window=*
+        write proc/driver/grip_tap1_slope_window ${persist.grip.tap1.slope.window}
+on property:persist.grip.tap2.slope.window=*
+        write proc/driver/grip_tap2_slope_window ${persist.grip.tap2.slope.window}
+on property:persist.grip.tap1.slope.release.force=*
+        write proc/driver/grip_tap1_slope_release_force ${persist.grip.tap1.slope.release.force}
+on property:persist.grip.tap2.slope.release.force=*
+        write proc/driver/grip_tap2_slope_release_force ${persist.grip.tap2.slope.release.force}
+on property:persist.grip.tap1.slope.tap.force=*
+	write proc/driver/grip_tap1_slope_tap_force ${persist.grip.tap1.slope.tap.force}
+on property:persist.grip.tap2.slope.tap.force=*
+	write proc/driver/grip_tap2_slope_tap_force ${persist.grip.tap2.slope.tap.force}
+on property:persist.grip.tap1.delta.release.force=*
+	write proc/driver/grip_tap1_delta_release_force ${persist.grip.tap1.delta.release.force}
+on property:persist.grip.tap2.delta.release.force=*
+	write proc/driver/grip_tap2_delta_release_force ${persist.grip.tap2.delta.release.force}
+on property:persist.grip.tap1.delta.tap.force=*
+	write proc/driver/grip_tap1_delta_tap_force ${persist.grip.tap1.delta.tap.force}
+on property:persist.grip.tap2.delta.tap.force=*
+        write proc/driver/grip_tap2_delta_tap_force ${persist.grip.tap2.delta.tap.force}
+on property:persist.grip.tap.sensitive.mode=*
+        write /proc/driver/grip_tap_sense_en ${persist.grip.tap.sensitive.mode}
+
+on property:persist.grip.slide1.enable=*
+       write /proc/driver/grip_slide1_en ${persist.grip.slide1.enable}
+on property:persist.grip.slide2.enable=*
+       write /proc/driver/grip_slide2_en ${persist.grip.slide2.enable}
+on property:persist.grip.slide1.distance=*
+       write /proc/driver/grip_slide1_dist ${persist.grip.slide1.distance}
+on property:persist.grip.slide2.distance=*
+       write /proc/driver/grip_slide2_dist ${persist.grip.slide2.distance}
+on property:persist.grip.slide1.threshold=*
+       write /proc/driver/grip_slide1_force ${persist.grip.slide1.threshold}
+on property:persist.grip.slide2.threshold=*
+       write /proc/driver/grip_slide2_force ${persist.grip.slide2.threshold}
+
+on property:persist.grip.swipe1.enable=*
+        write /proc/driver/grip_swipe1_en ${persist.grip.swipe1.enable}
+on property:persist.grip.swipe2.enable=*
+        write /proc/driver/grip_swipe2_en ${persist.grip.swipe2.enable}
+on property:persist.grip.swipe1.velocity=*
+	write /proc/driver/grip_swipe1_v ${persist.grip.swipe1.velocity}
+on property:persist.grip.swipe2.velocity=*
+	write /proc/driver/grip_swipe2_v ${persist.grip.swipe2.velocity}
+on property:persist.grip.swipe1.len=*
+	write /proc/driver/grip_swipe1_len ${persist.grip.swipe1.len}
+on property:persist.grip.swipe2.len=*
+	write /proc/driver/grip_swipe2_len ${persist.grip.swipe2.len}
+# ASUS_BSP--- Clay_Wang "For Grip AP interface"
+

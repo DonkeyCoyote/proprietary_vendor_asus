@@ -1,0 +1,11 @@
+echo 0 > /sys/class/power_supply/battery/device/asus_usb_suspend
+
+status=`cat /sys/class/power_supply/battery/device/asus_usb_suspend`
+
+if [ "$status" -eq "0" ]; then
+	echo PASS
+
+else
+	echo FAIL
+
+fi

@@ -1,0 +1,15 @@
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	value=`cat /sys/class/power_supply/battery/device/charger_limit_percent`
+	echo $value
+	exit
+fi
+
+if [ "$CMD" -lt "0" -o "$CMD" -gt "100" ]; then
+	echo "Invalid value!"
+	exit
+else
+	echo $CMD > /sys/class/power_supply/battery/device/charger_limit_percent
+	echo PASS
+fi

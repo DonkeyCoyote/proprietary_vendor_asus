@@ -1,0 +1,32 @@
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (Red), 2 (Green)"
+	exit
+fi
+
+if [ "$CMD" -lt "0" -o "$CMD" -gt "2" ]; then
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (Red), 2 (Green)"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	echo 18 0 > /sys/class/ec_hid/dongle/device/set_gpio
+	echo 2F 0 > /sys/class/ec_hid/dongle/device/set_gpio
+
+	echo 1
+elif [ "$CMD" -eq "1" ]; then
+	echo 18 1 > /sys/class/ec_hid/dongle/device/set_gpio
+	echo 2F 0 > /sys/class/ec_hid/dongle/device/set_gpio
+
+	echo 1
+elif [ "$CMD" -eq "2" ]; then
+	echo 18 0 > /sys/class/ec_hid/dongle/device/set_gpio
+	echo 2F 1 > /sys/class/ec_hid/dongle/device/set_gpio
+
+	echo 1
+fi
+
+

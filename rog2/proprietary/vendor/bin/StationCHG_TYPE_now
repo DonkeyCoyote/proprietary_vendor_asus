@@ -1,0 +1,5 @@
+result=`cat /sys/class/ec_hid/dongle/device/charger_type`
+
+if [ "$result" = "HVDCP_ASUS_200K_2A" ]; then
+	echo HVDCP_ASUS_200K_2A
+fi

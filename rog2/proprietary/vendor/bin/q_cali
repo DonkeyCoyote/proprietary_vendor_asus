@@ -1,0 +1,90 @@
+#!/vendor/bin/sh
+case $1 in
+	"0")
+	    # rear camera capture raw and calibration
+		rm /data/data/cal_rear_result.txt
+		rm /data/data/SHD_log.txt
+		rm /sdcard/*.raw
+		#setprop debug.asus.cameratest.mode 6
+		CameraTest 3 1
+		#/vendor/bin/ditbsp 3 0
+        CameraTest 5 dut_rear_white 10
+		CameraTest 3 0
+		test_ShadingCaliForQcom 0 0 0 0 /sdcard/dut_rear_white.raw /vendor/lib/DataSet/ispDB/ParameterDB.db
+		#setprop debug.asus.cameratest.mode 0
+		#rm /factory/luma_target.txt
+	;;
+	"1")
+	    # front camera capture raw and calibration
+		rm /data/data/cal_front_result.txt
+		rm /data/data/SHD_log.txt
+		rm /sdcard/*.raw
+		#setprop debug.asus.cameratest.mode 6
+		CameraTest 3 1
+		#/vendor/bin/ditbsp 3 1
+        CameraTest 5 dut_front_white 10
+		CameraTest 3 0
+		test_ShadingCaliForQcom 0 1 0 0 /sdcard/dut_front_white.raw /vendor/lib/DataSet/ispDB/ParameterDB.db
+		#setprop debug.asus.cameratest.mode 0
+		#rm /factory/luma_target.txt
+	;;
+	"2")
+	    # rear2 camera capture raw and calibration
+		rm /data/data/cal_rear2_result.txt
+		rm /data/data/SHD_log.txt
+		rm /sdcard/*.raw
+		#setprop debug.asus.cameratest.mode 6
+		CameraTest 3 1
+		#/vendor/bin/ditbsp 3 2
+        CameraTest 5 dut_rear2_white 10
+		CameraTest 3 0
+		test_ShadingCaliForQcom 0 2 0 0 /sdcard/dut_rear2_white.raw /vendor/lib/DataSet/ispDB/ParameterDB.db
+		#setprop debug.asus.cameratest.mode 0
+		#rm /factory/luma_target.txt
+	;;
+	"3")
+	    # front2 camera capture raw and calibration
+		rm /data/data/cal_front2_result.txt
+		rm /data/data/SHD_log.txt
+		#setprop debug.asus.cameratest.mode 6
+		CameraTest 3 1
+		#/vendor/bin/ditbsp 3 3
+        CameraTest 4 3 10
+		CameraTest 3 0
+		#setprop debug.asus.cameratest.mode 0
+		#rm /factory/luma_target.txt
+	;;
+	"DUAL_0")
+	    # rear dual camera capture raw and calibration
+		rm /data/data/cal_rear_result.txt
+		rm /data/data/cal_rear2_result.txt
+		rm /data/data/SHD_log.txt
+		rm /sdcard/*.raw
+		#setprop debug.asus.cameratest.mode 6
+		DualCamera 3 1
+		#/vendor/bin/ditbsp 3 0
+        DualCamera 5 dut_rear_white 10
+		test_ShadingCaliForQcom 0 0 0 0 /sdcard/dut_rear_white_1.raw /vendor/lib/DataSet/ispDB/ParameterDB.db
+		test_ShadingCaliForQcom 0 2 0 0 /sdcard/dut_rear_white_2.raw /vendor/lib/DataSet/ispDB/ParameterDB.db
+		DualCamera 3 0
+		#setprop debug.asus.cameratest.mode 0
+		#rm /factory/luma_target.txt
+	;;
+	"DUAL_1")
+	    # front dual camera capture raw and calibration
+		rm /data/data/cal_front_result.txt
+		rm /data/data/cal_front2_result.txt
+		rm /data/data/SHD_log.txt
+		setprop debug.asus.cameratest.mode 6
+		DualCamera 3 1
+		/vendor/bin/ditbsp 3 1
+        DualCamera 4 dual 10
+		DualCamera 3 0
+		setprop debug.asus.cameratest.mode 0
+		rm /factory/luma_target.txt
+	;;
+	*)
+	    echo "Invalid argument!!(par1 : commandID = $1)"
+	;;
+esac
+exit 0

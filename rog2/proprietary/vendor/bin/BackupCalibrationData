@@ -1,0 +1,367 @@
+DATADATA="/data/data/"
+FACTORY_FOLDER="/vendor/factory"
+DEBUG=0
+PULL_VCM=0
+
+function fail()
+{
+  if [ $DEBUG -eq 1 ]; then
+    echo "FAIL: wrong input Parameter"
+  fi
+
+  echo "FAIL"
+  exit 0
+}
+
+function copyfile()
+{
+
+  if [ -e $FACTORY_FOLDER$1 ]; then
+  	cp $FACTORY_FOLDER$1 $DATADATA$2
+	return 0
+  else
+  	if [ $DEBUG -eq 1 ]; then
+    	  echo FAIL: $1 is miss.
+  	fi
+
+	#rm -rf "$DATADATA$2"
+  	return 1
+  fi
+
+}
+
+function CheckDualCam()
+{
+	case "$1" in
+		"0")
+			#rear2 camera
+			LSC_CALI=`/vendor/bin/ditbsp 2 2 0|grep DUT_`
+			if [ "$LSC_CALI" != "" ]; then
+				VCM_MACRO="/vcm2_macro.txt"
+				VCM_MACRO_CAL="/vcm2_macro_H.txt"
+				VCM_30CM="/vcm2_30cm.txt"
+				VCM_50CM="/vcm2_50cm.txt"
+				VCM_INF="/vcm2_inf.txt"
+				VCM_INF_CAL="/vcm2_inf_H.txt"
+				RGB_SENSOR=`/vendor/bin/ditbsp 2 0 1|grep DUT_`
+				PD_DATA="/PD_EEPROM_Cali.txt"
+				AEC_EXP_IDX_DIFF="/exposure_difference.txt"
+			else
+				if [ $DEBUG -eq 1 ]; then
+					echo LSC_CALI2 is Null.
+				fi
+				return 1
+			fi
+		;;
+		
+		"1")
+			#front2 camera
+			LSC_CALI=`/vendor/bin/ditbsp 2 3 0|grep DUT_`
+			if [ "$LSC_CALI" != "" ]; then
+				VCM_MACRO=""
+				VCM_MACRO_CAL=""
+				VCM_30CM=""
+				VCM_50CM=""
+				VCM_INF=""
+				VCM_INF_CAL=""
+				RGB_SENSOR=""			
+				PD_DATA=""
+				AEC_EXP_IDX_DIFF="/exposure_difference.txt"
+			else
+				if [ $DEBUG -eq 1 ]; then
+					echo LSC_CALI2 is Null.
+				fi
+				return 1
+			fi			
+		;;
+		
+		"6")
+			#rear2 camera for Q3a
+			LSC_CALI="dut_rear2.bin"
+			if [ -e $FACTORY_FOLDER"/$LSC_CALI" ]; then
+				VCM_MACRO="/vcm2_macro.txt"
+				VCM_MACRO_CAL="/vcm2_macro_H.txt"
+				VCM_30CM=""
+				VCM_50CM="/vcm2_50cm.txt"
+				VCM_INF="/vcm2_inf.txt"
+				VCM_INF_CAL="/vcm2_inf_H.txt"
+				RGB_SENSOR=""
+				PD_DATA=""
+				AEC_EXP_IDX_DIFF=""
+			else
+				if [ $DEBUG -eq 1 ]; then
+					echo LSC_CALI2 is Null.
+				fi
+				return 1
+			fi
+		;;
+
+		"7")
+			#front2 camera for Q3a			
+			LSC_CALI="dut_front2.bin"
+			if [ -e $FACTORY_FOLDER"/$LSC_CALI" ]; then
+				VCM_MACRO=""
+				VCM_MACRO_CAL=""
+				VCM_30CM=""
+				VCM_50CM=""
+				VCM_INF=""
+				VCM_INF_CAL=""
+				RGB_SENSOR=""			
+				PD_DATA=""
+				AEC_EXP_IDX_DIFF=""
+			else
+				if [ $DEBUG -eq 1 ]; then
+					echo LSC_CALI2 is Null.
+				fi
+				return 1
+			fi
+		;;
+		
+		*)
+			# Command ID wrong
+		;;
+
+	esac   
+    return 0
+}
+
+function CopyCameraCaliData()
+{
+    if [ ! -d $DATADATA$2 ]; then
+      mkdir "$DATADATA$2"
+    fi
+	
+	#check DB name
+	temp_db=$1
+	temp_db=${temp_db:0:4}
+	if [ $temp_db != "DUT_" ] && [ $temp_db != "dut_" ]; then
+		if [ $DEBUG -eq 1 ]; then
+			  echo $1 is Null.
+		fi
+		return 1
+	fi
+	
+	#check file exist or not
+	copyfile "/$1" $2
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	
+	copyfile $VCM_MACRO $2
+	copyfile $VCM_MACRO_CAL $2
+    copyfile $VCM_30CM $2
+	copyfile $VCM_50CM $2
+    copyfile $VCM_INF $2
+	copyfile $VCM_INF_CAL $2
+	copyfile $AEC_EXP_IDX_DIFF $2
+	if [ "$RGB_SENSOR" != "" ]; then
+		copyfile "/$RGB_SENSOR" $2
+	else
+		if [ $DEBUG -eq 1 ]; then
+			echo RGB_SENSOR is Null.
+		fi
+	fi
+	if [ "$PD_DATA" != "" ]; then
+		copyfile "$PD_DATA" $2
+	else
+		if [ $DEBUG -eq 1 ]; then
+			  echo PD_DATA is Null.
+		fi
+	fi	
+    return 0
+}
+
+function TarOTPData()
+{
+    cd $DATADATA && tar -zcf "$1.tar.gz" $1
+
+  if [ ! -e "$DATADATA$1.tar.gz" ]; then
+    if [ $DEBUG -eq 1 ]; then
+      echo FAIL: "$DATADATA$1.tar.gz" does not generate.
+    fi
+    return 1
+  fi
+
+    rm -rf "$DATADATA$1"
+    return 0
+}
+
+if [ $# -eq 3 ]; then
+    DEBUG=1
+fi
+
+case "$1" in
+  "0")
+	#rear camera
+	VCM_MACRO="/vcm_macro.txt"
+	VCM_MACRO_CAL="/vcm_macro_H.txt"
+	VCM_30CM="/vcm_30cm.txt"
+	VCM_50CM="/vcm_50cm.txt"
+	VCM_INF="/vcm_inf.txt"
+	VCM_INF_CAL="/vcm_inf_H.txt"
+	RGB_SENSOR=`/vendor/bin/ditbsp 2 0 1|grep DUT_`
+	LSC_CALI=`/vendor/bin/ditbsp 2 0 0|grep DUT_`
+	PD_DATA="/PD_EEPROM_Cali.txt"
+	AEC_EXP_IDX_DIFF=""
+	
+  ;;
+
+  "1")
+	#front camera
+	VCM_MACRO="/vcm_macro_V_front.txt"
+	VCM_MACRO_CAL="/vcm_macro_V_front.txt"
+	VCM_30CM="/vcm_30cm_front.txt"
+	VCM_50CM="/vcm_50cm_front.txt"
+	VCM_INF="/vcm_inf_V_front.txt"
+	VCM_INF_CAL="/vcm_inf_V_front.txt"
+	RGB_SENSOR=""
+	LSC_CALI=`/vendor/bin/ditbsp 2 1 0|grep DUT_`
+	PD_DATA=""
+	AEC_EXP_IDX_DIFF=""
+	
+  ;;
+  
+  "2")
+	#RGB sensor only	
+	RGB_SENSOR=`/vendor/bin/ditbsp 2 0 1|grep DUT_`
+	if [ "$RGB_SENSOR" != "" ]; then
+		if [ ! -d $DATADATA$2 ]; then
+		mkdir "$DATADATA$2"
+		fi
+		copyfile "/$RGB_SENSOR" $2
+		if [ $? -eq 0 ]; then
+			TarOTPData $2
+			if [ $? -eq 0 ]; then
+				echo "PASS"
+			else
+				echo "FAIL"
+				exit 0
+			fi
+		else
+		  echo "Copy File Fail"
+		  exit 0
+		fi
+	else
+		if [ $DEBUG -eq 1 ]; then
+			  echo RGB_SENSOR is Null.
+		fi
+	fi	
+	exit 0
+  ;;
+  
+  "3")
+	#front2 camera
+	VCM_MACRO=""
+	VCM_MACRO_CAL=""
+	VCM_30CM=""
+	VCM_50CM=""
+	VCM_INF=""
+	VCM_INF_CAL=""
+	RGB_SENSOR=""
+	LSC_CALI=`/vendor/bin/ditbsp 2 3 0|grep DUT_`
+	PD_DATA=""
+	AEC_EXP_IDX_DIFF="/exposure_difference.txt"
+	
+  ;;
+
+  "4")
+	#rear2 camera
+	VCM_MACRO="/vcm2_macro.txt"
+	VCM_MACRO_CAL="/vcm2_macro_H.txt"
+	VCM_30CM="/vcm2_30cm.txt"
+	VCM_50CM="/vcm2_50cm.txt"
+	VCM_INF="/vcm2_inf.txt"
+	VCM_INF_CAL="/vcm2_inf_H.txt"
+	RGB_SENSOR=`/vendor/bin/ditbsp 2 0 1|grep DUT_`
+	LSC_CALI=`/vendor/bin/ditbsp 2 2 0|grep DUT_`
+	PD_DATA="/PD_EEPROM_Cali.txt"
+	AEC_EXP_IDX_DIFF="/exposure_difference.txt"
+	
+  ;;
+
+  "6")
+	#rear camera for Q3a
+	VCM_MACRO="/vcm_macro.txt"
+	VCM_MACRO_CAL="/vcm_macro_H.txt"
+	VCM_30CM=""
+	VCM_50CM="/vcm_50cm.txt"
+	VCM_INF="/vcm_inf.txt"
+	VCM_INF_CAL="/vcm_inf_H.txt"
+	RGB_SENSOR=""
+	LSC_CALI="dut_rear.bin"
+	PD_DATA=""
+	AEC_EXP_IDX_DIFF=""
+  ;;
+
+  "7")
+	#front camera for Q3a
+	VCM_MACRO="/vcm_macro_V_front.txt"
+	VCM_MACRO_CAL="/vcm_macro_V_front.txt"
+	VCM_30CM="/vcm_30cm_front.txt"
+	VCM_50CM="/vcm_50cm_front.txt"
+	VCM_INF="/vcm_inf_V_front.txt"
+	VCM_INF_CAL="/vcm_inf_V_front.txt"
+	RGB_SENSOR=""
+	LSC_CALI="dut_front.bin"
+	PD_DATA=""
+	AEC_EXP_IDX_DIFF=""
+	
+  ;;
+    
+  *)
+  # echo Command ID wrong: 
+   fail
+  ;;
+
+esac   
+
+if [ "$LSC_CALI" != "" ]; then
+	CopyCameraCaliData $LSC_CALI $2	
+	if [ $? -eq 0 ]; then
+		CheckDualCam $1
+		if [ $? -eq 0 ]; then
+			CopyCameraCaliData $LSC_CALI $2	
+			if [ $? -eq 0 ]; then
+				TarOTPData $2
+				if [ $? -eq 0 ]; then
+					echo "PASS"
+				else
+					if [ $DEBUG -eq 1 ]; then
+						echo "Tar FAIL."
+					fi			
+					echo "FAIL"
+					exit 0
+				fi
+			else
+				if [ $DEBUG -eq 1 ]; then
+					echo "Copy Dual Cam Data FAIL."
+				fi		
+				echo "FAIL"
+				exit 0
+			fi
+		else
+			if [ $DEBUG -eq 1 ]; then
+				echo "Check Dual Cam Data FAIL or No Dual Cam"
+			fi
+			TarOTPData $2
+			if [ $? -eq 0 ]; then
+				echo "PASS"
+			else
+				echo "FAIL"
+				exit 0
+			fi
+		fi
+	else
+		if [ $DEBUG -eq 1 ]; then
+			echo "Copy Cali Data FAIL."
+		fi	
+		echo "FAIL"
+		exit 0
+	fi
+else
+	if [ $DEBUG -eq 1 ]; then
+		echo "DB Name is Null."
+	fi	
+	echo "FAIL"
+	exit 0
+fi

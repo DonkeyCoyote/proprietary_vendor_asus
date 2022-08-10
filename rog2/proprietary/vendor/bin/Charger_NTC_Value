@@ -1,0 +1,13 @@
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "Please enter NTC parameter!"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	status=`cat /dev/therm/vadc/wp_therm`
+	echo `expr $((status/1000))`
+else
+	echo "Invalid parameter!"
+fi

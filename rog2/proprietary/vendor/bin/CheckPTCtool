@@ -1,0 +1,2 @@
+status=`cat /sys/class/power_supply/battery/device/ptc_check`
+echo $status

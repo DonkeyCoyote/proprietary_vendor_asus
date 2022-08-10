@@ -1,0 +1,1 @@
+cat /sys/devices/platform/soc/1d84000.ufshc/ufs_size

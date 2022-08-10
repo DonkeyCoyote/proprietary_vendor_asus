@@ -1,0 +1,23 @@
+vbus=`cat /sys/class/power_supply/battery/device/vbus_side_btm`
+if [ "$vbus" -ne "1" ]; then
+	echo None
+	exit
+fi
+
+qctype=`cat /sys/class/power_supply/battery/device/CHG_TYPE`
+pca=`cat /sys/class/power_supply/pca9468-mains/charging_enabled`
+
+if [ "$pca" -gt "1" ]; then
+	echo PD_ASUS_PPS_30W_2A
+	exit
+fi
+
+if [ "$qctype" = "HVDCP_ASUS_200K_2A" ]; then
+	echo HVDCP_ASUS_200K_2A
+
+elif [ "$qctype" = "DCP_ASUS_750K_2A" ]; then
+	echo DCP_ASUS_750K_2A
+
+else
+	echo None
+fi

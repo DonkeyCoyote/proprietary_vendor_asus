@@ -1,0 +1,26 @@
+#
+# rc file for goodix fingerprint
+#
+
+on post-fs-data
+    setprop vendor.fp.version.driver V03.02.04.20
+
+service fp_bmmi /vendor/bin/sh /vendor/bin/gf_bmmi_test.sh
+    class core
+    group root
+    user root
+    oneshot
+    disabled
+
+on property:persist.vendor.asus.fp.bmmi.test=1
+    start fp_bmmi
+
+service fp_smmi /vendor/bin/sh /vendor/bin/gf_smmi_test.sh
+    class core
+    group root
+    user root
+    oneshot
+    disabled
+
+on property:persist.vendor.asus.fp.smmi.test=1
+    start fp_smmi

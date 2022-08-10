@@ -1,0 +1,9 @@
+side=`cat /sys/class/power_supply/battery/device/thermal_gpio`
+
+if [ "$side" -eq "0" ]; then
+	echo 0
+
+elif [ "$side" -eq "1" ]; then
+	echo 1
+
+fi
