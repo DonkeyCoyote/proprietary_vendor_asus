@@ -548,7 +548,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     vendor/asus/zenfone6/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml \
-    vendor/asus/zenfone6/proprietary/vendor/etc/audio_policy_configuration_ZS630KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_ZS630KL.xml \
+    vendor/asus/zenfone6/proprietary/vendor/etc/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     vendor/asus/zenfone6/proprietary/vendor/etc/audio_tuning_mixer_tavil.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer_tavil.txt \
     vendor/asus/zenfone6/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/asus/zenfone6/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
@@ -592,7 +592,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/asus/zenfone6/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/devcfg_tzOn.mbn:$(TARGET_COPY_OUT_VENDOR)/etc/devcfg_tzOn.mbn \
     vendor/asus/zenfone6/proprietary/vendor/etc/dts/GEQ_configs:$(TARGET_COPY_OUT_VENDOR)/etc/dts/GEQ_configs \
     vendor/asus/zenfone6/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin \
@@ -888,7 +887,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/qxdm/Qualcomm_Default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/Qualcomm_Default.cfg \
     vendor/asus/zenfone6/proprietary/vendor/etc/qxdm/Qualcomm_Default_plusAS.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/Qualcomm_Default_plusAS.cfg \
     vendor/asus/zenfone6/proprietary/vendor/etc/qxdm/SNS.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/SNS.cfg \
-    vendor/asus/zenfone6/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/rstg2k.sh:$(TARGET_COPY_OUT_VENDOR)/etc/rstg2k.sh \
     vendor/asus/zenfone6/proprietary/vendor/etc/rstgy2k.sh:$(TARGET_COPY_OUT_VENDOR)/etc/rstgy2k.sh \
     vendor/asus/zenfone6/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
