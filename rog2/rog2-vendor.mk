@@ -9,12 +9,13 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/etc/hardcore_X1.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X1.json \
     vendor/asus/rog2/proprietary/etc/hardcore_X2.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X2.json \
     vendor/asus/rog2/proprietary/etc/hardcore_X3.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X3.json \
+    vendor/asus/rog2/proprietary/etc/hardcore_X660KL.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X660KL.json \
     vendor/asus/rog2/proprietary/etc/hardcore_default.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_default.json \
-    vendor/asus/rog2/proprietary/etc/permissions/asus.software.gamewidget.zenui.rog2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.gamewidget.zenui.rog2.xml \
-    vendor/asus/rog2/proprietary/etc/permissions/asus.software.rog.connect.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.rog.connect.xml \
+    vendor/asus/rog2/proprietary/etc/permissions/asus.software.gamewidget.zenui.rog2.r.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.gamewidget.zenui.rog2.r.xml \
+    vendor/asus/rog2/proprietary/etc/permissions/asus.software.rog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.rog.xml \
     vendor/asus/rog2/proprietary/etc/permissions/asus.software.sku.WW.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.sku.WW.xml \
     vendor/asus/rog2/proprietary/etc/permissions/asus.software.zenui.rog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.rog.xml \
-    vendor/asus/rog2/proprietary/etc/permissions/asus.software.zenui.six.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.six.xml \
+    vendor/asus/rog2/proprietary/etc/permissions/asus.software.zenui.seven.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.seven.xml \
     vendor/asus/rog2/proprietary/etc/permissions/asus.software.zenui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.xml \
     vendor/asus/rog2/proprietary/etc/sysconfig/ims-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/ims-hiddenapi-package-whitelist.xml \
     vendor/asus/rog2/proprietary/etc/videoeditor/Charming.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Charming.mfim \
@@ -78,7 +79,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflow_inference.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflow_inference.so \
     vendor/asus/rog2/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so \
     vendor/asus/rog2/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
-    vendor/asus/rog2/proprietary/priv-app/GameBroadcaster/lib/arm64/libJniModule.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/GameBroadcaster/lib/arm64/libJniModule.so \
     vendor/asus/rog2/proprietary/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so \
     vendor/asus/rog2/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/asus/rog2/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
@@ -179,9 +179,7 @@ PRODUCT_PACKAGES += \
     AsusGallery \
     AsusGalleryBurst \
     GameBroadcaster \
-    ImsAsusPointerListenerProxyService \
     ROGAirTrigger \
-    ROGGameCenter \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     AntHalService-Soong \

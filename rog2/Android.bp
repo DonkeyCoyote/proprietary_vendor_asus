@@ -90,31 +90,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ImsAsusPointerListenerProxyService",
-	owner: "asus",
-	apk: "proprietary/priv-app/ImsAsusPointerListenerProxyService/ImsAsusPointerListenerProxyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "ROGAirTrigger",
 	owner: "asus",
 	apk: "proprietary/priv-app/ROGAirTrigger/ROGAirTrigger.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "ROGGameCenter",
-	owner: "asus",
-	apk: "proprietary/priv-app/ROGGameCenter/ROGGameCenter.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
