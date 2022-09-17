@@ -675,8 +675,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/vendor/etc/audio_configs_stock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs_stock.xml \
     vendor/asus/rog2/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     vendor/asus/rog2/proprietary/vendor/etc/audio_effects_GSI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_GSI.xml \
-    vendor/asus/rog2/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
-    vendor/asus/rog2/proprietary/vendor/etc/audio_io_policy_24bit.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy_24bit.conf \
     vendor/asus/rog2/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     vendor/asus/rog2/proprietary/vendor/etc/audio_platform_info_ZS660KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_ZS660KL.xml \
     vendor/asus/rog2/proprietary/vendor/etc/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml \
