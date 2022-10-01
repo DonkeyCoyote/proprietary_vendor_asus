@@ -1,0 +1,4 @@
+service ifaa-2-0 /vendor/bin/hw/vendor.qti.hardware.ifaa@2.0-service
+    class hal
+    user system
+    group system

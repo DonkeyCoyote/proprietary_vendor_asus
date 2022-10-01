@@ -1,0 +1,92 @@
+{
+	"displayname":"sys extreme power saving",
+	"configurations": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x43C00000",
+					"value":"0",
+					"valueset": [
+					  "0","1","2","3"
+					]
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 0-3",
+					"code":"0x40804100",
+					"value":"1075",
+					"valueset": [
+						"300", "1094", "1209", "1305", "1401", "1497", "1612", "1708", "1804"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 0-3",
+					"code":"0x40800100",
+					"value":"300",
+					"valueset": [
+						"300", "1075", "1171", "1248", "1420", "1516", "1612", "1708", "1804"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 4-6",
+					"code":"0x40804000",
+					"value":"1286",
+					"valueset": [
+						"710", "1766", "1862", "1958", "2054", "2150", "2246", "2342", "2419"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 4-6",
+					"code":"0x40800000",
+					"value":"710",
+					"valueset": [
+						"710", "1766", "1862", "1958", "2054", "2150", "2246", "2342", "2419"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 7",
+					"code":"0x40804200",
+					"value":"1401",
+					"valueset": [
+						"844", "2169", "2265", "2361", "2457", "2553", "2649",  "2745", "2841", "3091"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 7",
+					"code":"0x40800200",
+					"value":"844",
+					"valueset": [
+						"844", "2169", "2265", "2361", "2457", "2553", "2649",  "2745", "2841", "3091"
+					]
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+					"code":"0X42808000",
+					"value":"6",
+					"valueset": [
+						"9", "8", "7", "6", "5", "4", "3", "2", "1", "0"
+					]
+				},
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+					"code":"0X42804000",
+					"value":"9",
+					"valueset": [
+						"9", "8", "7", "6", "5", "4", "3", "2", "1", "0"
+					]
+				}
+			]
+		}
+	]
+}

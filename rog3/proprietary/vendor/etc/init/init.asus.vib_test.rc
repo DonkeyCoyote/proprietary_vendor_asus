@@ -1,0 +1,35 @@
+
+service vibcali_ship /vendor/bin/sh /vendor/bin/VibCali_ship.sh
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:savelogmtp:s0
+
+on property:ro.boot.ftm=1
+    symlink /vendor/bin/VibratorTest.sh /data/data/VibratorTest
+    symlink /vendor/bin/VibCali.sh /data/data/VibCali
+    chown system system /mnt/vendor/persist/aw_cali.bin
+    chmod 0664 /sys/class/leds/vibrator/cali
+    chown system shell /sys/class/leds/vibrator/cali
+    chown system system /mnt/vendor/persist/aw_rtp_cali.bin
+    chmod 0664 /sys/class/leds/vibrator/osc_cali
+    chown system shell /sys/class/leds/vibrator/osc_cali
+
+on property:debug.vendor.vib.cali=0
+    chown system system /mnt/vendor/persist/aw_cali.bin
+    chown system system /mnt/vendor/persist/aw_rtp_cali.bin
+    setprop vendor.sys.asus.setenforce 0
+    write /proc/asusevtlog "vib: setenforce enforcing"
+
+on property:debug.vendor.vib.cali=1
+    setprop vendor.sys.asus.setenforce 1
+    write /proc/asusevtlog "vib: setenforce permissive"
+    chmod 777 /mnt/vendor/persist
+    chmod 666 /sys/class/leds/vibrator/cali
+    chmod 666 /sys/class/leds/vibrator/osc_cali
+    chown shell shell /mnt/vendor/persist/aw_cali.bin
+    chown shell shell /mnt/vendor/persist/aw_rtp_cali.bin
+
+on property:debug.vendor.vib.cali=2
+    start vibcali_ship

@@ -1,0 +1,806 @@
+{
+	"displayname":"sys comb",
+	"comb_0": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x48000000",
+					"value":"0"
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 0-3",
+					"code":"0x40804100",
+					"value":"1804",
+					"valueset": [
+						"300", "1094", "1209", "1305", "1401", "1497", "1612", "1708", "1804"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 0-3",
+					"code":"0x40800100",
+					"value":"1094",
+					"valueset": [
+						"300", "1094", "1209", "1305", "1401", "1497", "1612", "1708", "1804"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 4-6",
+					"code":"0x40804000",
+					"value":"2419",
+					"valueset": [
+						"710", "1670", "1766", "1881", "1996", "2112", "2227", "2342", "2419"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 4-6",
+					"code":"0x40800000",
+					"value":"1075",
+					"valueset": [
+						"710", "1670", "1766", "1881", "1996", "2112", "2227", "2342", "2419"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 7",
+					"code":"0x40804200",
+					"value":"2841",
+					"valueset": [
+						"844", "2035", "2150", "2265", "2380", "2496", "2592",  "2688", "2764", "2841"  
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 7",
+					"code":"0x40800200",
+					"value":"1305",
+					"valueset": [
+						"844", "2035", "2150", "2265", "2380", "2496", "2592",  "2688", "2764", "2841"  
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_downmigrate",
+					"code":"0x40C20000",
+					"value":"70",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_upmigrate",
+					"code":"0x40C1C000",
+					"value":"90",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_group_downmigrate",
+					"code":"0x40C58000",
+					"value":"70",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_group_upmigrate",
+					"code":"0x40C54000",
+					"value":"90",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load",
+					"code":"0x41440000",
+					"value":"80",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq",
+					"code":"0x4143C000",
+					"value":"1766",
+					"valueset": [
+						"1555", "1766", "2112", "2419"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load",
+					"code":"0x41440100",
+					"value":"80",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq",
+					"code":"0x4143C100",
+					"value":"1612",
+					"valueset": [
+						"1209", "1497", "1804"
+					]
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+					"code":"0X42808000",
+					"value":"0",
+					"valueset": [
+						"9", "8", "7", "6", "5", "4", "3", "2", "1", "0"
+					]
+				},
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+					"code":"0X42804000",
+					"value":"9",
+					"valueset": [
+						"9", "8", "7", "6", "5", "4", "3", "2", "1", "0"
+					]
+				},
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/idle_timer",
+					"code":"0X42824000",
+					"value":"3000",
+					"valueset": [
+						"80","500","1000","2500","5000","10000"
+					]
+				}
+			]
+		},
+		{
+			"category":"IO",
+			"items": [
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq",
+					"code":"0x41828000",
+					"value":"4577",
+					"valueset": [
+						"2288","4577","7110","9155","12298","14236","15258"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent",
+					"code":"0x41834000",
+					"value":"50",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq",
+					"code":"0x43010000",
+					"value":"2086",
+					"valueset": [
+						"762","1720","2086","2929","3879","5931","6515","7980","10437","12191"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/io_percent",
+					"code":"0x43020000",
+					"value":"50",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu%d-cpu-l3-lat/min_freq",
+					"code":"0x43400000",
+					"value":"6144",
+					"valueset": [
+						"3000","4032","6144","7104","8832","10560","12480","14208","15168","15936"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil",
+					"code":"0x43404000",
+					"value":"1000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil",
+					"code":"0x43408000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/min_freq",
+					"code":"0x4341C000",
+					"value":"4577",
+					"valueset": [
+					  "2288","4577","7110","9155","12298","14236","15258"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/ratio_ceil",
+					"code":"0x43420000",
+					"value":"1000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu4-cpu-llcc-lat/mem_latency/ratio_ceil",
+					"code":"0x43424000",
+					"value":"1000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/min_freq",
+					"code":"0x43430000",
+					"value":"2086",
+					"valueset": [
+					  "762","1720","2086","2929","3879","5931","6515","7980","10437","12191"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/mem_latency/ratio_ceil",
+					"code":"0x43434000",
+					"value":"1000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu4-llcc-ddr-lat/mem_latency/ratio_ceil",
+					"code":"0x43438000",
+					"value":"1000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				}
+			]
+		}
+	],
+
+	"comb_1": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x48000000",
+					"value":"1"
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 0-3",
+					"code":"0x40804100",
+					"value":"1804",
+					"valueset": [
+						"300", "1094", "1209", "1305", "1401", "1497", "1612", "1708", "1804"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 0-3",
+					"code":"0x40800100",
+					"value":"1209",
+					"valueset": [
+						"300", "1094", "1209", "1305", "1401", "1497", "1612", "1708", "1804"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 4-6",
+					"code":"0x40804000",
+					"value":"2419",
+					"valueset": [
+						"710", "1670", "1766", "1881", "1996", "2112", "2227", "2342", "2419"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 4-6",
+					"code":"0x40800000",
+					"value":"1555",
+					"valueset": [
+						"710", "1670", "1766", "1881", "1996", "2112", "2227", "2342", "2419"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 7",
+					"code":"0x40804200",
+					"value":"2841",
+					"valueset": [
+						"844", "2035", "2150", "2265", "2380", "2496", "2592",  "2688", "2764", "2841"  
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 7",
+					"code":"0x40800200",
+					"value":"1785",
+					"valueset": [
+						"844", "1075", "1305", "1555", "1785", "2035", "2265",  "2496", "2688", "2841" 
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_downmigrate",
+					"code":"0x40C20000",
+					"value":"60",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_upmigrate",
+					"code":"0x40C1C000",
+					"value":"80",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_group_downmigrate",
+					"code":"0x40C58000",
+					"value":"60",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_group_upmigrate",
+					"code":"0x40C54000",
+					"value":"80",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load",
+					"code":"0x41440000",
+					"value":"80",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq",
+					"code":"0x4143C000",
+					"value":"2112",
+					"valueset": [
+						"1555", "1766", "2112", "2419"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load",
+					"code":"0x41440100",
+					"value":"80",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq",
+					"code":"0x4143C100",
+					"value":"1804",
+					"valueset": [
+						"1209", "1497", "1804"
+					]
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+					"code":"0X42808000",
+					"value":"0",
+					"valueset": [
+						"9", "8", "7", "6", "5", "4", "3", "2", "1", "0"
+					]
+				},
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+					"code":"0X42804000",
+					"value":"7",
+					"valueset": [
+						"9", "8", "7", "6", "5", "4", "3", "2", "1", "0"
+					]
+				},
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/idle_timer",
+					"code":"0X42824000",
+					"value":"5000",
+					"valueset": [
+						"80","500","1000","2500","5000","10000"
+					]
+				}
+			]
+		},
+		{
+			"category":"IO",
+			"items": [
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq",
+					"code":"0x41828000",
+					"value":"9155",
+					"valueset": [
+						"2288","4577","7110","9155","12298","14236","15258"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent",
+					"code":"0x41834000",
+					"value":"40",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq",
+					"code":"0x43010000",
+					"value":"5931",
+					"valueset": [
+						"762","1720","2086","2929","3879","5931","6515","7980","10437","12191"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/io_percent",
+					"code":"0x43020000",
+					"value":"40",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu%d-cpu-l3-lat/min_freq",
+					"code":"0x43400000",
+					"value":"10560",
+					"valueset": [
+						"3000","4032","6144","7104","8832","10560","12480","14208","15168","15936"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil",
+					"code":"0x43404000",
+					"value":"2000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil",
+					"code":"0x43408000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/min_freq",
+					"code":"0x4341C000",
+					"value":"9155",
+					"valueset": [
+					  "2288","4577","7110","9155","12298","14236","15258"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/ratio_ceil",
+					"code":"0x43420000",
+					"value":"2000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu4-cpu-llcc-lat/mem_latency/ratio_ceil",
+					"code":"0x43424000",
+					"value":"2000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/min_freq",
+					"code":"0x43430000",
+					"value":"5931",
+					"valueset": [
+					  "762","1720","2086","2929","3879","5931","6515","7980","10437","12191"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/mem_latency/ratio_ceil",
+					"code":"0x43434000",
+					"value":"2000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu4-llcc-ddr-lat/mem_latency/ratio_ceil",
+					"code":"0x43438000",
+					"value":"2000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				}
+			]
+		}
+	],
+
+	"comb_2": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x48000000",
+					"value":"2"
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 0-3",
+					"code":"0x40804100",
+					"value":"1804",
+					"valueset": [
+						"300", "1094", "1209", "1305", "1401", "1497", "1612", "1708", "1804"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 0-3",
+					"code":"0x40800100",
+					"value":"1401",
+					"valueset": [
+						"300", "1094", "1209", "1305", "1401", "1497", "1612", "1708", "1804"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 4-6",
+					"code":"0x40804000",
+					"value":"2419",
+					"valueset": [
+						"710", "1670", "1766", "1881", "1996", "2112", "2227", "2342", "2419"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 4-6",
+					"code":"0x40800000",
+					"value":"1996",
+					"valueset": [
+						"710", "1670", "1766", "1881", "1996", "2112", "2227", "2342", "2419"
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_max_freq 7",
+					"code":"0x40804200",
+					"value":"2841",
+					"valueset": [
+						"844", "2035", "2150", "2265", "2380", "2496", "2592",  "2688", "2764", "2841"  
+					]
+				},
+				{
+					"name":"/sys/module/msm_performance/parameters/cpu_min_freq 7",
+					"code":"0x40800200",
+					"value":"2265",
+					"valueset": [
+						"844", "1075", "1305", "1555", "1785", "2035", "2265",  "2496", "2688", "2841" 
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_downmigrate",
+					"code":"0x40C20000",
+					"value":"50",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_upmigrate",
+					"code":"0x40C1C000",
+					"value":"70",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_group_downmigrate",
+					"code":"0x40C58000",
+					"value":"50",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/proc/sys/kernel/sched_group_upmigrate",
+					"code":"0x40C54000",
+					"value":"70",
+					"valueset": [
+						"100", "90", "80", "70", "60", "50"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load",
+					"code":"0x41440000",
+					"value":"70",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq",
+					"code":"0x4143C000",
+					"value":"2419",
+					"valueset": [
+						"1555", "1766", "2112", "2419"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load",
+					"code":"0x41440100",
+					"value":"70",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq",
+					"code":"0x4143C100",
+					"value":"1804",
+					"valueset": [
+						"1209", "1497", "1804"
+					]
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+					"code":"0X42808000",
+					"value":"0",
+					"valueset": [
+						"9", "8", "7", "6", "5", "4", "3", "2", "1", "0"
+					]
+				},
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+					"code":"0X42804000",
+					"value":"5",
+					"valueset": [
+						"9", "8", "7", "6", "5", "4", "3", "2", "1", "0"
+					]
+				},
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/idle_timer",
+					"code":"0X42824000",
+					"value":"10000",
+					"valueset": [
+						"80","500","1000","2500","5000","10000"
+					]
+				}
+			]
+		},
+		{
+			"category":"IO",
+			"items": [
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq",
+					"code":"0x41828000",
+					"value":"12298",
+					"valueset": [
+						"2288","4577","7110","9155","12298","14236","15258"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent",
+					"code":"0x41834000",
+					"value":"30",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq",
+					"code":"0x43010000",
+					"value":"7980",
+					"valueset": [
+						"762","1720","2086","2929","3879","5931","6515","7980","10437","12191"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/io_percent",
+					"code":"0x43020000",
+					"value":"30",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu%d-cpu-l3-lat/min_freq",
+					"code":"0x43400000",
+					"value":"14208",
+					"valueset": [
+						"3000","4032","6144","7104","8832","10560","12480","14208","15168","15936"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil",
+					"code":"0x43404000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil",
+					"code":"0x43408000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/min_freq",
+					"code":"0x4341C000",
+					"value":"12298",
+					"valueset": [
+					  "2288","4577","7110","9155","12298","14236","15258"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/ratio_ceil",
+					"code":"0x43420000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu4-cpu-llcc-lat/mem_latency/ratio_ceil",
+					"code":"0x43424000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/min_freq",
+					"code":"0x43430000",
+					"value":"7980",
+					"valueset": [
+					  "762","1720","2086","2929","3879","5931","6515","7980","10437","12191"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/mem_latency/ratio_ceil",
+					"code":"0x43434000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/soc:qcom,cpu4-llcc-ddr-lat/mem_latency/ratio_ceil",
+					"code":"0x43438000",
+					"value":"4000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				}
+			]
+		}
+	]
+}

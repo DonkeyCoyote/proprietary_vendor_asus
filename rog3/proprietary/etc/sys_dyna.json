@@ -1,0 +1,18 @@
+{
+	"displayname":"sys dynamic",
+	"configurations": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x43C00000",
+					"value":"0",
+					"valueset": [
+					  "0","1","2","3"
+					]
+				}
+			]
+		}
+	]
+}
