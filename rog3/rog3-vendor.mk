@@ -596,7 +596,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/asus/rog3/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/asus/rog3/proprietary/vendor/bin/hw/android.hardware.lights-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.lights-service.qti \
-    vendor/asus/rog3/proprietary/vendor/bin/hw/android.hardware.memtrack@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack@1.0-service \
     vendor/asus/rog3/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/asus/rog3/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
     vendor/asus/rog3/proprietary/vendor/bin/hw/android.hardware.power-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power-service \
@@ -613,8 +612,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/asus/rog3/proprietary/vendor/bin/hw/vendor.qti.hardware.auralight@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.auralight@1.0-service \
     vendor/asus/rog3/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor/asus/rog3/proprietary/vendor/bin/hw/vendor.qti.hardware.display.allocator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.allocator-service \
-    vendor/asus/rog3/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
     vendor/asus/rog3/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
     vendor/asus/rog3/proprietary/vendor/bin/hw/vendor.qti.hardware.ifaa@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.ifaa@2.0-service \
     vendor/asus/rog3/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
@@ -656,7 +653,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/bin/init.qti.qcv.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qcv.sh \
     vendor/asus/rog3/proprietary/vendor/bin/ipacm:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm \
     vendor/asus/rog3/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
-    vendor/asus/rog3/proprietary/vendor/bin/irisConfig:$(TARGET_COPY_OUT_VENDOR)/bin/irisConfig \
     vendor/asus/rog3/proprietary/vendor/bin/is_keybox_valid:$(TARGET_COPY_OUT_VENDOR)/bin/is_keybox_valid \
     vendor/asus/rog3/proprietary/vendor/bin/is_keymaster_valid:$(TARGET_COPY_OUT_VENDOR)/bin/is_keymaster_valid \
     vendor/asus/rog3/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
@@ -895,7 +891,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/android.hardware.lights-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.lights-qti.rc \
-    vendor/asus/rog3/proprietary/vendor/etc/init/android.hardware.memtrack@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.memtrack@1.0-service.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/android.hardware.power-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power-service.rc \
@@ -954,8 +949,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/etc/init/vendor.qti.hardware.auralight@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.auralight@1.0-service.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
-    vendor/asus/rog3/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
-    vendor/asus/rog3/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/vendor.qti.hardware.ifaa@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.ifaa@2.0-service.rc \
@@ -977,295 +970,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/asus/rog3/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/HDR_SCurve0810.png:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/HDR_SCurve0810.png \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm22.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm23.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm23.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm24.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm25.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm26.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm27.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm27.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er1/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er1/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/HDR_SCurve0810.png:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/HDR_SCurve0810.png \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm22.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm23.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm23.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm24.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm25.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm26.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm27.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm27.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_er2/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_er2/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/HDR_SCurve0810.png:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/HDR_SCurve0810.png \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm22.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm23.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm23.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm24.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm25.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm26.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm27.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm27.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_mp/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_mp/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/HDR_SCurve0810.png:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/HDR_SCurve0810.png \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm22.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm23.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm23.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm24.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm25.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm26.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm27.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm27.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_pr/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_pr/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/HDR_SCurve0810.png:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/HDR_SCurve0810.png \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm22.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm23.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm23.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm24.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm25.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm26.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm27.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm27.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_obiwan_sr/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_obiwan_sr/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er1/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er1/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_er2/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_er2/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp1/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp1/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_mp2/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_mp2/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr1/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr1/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_pr2/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_pr2/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm1.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm10.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm11.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm12.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm13.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm14.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm15.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm16.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm17.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm18.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm19.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm2.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm20.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm21.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm3.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm4.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm5.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm6.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm7.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm8.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/inparm/inparm_tequila_sr/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/inparm_tequila_sr/inParm9.txt \
-    vendor/asus/rog3/proprietary/vendor/etc/irissoft_o.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_o.fw \
-    vendor/asus/rog3/proprietary/vendor/etc/irissoft_t.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_t.fw \
     vendor/asus/rog3/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/asus/rog3/proprietary/vendor/etc/kunaiIII_BT_Version.sh:$(TARGET_COPY_OUT_VENDOR)/etc/kunaiIII_BT_Version.sh \
     vendor/asus/rog3/proprietary/vendor/etc/kunaiIII_fw_update.sh:$(TARGET_COPY_OUT_VENDOR)/etc/kunaiIII_fw_update.sh \
@@ -2042,10 +1746,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl-qti.so \
-    vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so \
-    vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so \
-    vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.memtrack@1.0-impl.so \
-    vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.1-impl.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.2-impl.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
@@ -2058,10 +1758,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.dsi.ant@1.0-impl.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
-    vendor/asus/rog3/proprietary/vendor/lib/hw/gralloc.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.kona.so \
-    vendor/asus/rog3/proprietary/vendor/lib/hw/lights.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.kona.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
-    vendor/asus/rog3/proprietary/vendor/lib/hw/memtrack.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.kona.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/sound_trigger.primary.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.kona.so \
     vendor/asus/rog3/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.1-impl.so \
@@ -2230,16 +1927,13 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiagjni.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplaydebug.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayskuutils.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpps.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmutils.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/asus/rog3/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
@@ -2258,8 +1952,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
     vendor/asus/rog3/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
     vendor/asus/rog3/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libgralloccore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloccore.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgrallocutils.so \
     vendor/asus/rog3/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/asus/rog3/proprietary/vendor/lib/libgui_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui_vendor.so \
     vendor/asus/rog3/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
@@ -2275,7 +1967,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/asus/rog3/proprietary/vendor/lib/libifaaproduct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libifaaproduct.so \
     vendor/asus/rog3/proprietary/vendor/lib/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipebpsstriping.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libirisService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libirisService.so \
     vendor/asus/rog3/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
     vendor/asus/rog3/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
     vendor/asus/rog3/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
@@ -2335,10 +2026,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn553_fw.so \
     vendor/asus/rog3/proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-3.9.1.so \
     vendor/asus/rog3/proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-3.9.1.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libpwiriscalibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwiriscalibrate.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libpwirissoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwirissoft.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libpwsnapdragoncolor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwsnapdragoncolor.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwsoftirisPCS.so \
     vendor/asus/rog3/proprietary/vendor/lib/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libq3dtools_adreno.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcc_file_agent.so \
@@ -2354,7 +2041,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdutils.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
@@ -2369,7 +2055,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqsap_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsap_sdk.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libqservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqservice.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
     vendor/asus/rog3/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd.so \
@@ -2399,14 +2084,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
     vendor/asus/rog3/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
     vendor/asus/rog3/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-colormgr-algo.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-vndapis.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmcore.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmutils.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
@@ -2447,11 +2129,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynx.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/asus/rog3/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/asus/rog3/proprietary/vendor/lib/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthreadutils.so \
     vendor/asus/rog3/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/asus/rog3/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
-    vendor/asus/rog3/proprietary/vendor/lib/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml.so \
     vendor/asus/rog3/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/asus/rog3/proprietary/vendor/lib/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrustedapploader.so \
     vendor/asus/rog3/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
@@ -2556,7 +2236,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpese@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfc@2.0.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfclegacy@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.pixelworks.hardware.display@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.slm@1.0.so \
@@ -2592,17 +2271,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.allocator@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.allocator@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.allocator@3.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.composer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.composer@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.composer@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.composer@2.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@1.1.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@2.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@3.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@4.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.1.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0.so \
@@ -2810,10 +2478,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.memtrack@1.0-impl.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.2-impl.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
@@ -2826,10 +2490,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.default.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/hw/gralloc.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.kona.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/hw/lights.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.kona.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/hw/memtrack.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.kona.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/sound_trigger.primary.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.kona.so \
     vendor/asus/rog3/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
@@ -3005,15 +2666,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplaydebug.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmutils.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libembmsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libembmsservice.so \
@@ -3033,10 +2691,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libgpu_tonemapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpu_tonemapper.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libgralloccore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloccore.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrallocutils.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
@@ -3048,14 +2703,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/libhdrdynamicootf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamicootf.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libhwminijail.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwminijail.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libifaaproduct.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifaaproduct.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libipanat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipanat.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libirisService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libirisService.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
@@ -3122,11 +2775,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libplatformconfig.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-3.9.1.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwiriscalibrate.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libpwirispq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirispq.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirissoft.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libpwsnapdragoncolor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwsnapdragoncolor.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwsoftirisPCS.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libq3dtools_adreno.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
@@ -3142,7 +2790,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci.so \
@@ -3157,7 +2804,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqsap_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsap_sdk.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libqservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqservice.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
@@ -3189,14 +2835,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmcore.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
@@ -3232,11 +2875,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/asus/rog3/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
@@ -3318,7 +2959,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@2.0.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfclegacy@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
@@ -3355,19 +2995,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@3.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@4.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@2.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@3.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@1.1.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@2.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@3.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@4.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so \
-    vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so \
     vendor/asus/rog3/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.0.so \
@@ -3456,6 +3083,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    libthermalclient \
     CACertService \
     CneApp \
     IWlanService \
@@ -3465,7 +3093,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1 \
     android.hardware.cas@1.2-service \
     android.hardware.gnss@2.1-service-qti \
-    android.hardware.graphics.mapper-impl-qti-display \
     android.hardware.lights-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
@@ -3476,6 +3103,4 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.clearkey \
     manifest_android.hardware.drm@1.3-service.widevine \
     power \
-    vendor.qti.gnss@4.0-service \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service
+    vendor.qti.gnss@4.0-service
