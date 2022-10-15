@@ -316,7 +316,6 @@ PRODUCT_PACKAGES += \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
-    AsusVisualMaster \
     GameBroadcaster \
     MobileManager \
     ROGAirTrigger \
