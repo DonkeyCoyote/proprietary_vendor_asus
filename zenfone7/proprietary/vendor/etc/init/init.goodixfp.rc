@@ -1,0 +1,20 @@
+
+#
+# rc file for goodix fingerprint
+#
+
+service fp_ver /vendor/bin/sh /vendor/bin/fp_version.sh
+    class core
+    oneshot
+    disabled
+
+on property:vendor.goodix.service.ready=1
+#    setprop persist.vendor.asus.fp.wakeup true
+    start fp_ver
+
+on property:persist.vendor.asus.fp.wakeup=true
+   setprop vendor.asus.fp.wakeup true
+   
+   
+on property:persist.vendor.asus.fp.wakeup=false
+   setprop vendor.asus.fp.wakeup false

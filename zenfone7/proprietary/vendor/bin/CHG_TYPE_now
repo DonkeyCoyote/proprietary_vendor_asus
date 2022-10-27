@@ -1,0 +1,15 @@
+side=`cat /sys/class/power_supply/battery/device/CHG_TYPE`
+
+if [ "$side" = "DCP_ASUS_750K_2A" ]; then
+	echo DCP_ASUS_750K_2A
+
+elif [ "$side" = "HVDCP_ASUS_200K_2A" ]; then
+	echo HVDCP_ASUS_200K_2A
+
+elif [ "$side" = "PD_ASUS_PPS_30W_2A" ]; then
+	echo PD_ASUS_PPS_30W_2A
+
+else
+	echo OTHERS
+
+fi

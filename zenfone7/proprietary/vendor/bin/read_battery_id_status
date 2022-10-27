@@ -1,0 +1,16 @@
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "Please enter Battery ID parameter!"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	result=`cat /proc/driver/battID_status`
+	echo $result
+
+elif [ "$CMD" -eq "1" ]; then
+	result=`cat /proc/driver/batt_type`
+	echo $result
+
+fi

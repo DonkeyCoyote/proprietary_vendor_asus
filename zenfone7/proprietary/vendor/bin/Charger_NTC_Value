@@ -1,0 +1,13 @@
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "Please enter NTC parameter!"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	status=`cat /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:vadc@3100/iio:device0/in_temp_skin_therm_input`
+	echo `expr $((status/1000))`
+else
+	echo "Invalid parameter!"
+fi

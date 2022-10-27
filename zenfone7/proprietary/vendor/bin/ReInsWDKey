@@ -1,0 +1,37 @@
+#!/vendor/bin/sh
+
+LOG_TAG="WDKEY_INSTALL"
+FNAME="/ADF/keybox.bin"
+
+logi ()
+{
+	/vendor/bin/log -t $LOG_TAG -p i "$@"
+}
+
+
+logi "start to install WD key"
+
+if [ -f "/ADF/NOWDKY" ]; then
+	logi "No WDKEY for this device"
+fi
+
+echo 1 > /sys/fs/selinux/log
+sleep 1
+
+/vendor/bin/install_key_server zf7rewv
+
+if [ -f "/ADF/keybox.bin" ]; then
+	rm -f $FNAME
+fi
+
+startlog_flag=`getprop persist.vendor.asus.startlog`
+if test "$startlog_flag" -eq 0; then
+	echo 0 > /sys/fs/selinux/log
+else
+	echo 1 > /sys/fs/selinux/log
+fi
+
+logi "end of WD key install"
+
+
+

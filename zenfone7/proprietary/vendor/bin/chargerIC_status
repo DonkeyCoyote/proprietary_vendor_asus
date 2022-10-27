@@ -1,0 +1,9 @@
+status=`cat /sys/class/power_supply/battery/device/chargerIC_status`
+
+if [ "$status" -eq "1" ]; then
+	echo 1
+
+elif [ "$side" -eq "0" ]; then
+	echo 0
+
+fi

@@ -1,0 +1,23 @@
+service adrt_service /vendor/bin/adrt_service
+    user root
+    group root
+    disabled
+    oneshot
+
+service change_aps /vendor/bin/change_aps
+    user root
+    group root
+    disabled
+    oneshot
+
+#on post-fs-data
+#persist property can not get since /data are not ready
+on early-boot
+    start adrt_service
+
+on property:debug.asus.adrt=1
+    start change_aps
+
+on property:debug.asus.adrt=0
+    start change_aps
+

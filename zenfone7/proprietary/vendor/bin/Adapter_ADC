@@ -1,0 +1,9 @@
+ack=`cat /sys/class/power_supply/battery/device/adc_adapter`
+
+if [ "$ack" -eq "0" ]; then
+	echo 0
+
+elif [ "$ack" -eq "1" ]; then
+	echo 1
+
+fi

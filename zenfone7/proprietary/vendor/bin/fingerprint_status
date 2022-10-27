@@ -1,0 +1,9 @@
+#!/vendor/bin/sh
+
+is_fp_ready=`getprop vendor.goodix.service.ready`
+
+if [ "$is_fp_ready" -eq "1" ]; then
+	echo $is_fp_ready
+else
+	echo 0
+fi

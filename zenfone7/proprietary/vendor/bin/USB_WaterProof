@@ -1,0 +1,26 @@
+side=`cat /sys/class/power_supply/battery/device/TypeC_Side_Detect`
+if [ "$1" == "0" ]; then
+	if [ "$side" != "0" ]; then
+		echo FAIL
+		exit
+	fi
+
+elif [ "$1" == "1" ]; then
+	if [ "$side" == "0" ]; then
+		echo FAIL
+		exit
+	fi
+
+else
+	echo "Invalid parameter!"
+	exit
+fi
+
+water=`cat /sys/class/power_supply/battery/device/usb_water_alert`
+if [ "$water" -eq "0" ]; then
+	echo PASS
+
+elif [ "$water" -eq "1" ]; then
+	echo FAIL
+fi
+

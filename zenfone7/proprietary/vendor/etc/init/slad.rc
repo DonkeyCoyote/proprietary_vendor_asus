@@ -1,0 +1,13 @@
+on post-fs-data
+service slad /vendor/bin/slad
+    class main
+    socket slad stream 0666 root system
+    disabled
+
+on property:vendor.sla.enabled=1
+    setprop vendor.asus.sar.sla 1
+    start slad
+
+on property:vendor.sla.enabled=0
+    setprop vendor.asus.sar.sla 0
+    stop slad

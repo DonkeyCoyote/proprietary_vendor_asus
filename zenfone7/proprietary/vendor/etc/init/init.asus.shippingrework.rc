@@ -1,0 +1,20 @@
+service shipping_rework  /vendor/bin/sh /vendor/bin/shipping_rework.sh
+    user root
+    group root
+    seclabel u:r:savelogmtp:s0
+    oneshot
+    disabled
+
+on property:vendor.shipping.rework=*
+    start shipping_rework
+
+on property:vendor.shipping.rework.cid=*
+    start shipping_rework    
+
+
+on property:vendor.sys.asus.setenforce=1
+	write /sys/fs/selinux/log 1
+
+on property:vendor.sys.asus.setenforce=0
+	write /sys/fs/selinux/log 0
+

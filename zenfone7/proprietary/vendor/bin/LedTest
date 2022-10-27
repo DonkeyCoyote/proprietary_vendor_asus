@@ -1,0 +1,69 @@
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (Red), 2 (Green)"
+	exit
+fi
+
+if [ "$CMD" -lt "0" -o "$CMD" -gt "2" ]; then
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (Red), 2 (Green)"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	setprop vendor.asus.LedTestmode 1
+	echo 0 > /sys/class/leds/red/brightness
+	echo 0 > /sys/class/leds/green/brightness
+
+	result1=`cat /sys/class/leds/red/brightness`
+	result2=`cat /sys/class/leds/green/brightness`
+	setprop vendor.asus.LedTestmode 0
+	if [ "$result1" -eq "0" -a "$result2" -eq "0" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+
+elif [ "$CMD" -eq "1" ]; then
+	setprop vendor.asus.LedTestmode 1
+	echo 0 > /sys/class/leds/green/brightness
+	echo 255 > /sys/class/leds/red/brightness
+
+	result=`cat /sys/class/leds/red/brightness`
+	setprop vendor.asus.LedTestmode 0
+	if [ "$result" -eq "255" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+
+elif [ "$CMD" -eq "2" ]; then
+	setprop vendor.asus.LedTestmode 1
+	echo 0 > /sys/class/leds/red/brightness
+	echo 255 > /sys/class/leds/green/brightness
+
+	result=`cat /sys/class/leds/green/brightness`
+	setprop vendor.asus.LedTestmode 0
+	if [ "$result" -eq "255" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+
+elif [ "$CMD" -eq "3" ]; then
+	echo 0 > /sys/class/leds/red/brightness
+	echo 0 > /sys/class/leds/green/brightness
+
+	#result=`cat /sys/class/leds/blue/brightness`
+	#if [ "$result" -eq "255" ]; then
+	#	echo 1
+	#else
+	#	echo 0
+	#fi
+	echo "No support blue LED"
+
+fi
+
+
