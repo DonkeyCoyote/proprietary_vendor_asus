@@ -495,7 +495,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
-    vendor/asus/zenfone8/proprietary/vendor/bin/hw/android.hardware.power-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power-service \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.qti \
@@ -767,7 +766,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
-    vendor/asus/zenfone8/proprietary/vendor/etc/init/android.hardware.power-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power-service.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service-multihal.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti.rc \
@@ -3486,7 +3484,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.2-service \
     c2_manifest_vendor \
     manifest_android.hardware.drm@1.3-service.widevine \
-    power \
     vendor.pixelworks.hardware.display.iris-service \
     vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor.qti.diag.hal.service \
