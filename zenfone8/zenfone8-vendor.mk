@@ -451,7 +451,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    vendor/asus/zenfone8/proprietary/vendor/bin/hw/vendor.ozoaudio.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.ozoaudio.media.c2@1.0-service \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.pixelworks.hardware.display.iris-service \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor/asus/zenfone8/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
@@ -764,7 +763,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/slad.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/slad.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    vendor/asus/zenfone8/proprietary/vendor/etc/init/vendor.ozoaudio.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.ozoaudio.media.c2@1.0-service.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/asus/zenfone8/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
@@ -1260,7 +1258,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/etc/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/asus/zenfone8/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    vendor/asus/zenfone8/proprietary/vendor/etc/ozosdk.license:$(TARGET_COPY_OUT_VENDOR)/etc/ozosdk.license \
     vendor/asus/zenfone8/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
@@ -1350,7 +1347,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/asus/zenfone8/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/asus/zenfone8/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
-    vendor/asus/zenfone8/proprietary/vendor/etc/seccomp_policy/vendor.ozoaudio.media.c2@1.0-default-seccomp_policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.ozoaudio.media.c2@1.0-default-seccomp_policy \
     vendor/asus/zenfone8/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/asus/zenfone8/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/asus/zenfone8/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
@@ -2011,7 +2007,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib/libav_ozoencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libav_ozoencoder.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
@@ -2171,7 +2166,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libopus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopus.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libos.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib/libozoaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libozoaudio.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
@@ -2438,7 +2432,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libeffectproxy.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libldnhncr.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib/soundfx/libozoprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libozoprocessing.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcompostprocbundle.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvisualizer.so \
@@ -2874,8 +2867,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib64/libav_ozodecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libav_ozodecoder.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib64/libav_ozoencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libav_ozoencoder.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatterylistener.so \
@@ -2921,8 +2912,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.0.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.1.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib64/libcodec2_soft_ozodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_ozodec.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib64/libcodec2_soft_ozoenc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_ozoenc.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vndk.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libcomprcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomprcapture.so \
@@ -3048,9 +3037,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib64/libozoaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozoaudio.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib64/libozoc2store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozoc2store.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib64/libozowidening.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozowidening.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
@@ -3249,7 +3235,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libeffectproxy.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libldnhncr.so \
-    vendor/asus/zenfone8/proprietary/vendor/lib64/soundfx/libozoprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libozoprocessing.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcompostprocbundle.so \
     vendor/asus/zenfone8/proprietary/vendor/lib64/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcomvisualizer.so \
