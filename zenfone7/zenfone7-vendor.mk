@@ -288,6 +288,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone7/proprietary/system_ext/lib64/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.constants@2.1.so \
     vendor/asus/zenfone7/proprietary/system_ext/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/asus/zenfone7/proprietary/system_ext/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libadsprpc_system.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
+    vendor/asus/zenfone7/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/asus/zenfone7/proprietary/system_ext/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcdsprpc_system.so \
     vendor/asus/zenfone7/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/asus/zenfone7/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
