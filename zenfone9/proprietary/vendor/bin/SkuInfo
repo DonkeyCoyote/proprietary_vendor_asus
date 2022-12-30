@@ -1,0 +1,40 @@
+#!/system/bin/sh
+
+g_skuinfo=`getprop ro.boot.id.rf`
+
+SKU_TABLE=(
+  "0:WW-L"
+  "1:WW-H"
+  "2:US"
+  )
+
+i=0
+retval=$g_skuinfo
+while [  "$i" -lt "${#SKU_TABLE[@]}" ]; do
+  # echo ${SKU_TABLE[$i]}
+  table=`echo ${SKU_TABLE[$i]}|tr ":" "\n"`
+  key=""
+  value=""
+  j=0
+  for data in $table
+  do
+     # echo $data
+     if [ $j -eq 0 ]; then
+        key=$data
+     else
+        value=$data
+     fi
+     ((j++))
+  done
+  # echo "Key " $key  "value" $value
+  if [ "$g_skuinfo" -eq "$key" ]; then
+    retval=$value
+  fi
+  ((i++))
+done
+
+echo $retval
+
+
+
+

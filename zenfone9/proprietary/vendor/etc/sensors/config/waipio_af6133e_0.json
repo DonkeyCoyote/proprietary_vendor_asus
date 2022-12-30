@@ -1,0 +1,169 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf", "QRD", "HDK"],
+    "soc_id": ["457", "482", "530"]
+  },
+  "af6133e_0_platform":{
+    "owner": "sns_af6133e",
+    ".config":{
+      "owner": "sns_af6133e",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "12"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".orient":{
+      "owner": "sns_af6133e",
+      "x":{ "type": "str", "ver": "1",
+        "data": "-x"
+      },
+      "y":{ "type": "str", "ver": "1",
+        "data": "-y"
+      },
+      "z":{ "type": "str", "ver": "1",
+        "data": "+z"
+      }
+    },
+    ".mag":{
+      "owner": "sns_af6133e",
+      ".fac_cal":{
+        "owner": "sns_af6133e",
+        ".corr_mat":{
+          "owner": "sns_af6133e",
+          "0_0":{ "type": "flt", "ver": "2",
+            "data": "0.9487"
+          },
+          "0_1":{ "type": "flt", "ver": "2",
+            "data": "0.0652"
+          },
+          "0_2":{ "type": "flt", "ver": "2",
+            "data": "-0.0053"
+          },
+          "1_0":{ "type": "flt", "ver": "2",
+            "data": "0.0994"
+          },
+          "1_1":{ "type": "flt", "ver": "2",
+            "data": "0.9324"
+          },
+          "1_2":{ "type": "flt", "ver": "2",
+            "data": "0.0218"
+          },
+          "2_0":{ "type": "flt", "ver": "2",
+            "data": "-0.0331"
+          },
+          "2_1":{ "type": "flt", "ver": "2",
+            "data": "0.0547"
+          },
+          "2_2":{ "type": "flt", "ver": "2",
+            "data": "1.1403"
+          }
+        }
+      }
+    },
+    ".placement":{
+      "owner": "sns_af6133e",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".setting":{
+      "owner": "sns_af6133e",
+      "0":{ "type": "flt", "ver": "2",
+        "data": "3.0"
+      },
+      "1":{ "type": "flt", "ver": "2",
+        "data": "2.0"
+      },
+      "2":{ "type": "flt", "ver": "2",
+        "data": "128.0"
+      },
+      "3":{ "type": "flt", "ver": "2",
+        "data": "0.0"
+      },
+      "4":{ "type": "flt", "ver": "2",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "2",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "2",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "2",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "2",
+        "data": "4.0"
+      },
+      "9":{ "type": "flt", "ver": "2",
+        "data": "1.6"
+      },
+      "10":{ "type": "flt", "ver": "2",
+        "data": "7.0"
+      },
+      "11":{ "type": "flt", "ver": "2",
+        "data": "-19.6"
+      }
+    }
+  }
+}

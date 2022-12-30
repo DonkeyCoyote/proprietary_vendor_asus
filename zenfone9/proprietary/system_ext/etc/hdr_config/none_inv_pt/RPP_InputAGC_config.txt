@@ -1,0 +1,9 @@
+1,       # Enable
+-16,     # targetLeveldB
+30,      # attackdBPerSec
+2,       # releasedBPerSec
+0,       # startGaindB
+12,      # maxBoostdB
+0,       # maxAttenuationdB
+3,       # distanceSensitivity
+-30,     # minLevelForAdaptationdB

@@ -1,0 +1,111 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "soc_id": ["457", "482"]
+  },
+  "qsh_camera":{
+    "owner": "qsh_camera",
+    ".config":{
+      "owner": "qsh_camera",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "9"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "16"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "reset_pin_num":{ "type": "int", "ver": "0",
+        "data": "108"
+      },
+      "reset_pin_pull_type":{"type": "int", "ver": "0",
+        "data": "3"
+      },
+      "reset_pin_is_chip_pin":{"type": "int", "ver": "0",
+        "data": "1"
+      },
+      "reset_pin_drive_strength":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "aux_pin_num":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "aux_pin_pull_type":{"type": "int", "ver": "0",
+        "data": "3"
+      },
+      "aux_pin_is_chip_pin":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "aux_pin_drive_strength":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "aux_pin_value_motion_detect":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "aux_pin_value_ulp_streaming":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "85"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".tuning_params":{
+      "owner": "qsh_camera",
+      "fd_threshold":{"type": "int", "ver": "0",
+        "data": "341"
+      },
+      "max_stg2_entries_per_unit_time":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "rate_limit_unit_time_in_secs":{"type": "int", "ver": "0",
+        "data": "1"
+      }
+    },
+    ".als_params":{
+      "owner": "qsh_camera",
+      "als_enable":{"type": "int", "ver": "0",
+        "data": "1"
+      },
+      "als_reg_cnt":{"type": "int", "ver": "0",
+        "data": "3"
+      },
+      "als_reg_base":{"type": "int", "ver": "0",
+        "data": "13185"
+      },
+      "als_reg_hold":{"type": "int", "ver": "0",
+        "data": "13188"
+      }
+    },
+    ".md_poll_params":{
+      "owner": "qsh_camera",
+      "md_poll_freq_ms":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "md_detection_reg":{"type": "int", "ver": "0",
+        "data": "13238"
+      }
+    }
+  }
+}

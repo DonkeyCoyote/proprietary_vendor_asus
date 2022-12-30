@@ -1,0 +1,37 @@
+#!/system/bin/sh
+
+vcm_enable=`cat /proc/driver/vcm_enable`
+
+vcm_gyro_setting=`echo 0x012D 0xC0> /proc/driver/vcm_ic_rw`
+
+vcm_value=`echo 0x012D> /proc/driver/vcm_ic_rw`
+
+vcm_cat=`cat /proc/driver/vcm_ic_rw`
+
+i=0
+if [ ${vcm_enable} -eq "1" ]; then
+#	echo CHHO 1-1
+	${vcm_value}
+#	echo CHHO ${vcm_cat:16:19}
+#	if [ "${vcm_cat:16:19}" != '0xc0' ]; then
+#		echo CHHO 1-2
+#	fi
+
+	while [ "${vcm_cat:16:19}" != '0xc0' ] && [ "${i}" -lt "10" ]; do
+
+		${vcm_gyro_setting}
+		${vcm_value}
+		#echo CHHO 1-3 ${vcm_cat}
+
+		i=$(($i+1))
+	done
+
+	if [ "${i}" -lt "10" ]; then
+		echo "1"
+	else
+		echo "0"
+	fi
+else
+	echo "vcm not enable"
+fi
+

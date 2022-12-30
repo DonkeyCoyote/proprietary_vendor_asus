@@ -1,0 +1,10 @@
+#!/system/bin/sh
+
+syslog() {
+	log -t CameraTest -p I "$@"
+	#echo "$@" >> $LOGCAT_LOG_FILE
+}
+
+syslog "==================DualCamera TEST :E================="
+CameraTest $@ 1
+syslog "==================DualCamera TEST :X================="

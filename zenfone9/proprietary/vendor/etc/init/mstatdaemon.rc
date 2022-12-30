@@ -1,0 +1,12 @@
+# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service vendor.mstatdaemon /vendor/bin/mstatdaemon
+    class main
+    user radio
+    group radio
+
+on boot
+    setprop vendor.mstatservice.enable 1

@@ -1,0 +1,8 @@
+#explame:com.xxx 1 1 7 7 60 
+#first para:	package name
+#second para: 	perf config in dynamic mode   		0:do no thing   1: set cpu run 0-6
+#third para: 	perf config in performance mode 	0:do no thing   1: set cpu run 0-6
+#fourth pare:	thermal config in dynamic mode  	5:game1 6:game2 7:perf 8:bench
+#fifth para:	thermal config in performance mode	5:game1 6:game2 7:perf 8:bench
+#fixth para:	which fps apply this app config		
+#Tips:Begin MR1 32.2030.2030.21 App:com.xxx 1 1 7 7 60	

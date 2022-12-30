@@ -1,0 +1,99 @@
+#!/system/bin/sh
+
+ON="/proc/driver/ois_power"
+REG="/proc/driver/ois_i2c_rw"
+RDATA="/proc/driver/ois_rdata"
+RC="/proc/driver/ois_atd_status"
+
+LOG="/proc/fac_printklog"
+
+FILE="/sdcard/gyro.csv"
+
+function usage()
+{
+    echo "
+API: ATD TestCommand Interface
+
+FORMAT: adb shell /data/data/Camera_OIS_Rdata Para1
+
+USAGE:
+
+	Save Para1 numbers of Gyro X/Y and ACC X/Y data
+"
+}
+
+function power_on()
+{
+	echo 1 > $ON
+}
+function power_off()
+{
+	echo 0 > $ON
+}
+
+function do_process()
+{
+#date "+%Y%m%d %H:%M:%S.%3N"
+
+		echo $1 > $RDATA	
+		rm -f "/sdcard/gyro.csv" 
+		RDATA_COUNT=$1
+		local iARF=$1
+		while [ $iARF -gt 50 ]; do
+#		for ((iARF=$1; iARF>50; iARF-=50)); do
+			((iARF-=50))
+			cat $RDATA >> "/sdcard/gyro.csv" 
+		done
+		if [ $iARF -gt 0 ]; then
+			cat $RDATA >> "/sdcard/gyro.csv" 
+		fi
+		sed '/^$/d' -i "/sdcard/gyro.csv"
+}
+
+function cat_status()
+{
+#	cat $RC
+	local RDATA_RESULT_COUNT=$( cat  "/sdcard/gyro.csv" | wc -l )
+		if [ $RDATA_COUNT -eq $RDATA_RESULT_COUNT ]; then
+		echo "1"
+		else
+		echo "0"
+		fi
+#date "+%Y%m%d %H:%M:%S.%3N"
+	
+}
+
+[ -e $LOG ] && echo "$0 $*"> $LOG
+
+if [ $(echo "$1" | grep -o "^[0-9]*$") ] || [ $? -eq 0 ]; then
+       echo $? >/dev/null 2>&1
+else
+	usage
+	echo "0"
+	exit 1
+fi
+
+
+output=$(cat $ON)
+if [ $output -eq 0 ]
+then
+	echo "Solo power up..."
+	solo=1
+	power_on
+else
+	solo=0
+fi
+
+
+[ -e "$FILE" ] && rm $FILE
+
+do_process $1
+
+cat_status
+
+if [ $solo -eq 1 ]
+then
+	echo "Solo power down..."
+	power_off
+fi
+

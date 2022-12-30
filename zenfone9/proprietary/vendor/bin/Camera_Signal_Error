@@ -1,0 +1,33 @@
+#!/system/bin/sh
+
+case $1 in
+"0")
+	echo 0 > /proc/driver/cam_csi_check
+	echo 0 > /proc/driver/cam_cci_check
+	echo "PASS"
+;;
+"1")
+	cci=$(cat /proc/driver/cam_cci_check)
+	csi=$(cat /proc/driver/cam_csi_check)
+	if [ "$cci" = "0" ] && [ "$csi" = "0" ]; then
+		echo "PASS"
+		exit
+	fi
+	if [ "$cci" = "1" ] && [ "$csi" = "1" ]; then
+		echo CCI_Error#CRC_Error
+		exit
+	fi
+
+	if [ "$cci" = "1" ] ; then
+		echo CCI_Error
+		exit
+	fi
+	if [ "$csi" = "1" ]; then
+		echo CRC_Error
+		exit
+	fi
+;;
+*)
+	echo "Invalid argument!!(par1 : commandID = $1)"
+;;
+esac

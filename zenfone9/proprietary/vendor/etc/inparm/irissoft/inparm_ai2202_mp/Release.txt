@@ -1,0 +1,17 @@
+V1.0
+1. Modify from ZF8_mini v1.2 vesion to add  on CAM to 603 lines
+2. Add inparm list
+
+V1.1
+1. upate line 200 to 0.4
+2. Add mcfCheck and mcfCheck_low
+3. inParm.lst still use old version for no blending
+
+V1.2
+1. Update the inParm.lst support blending
+
+V1.3
+1. Update inparm 1~3 and inparm13~15 to D7500
+
+V1.4
+1. Update inparm1~18 line 200 to 0.5

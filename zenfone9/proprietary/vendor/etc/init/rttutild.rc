@@ -1,0 +1,18 @@
+on post-fs-data
+service rttutild /vendor/bin/rttutild
+    class main
+    socket rttutild stream 0666 root system
+    disabled
+
+on property:sys.boot_completed=1
+    start rttutild
+
+on property:vendor.asus.rttutild.enabled=1
+    start rttutild
+
+on property:vendor.asus.rttutild.enabled=0
+    stop rttutild
+
+on property:vendor.asus.operator.iso-country=*
+    stop rttutild
+    start rttutild

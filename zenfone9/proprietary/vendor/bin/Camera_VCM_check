@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+cat proc/driver/vcm_gyro_init
+echo 0xB8 > proc/driver/actuator_i2c_rw
+cat proc/driver/actuator_i2c_rw

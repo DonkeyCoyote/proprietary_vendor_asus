@@ -1,0 +1,2 @@
+../../build/ms/dynamic_modules/waipio.slpi.prod/libsns_device_mode_skel.so
+../../build/ms/dynamic_modules/waipio.slpi.prod/libsns_direct_channel_skel.so

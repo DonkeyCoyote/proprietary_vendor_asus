@@ -1,0 +1,5 @@
+../../build/ms/dynamic_modules/waipio.slpi.prod/libsysmon_skel.so
+../../build/ms/dynamic_modules/waipio.slpi.prod/libsysmondomain_skel.so
+../../build/ms/dynamic_modules/waipio.slpi.prod/libstabilitydomain_skel.so
+../../build/ms/dynamic_modules/waipio.slpi.prod/libsysmonquery_skel.so
+../../build/ms/dynamic_modules/waipio.slpi.prod/fastrpc_shell_2

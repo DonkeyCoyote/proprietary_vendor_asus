@@ -1,0 +1,29 @@
+
+2021/9/29 V1.31
+1. Copy inparm 1~18 ROG5.5 238 lines version 239~400 all "0" and add CAM 401 ~603 line, inparm.lst need to change lib to "0"
+2. Change inparm line 200 to 0.65
+3. Change inparm list for support low brightness mode calibration DCIP3 with  
+	DCIP3 D65  adb shell irisConfig 516 1 19
+	sRGB D65 adb shell irisConfig 516 1 22
+	
+	
+2021/9/29 V1.32
+1. Update inparm.lst to support Native/sRGB/DCIP3 D65/DCIP3 D75 with 2 MCF blending
+
+2021/10/20 V1.33
+1. Exten inparm19~36 for color enrich support and turn on the conlor enrich of inparm19~36
+2. Remove inparm list of the short term low brighness calibration support 
+3. Add inparm10~36 to inparm list 
+
+2021/10/22 V1.34
+1. Update the ROG5 color enahce setting to inparm19~36
+
+2021/12/15 V1.35
+1. Update inparm7~12 and inparm25~30 to support Softiris HDR/HLG 
+
+2022/1/18 V1.36
+1. Update inparm 18~36 for color enrich fine tune
+
+2022/2/16 V1.37
+1. Add inparm 37~39 for HDR10+ color enrich support
+2. Update inparm.lst to add three more inparm

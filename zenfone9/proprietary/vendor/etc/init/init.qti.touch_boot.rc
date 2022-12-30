@@ -1,0 +1,11 @@
+# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on boot
+   chown system /sys/devices/platform/soc/980000.spi/spi_master/spi0/spi0.0/trusted_touch_enable
+   chmod 0660 /sys/devices/platform/soc/980000.spi/spi_master/spi0/spi0.0/trusted_touch_enable
+   chown system /sys/devices/platform/soc/980000.spi/spi_master/spi0/spi0.0/trusted_touch_event
+   chmod 0660 /sys/devices/platform/soc/980000.spi/spi_master/spi0/spi0.0/trusted_touch_event
+

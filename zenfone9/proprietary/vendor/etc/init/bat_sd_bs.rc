@@ -1,0 +1,9 @@
+
+service bat_sd_bs /vendor/bin/bat_sd_bs
+    user root
+    group root logd system 
+    writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:batinfo:s0
+
+on property:sys.boot_completed=1
+    start bat_sd_bs

@@ -1,0 +1,36 @@
+on post-fs-data
+    start asus_sp
+
+service asus_sp /vendor/bin/sp
+    user root
+    group root
+    disabled
+    oneshot
+
+on property:persist.vendor.asus.setupwizard_country=*
+    start asus_sp
+
+on property:vendor.debug.update.deviceinfo=1
+    start asus_sp
+
+on property:ro.boot.ftm=1
+    symlink /vendor/bin/UpdateDeviceName /data/data/UpdateDeviceName
+    chmod 0777 /data/data/UpdateDeviceName
+    chown system shell /data/data/UpdateDeviceName
+
+on property:vendor.asus.update.mediaflag=1
+    write /proc/asusevtlog "INIT:Write MefiaFlag=1"
+    write /mnt/vendor/persist/MediaFlag 1
+    write /proc/asusevtlog "INIT:start ASUS_SP"
+    start asus_sp
+
+on property:vendor.asus.update.mediaflag=0
+    write /proc/asusevtlog "INIT:Write MefiaFlag=0"
+    write /mnt/vendor/persist/MediaFlag 0
+    write /proc/asusevtlog "INIT:start ASUS_SP"
+    start asus_sp
+
+#fota group
+on property:persist.vendor.fota.group=*
+    setprop vendor.asus.fota.group ${persist.vendor.fota.group}
+    start asus_sp

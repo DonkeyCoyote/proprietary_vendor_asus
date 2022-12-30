@@ -1,0 +1,11 @@
+1,       # Enable
+1,       # dryWetFactor
+9.019481, # ratio
+0.3,     # kneeWidthdB
+5.5,     # attack1Ms
+100,     # gainSmoothMs
+0,       # holdTimeMs
+-15.19481, # thresholddB
+60,      # maxAttenutationdB
+4.045455, # makeupdB
+0,       # startGaindB

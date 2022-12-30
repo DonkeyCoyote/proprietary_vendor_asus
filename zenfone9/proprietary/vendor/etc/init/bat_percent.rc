@@ -1,0 +1,9 @@
+
+service bat_percent /vendor/bin/bat_percent
+    user root
+    group root logd system 
+    writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:batinfo:s0
+
+on property:sys.boot_completed=1
+    start bat_percent

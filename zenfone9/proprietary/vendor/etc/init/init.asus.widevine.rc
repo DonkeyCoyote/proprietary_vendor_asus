@@ -1,0 +1,35 @@
+#ASUS_BSP add widevine_daemon service+++
+service vendor.ins_key /vendor/bin/install_key_server
+    class late_start
+    user root
+    group root media mediadrm drmrpc system log
+    seclabel u:r:install_key_server:s0
+    disabled
+
+service vendor.widevine /vendor/bin/sh /vendor/bin/widevine.sh
+    class late_start
+    user root
+    group root media mediadrm drmrpc system log
+    disabled
+    seclabel u:r:install_key_server:s0
+    oneshot
+#ASUS_BSP add widevine_daemon service---
+
+
+#ASUS_BSP: add for key validation +++
+on property:vendor.atd.start.key.install=1
+    start vendor.ins_key
+
+#calc .98765+= trigger key validation
+on property:vendor.debug.check.keybox=1
+    start vendor.widevine
+#ASUS_BSP: add for key validation ---
+
+#on property:vendor.atd.widevine.test=1
+#        start vendor.widevine
+
+#on property:sys.boot_completed=1
+#        start vendor.widevine
+
+
+

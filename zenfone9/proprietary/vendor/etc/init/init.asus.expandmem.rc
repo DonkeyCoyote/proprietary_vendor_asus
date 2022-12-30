@@ -1,0 +1,29 @@
+on boot
+# System server manages zram expandmem
+    chown root system /sys/devices/platform/soc/soc:expandmem/eswap_enable
+    chmod 0664 /sys/devices/platform/soc/soc:expandmem/eswap_enable
+    chown root system /sys/devices/platform/soc/soc:expandmem/eswap_reclaimin_enable
+    chmod 0664 /sys/devices/platform/soc/soc:expandmem/eswap_reclaimin_enable
+    chown root system /sys/devices/platform/soc/soc:expandmem/eswap_wdt
+    chmod 0664 /sys/devices/platform/soc/soc:expandmem/eswap_wdt
+    chown root system /sys/devices/platform/soc/soc:expandmem/eswap_loglevel
+    chmod 0664 /sys/devices/platform/soc/soc:expandmem/eswap_loglevel
+    restorecon /sys/devices/platform/soc/soc:expandmem/eswap_enable
+    restorecon /sys/devices/platform/soc/soc:expandmem/eswap_reclaimin_enable
+    restorecon /sys/devices/platform/soc/soc:expandmem/eswap_wdt
+    restorecon /sys/devices/platform/soc/soc:expandmem/eswap_loglevel
+
+on property:vendor.asus.zram_setting=1
+    start mem_expand
+
+on property:vendor.asus.expandmem.setting=1
+    setprop persist.vendor.asus.expandmem.enable 1
+
+on property:vendor.asus.expandmem.setting=0
+    setprop persist.vendor.asus.expandmem.enable 0
+
+service mem_expand /vendor/bin/sh /vendor/bin/mem_expand.sh
+    user root
+    group root
+    disabled
+    oneshot
