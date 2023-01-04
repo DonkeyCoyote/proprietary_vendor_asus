@@ -448,6 +448,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/bin/dit_cali:$(TARGET_COPY_OUT_VENDOR)/bin/dit_cali \
     vendor/asus/zenfone9/proprietary/vendor/bin/dit_cali_golden:$(TARGET_COPY_OUT_VENDOR)/bin/dit_cali_golden \
     vendor/asus/zenfone9/proprietary/vendor/bin/ditbsp:$(TARGET_COPY_OUT_VENDOR)/bin/ditbsp \
+    vendor/asus/zenfone9/proprietary/vendor/bin/dongle:$(TARGET_COPY_OUT_VENDOR)/bin/dongle \
     vendor/asus/zenfone9/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/asus/zenfone9/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     vendor/asus/zenfone9/proprietary/vendor/bin/dualcam_default_cali.bin:$(TARGET_COPY_OUT_VENDOR)/bin/dualcam_default_cali.bin \
@@ -3910,6 +3911,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
+    vendor/asus/zenfone9/proprietary/vendor/lib64/libusb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libusb.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libvendorscenariopoweroptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendorscenariopoweroptfeature.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
