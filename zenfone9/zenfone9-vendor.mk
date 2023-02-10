@@ -191,7 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 
 PRODUCT_PACKAGES += \
-    AsusCamera \
     AsusGalleryBurst \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \

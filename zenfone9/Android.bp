@@ -6,18 +6,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "AsusCamera",
-	owner: "asus",
-	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
-	overrides: ["Camera2"],
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "AsusGalleryBurst",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
