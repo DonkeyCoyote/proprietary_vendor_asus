@@ -118,6 +118,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "WfdService",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "com.qualcomm.location",
 	owner: "asus",
 	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
@@ -163,6 +175,12 @@ dex_import {
 	name: "UxPerformance",
 	owner: "asus",
 	jars: ["proprietary/framework/UxPerformance.jar"],
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "asus",
+	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 dex_import {
