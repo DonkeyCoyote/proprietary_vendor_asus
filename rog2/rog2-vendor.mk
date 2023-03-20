@@ -95,11 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.location.sdk.xml \
-    vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.location.xml \
-    vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.qualcomm.qti.izattools.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.izattools.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
-    vendor/asus/rog2/proprietary/system_ext/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/izat.xt.srv.xml \
-    vendor/asus/rog2/proprietary/system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/asus/rog2/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
@@ -236,7 +232,6 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     QtiTelephonyService \
     WfdService \
-    com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
     WfdCommon \
@@ -250,7 +245,6 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.constants-V2.0-java \
     com.quicinc.cne.constants-V2.1-java \
     dpmapi \
-    izat.xt.srv \
     qcrilhook \
     vendor.qti.hardware.data.cne.internal.api-V1.0-java \
     vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
@@ -1134,7 +1128,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/asus/rog2/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/asus/rog2/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/asus/rog2/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/asus/rog2/proprietary/vendor/etc/kunaiIII_BT_Version.sh:$(TARGET_COPY_OUT_VENDOR)/etc/kunaiIII_BT_Version.sh \
     vendor/asus/rog2/proprietary/vendor/etc/kunaiIII_fw_update.sh:$(TARGET_COPY_OUT_VENDOR)/etc/kunaiIII_fw_update.sh \
     vendor/asus/rog2/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -1984,8 +1977,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
     vendor/asus/rog2/proprietary/vendor/lib/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhta_hexagon_runtime.so \
     vendor/asus/rog2/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
-    vendor/asus/rog2/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
-    vendor/asus/rog2/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
     vendor/asus/rog2/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
     vendor/asus/rog2/proprietary/vendor/lib/libjson.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjson.so \
     vendor/asus/rog2/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
@@ -2698,8 +2689,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/vendor/lib64/libhwminijail.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwminijail.so \
     vendor/asus/rog2/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/asus/rog2/proprietary/vendor/lib64/libipanat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipanat.so \
-    vendor/asus/rog2/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
-    vendor/asus/rog2/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/asus/rog2/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/asus/rog2/proprietary/vendor/lib64/libjson.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjson.so \
     vendor/asus/rog2/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
