@@ -16,8 +16,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/lib/DataSet/ispDB/ASUS_UNDI.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ASUS_UNDI.bin \
     vendor/asus/zenfone6/proprietary/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin \
     vendor/asus/zenfone6/proprietary/lib/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ParameterDB.db \
-    vendor/asus/zenfone6/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
-    vendor/asus/zenfone6/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libUndistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libUndistort.so \
     vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_distortion_correction.so \
     vendor/asus/zenfone6/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so \
@@ -196,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 PRODUCT_PACKAGES += \
-    aptxals \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \

@@ -6,16 +6,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "aptxals",
-	owner: "asus",
-	apk: "proprietary/app/aptxals/aptxals.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "AsusCamera",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
