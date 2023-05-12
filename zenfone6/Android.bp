@@ -6,6 +6,26 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "AudioWizard",
+	owner: "asus",
+	apk: "proprietary/app/AudioWizard/AudioWizard.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "AudioWizardView",
+	owner: "asus",
+	apk: "proprietary/app/AudioWizardView/AudioWizardView.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "AsusCamera",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
