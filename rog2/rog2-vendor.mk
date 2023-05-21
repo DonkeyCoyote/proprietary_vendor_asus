@@ -225,6 +225,8 @@ PRODUCT_PACKAGES += \
     AsusCameraApp \
     AsusGallery \
     AsusGalleryBurst \
+    AudioWizard \
+    AudioWizardView \
     GameBroadcaster \
     ROGAirTrigger \
     HotwordEnrollmentOKGoogleWCD9340 \
