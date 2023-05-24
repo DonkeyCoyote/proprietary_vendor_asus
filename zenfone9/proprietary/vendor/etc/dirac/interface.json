@@ -4,7 +4,7 @@
   "minorVersion": 0,
   "patchVersion": 0
  },
- "uuid": "66dbc2bd-8ad9-4eef-a52c-62f2b3a01d2d",
+ "uuid": "fbf31a54-1fe0-41f1-9bb3-6efb48386cff",
  "archiveMetaData": {},
  "description": "PRODUCTION",
  "configurations": [
@@ -16,8 +16,8 @@
     "patchVersion": 8
    },
    "signalChainMetaData": {
-    "bypass_gain_db": {
-     "stringValue": "0"
+    "OutputType": {
+     "stringValue": "speaker"
     },
     "StreamType": {
      "stringValue": "normal"
@@ -25,8 +25,8 @@
     "group_id": {
      "stringValue": "0"
     },
-    "OutputType": {
-     "stringValue": "speaker"
+    "bypass_gain_db": {
+     "stringValue": "0"
     }
    },
    "parameters": [
@@ -250,17 +250,17 @@
     "patchVersion": 8
    },
    "signalChainMetaData": {
-    "bypass_gain_db": {
+    "OutputType": {
+     "stringValue": "speaker"
+    },
+    "group_id": {
      "stringValue": "0"
     },
     "StreamType": {
      "stringValue": "normal"
     },
-    "group_id": {
+    "bypass_gain_db": {
      "stringValue": "0"
-    },
-    "OutputType": {
-     "stringValue": "speaker"
     }
    },
    "parameters": [
@@ -484,17 +484,17 @@
     "patchVersion": 8
    },
    "signalChainMetaData": {
-    "bypass_gain_db": {
+    "OutputType": {
+     "stringValue": "speaker"
+    },
+    "group_id": {
      "stringValue": "0"
     },
     "StreamType": {
      "stringValue": "normal"
     },
-    "group_id": {
+    "bypass_gain_db": {
      "stringValue": "0"
-    },
-    "OutputType": {
-     "stringValue": "speaker"
     }
    },
    "parameters": [
@@ -718,20 +718,20 @@
     "patchVersion": 8
    },
    "signalChainMetaData": {
-    "bypass_gain_db": {
-     "stringValue": "0"
-    },
-    "StreamType": {
-     "stringValue": "normal"
-    },
-    "group_id": {
-     "stringValue": "1"
+    "OutputType": {
+     "stringValue": "headset"
     },
     "sample_rate": {
      "stringValue": "384000"
     },
-    "OutputType": {
-     "stringValue": "headset"
+    "group_id": {
+     "stringValue": "1"
+    },
+    "StreamType": {
+     "stringValue": "normal"
+    },
+    "bypass_gain_db": {
+     "stringValue": "0"
     }
    },
    "parameters": [
@@ -1023,6 +1023,9 @@
     "patchVersion": 8
    },
    "signalChainMetaData": {
+    "OutputType": {
+     "stringValue": "headset"
+    },
     "bypass_gain_db": {
      "stringValue": "0"
     },
@@ -1032,8 +1035,8 @@
     "group_id": {
      "stringValue": "3"
     },
-    "OutputType": {
-     "stringValue": "headset"
+    "sample_rate": {
+     "stringValue": "384000"
     }
    },
    "parameters": [
@@ -1325,8 +1328,8 @@
     "patchVersion": 8
    },
    "signalChainMetaData": {
-    "bypass_gain_db": {
-     "stringValue": "0"
+    "OutputType": {
+     "stringValue": "speaker"
     },
     "StreamType": {
      "stringValue": "system"
@@ -1334,8 +1337,8 @@
     "group_id": {
      "stringValue": "2"
     },
-    "OutputType": {
-     "stringValue": "speaker"
+    "bypass_gain_db": {
+     "stringValue": "0"
     }
    },
    "parameters": [
@@ -1559,17 +1562,17 @@
     "patchVersion": 8
    },
    "signalChainMetaData": {
-    "bypass_gain_db": {
-     "stringValue": "0"
-    },
-    "StreamType": {
-     "stringValue": "system"
+    "OutputType": {
+     "stringValue": "speaker"
     },
     "group_id": {
      "stringValue": "2"
     },
-    "OutputType": {
-     "stringValue": "speaker"
+    "StreamType": {
+     "stringValue": "system"
+    },
+    "bypass_gain_db": {
+     "stringValue": "0"
     }
    },
    "parameters": [
@@ -2026,8 +2029,8 @@
   "minorVersion": 2,
   "patchVersion": 1
  },
- "author": "rickard.asen@dirac.com",
+ "author": "gustav.nordblad@dirac.com",
  "project": "Davinci",
  "manufacturer": "Asus",
- "creationTime": "2022-08-13T19:29:19Z"
+ "creationTime": "2022-12-29T08:20:38Z"
 }

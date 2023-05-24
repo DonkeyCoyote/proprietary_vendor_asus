@@ -1240,8 +1240,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/ChgPD.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/ChgPD.cfg \
     vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/DIAG_GEN9_GPS.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/DIAG_GEN9_GPS.cfg \
     vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/DIAG_GEN9_GPS_SAP.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/DIAG_GEN9_GPS_SAP.cfg \
-    vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/DIAG_R28_Voice_test_only.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/DIAG_R28_Voice_test_only.cfg \
-    vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/PS_GeneralTest_513102.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/PS_GeneralTest_513102.cfg \
+    vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/PS_GeneralTest_514300.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/PS_GeneralTest_514300.cfg \
+    vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/R29_VoiceTest_Only.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/R29_VoiceTest_Only.cfg \
     vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/SNS.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/SNS.cfg \
     vendor/asus/zenfone9/proprietary/vendor/etc/qxdm/spf_audio.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qxdm/spf_audio.cfg \
     vendor/asus/zenfone9/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \

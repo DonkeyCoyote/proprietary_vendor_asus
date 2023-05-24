@@ -7,6 +7,16 @@
       "eccType": 0
     },
     {
+      "plmn": "20801",
+      "_comment" : "FR_Orange",
+      "eccType": 0
+    },
+    {
+      "plmn": "20802",
+      "_comment" : "FR_Orange",
+      "eccType": 0
+    },
+    {
       "plmn": "46601",
       "_comment" : "FET",
       "eccType": 1,
