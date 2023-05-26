@@ -781,3 +781,22 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "com.qualcomm.location",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "izat.xt.srv",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],
+	system_ext_specific: true,
+}
+

@@ -218,6 +218,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog2/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 PRODUCT_PACKAGES += \
+    AudioWizard \
+    AudioWizardView \
     FocusAppListener \
     GameBroadcasterService \
     HardwareStub \
@@ -225,8 +227,6 @@ PRODUCT_PACKAGES += \
     AsusCameraApp \
     AsusGallery \
     AsusGalleryBurst \
-    AudioWizard \
-    AudioWizardView \
     GameBroadcaster \
     ROGAirTrigger \
     HotwordEnrollmentOKGoogleWCD9340 \
@@ -3044,3 +3044,21 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.clearkey \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service
+
+ifeq ($(ROM_BUILDTYPE),$(filter $(ROM_BUILDTYPE),GAPPS MICROG))
+PRODUCT_COPY_FILES += \
+    vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.location.xml \
+    vendor/asus/rog2/proprietary/system_ext/etc/permissions/com.qualcomm.qti.izattools.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.izattools.xml \
+    vendor/asus/rog2/proprietary/system_ext/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/izat.xt.srv.xml \
+    vendor/asus/rog2/proprietary/system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
+    vendor/asus/rog2/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    vendor/asus/rog2/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
+    vendor/asus/rog2/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
+    vendor/asus/rog2/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
+    vendor/asus/rog2/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so
+
+PRODUCT_PACKAGES += \
+    com.qualcomm.location \
+    izat.xt.srv
+endif
+
