@@ -306,6 +306,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 PRODUCT_PACKAGES += \
+    AudioWizardView \
     FocusAppListener \
     GameBroadcasterService \
     HardwareStub \
@@ -313,6 +314,7 @@ PRODUCT_PACKAGES += \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
+    DiracAudioControlService \
     GameBroadcaster \
     MobileManager \
     ROGAirTrigger \

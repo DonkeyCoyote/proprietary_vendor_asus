@@ -6,6 +6,16 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "AudioWizardView",
+	owner: "asus",
+	apk: "proprietary/app/AudioWizardView/AudioWizardView.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "FocusAppListener",
 	owner: "asus",
 	apk: "proprietary/app/FocusAppListener/FocusAppListener.apk",
@@ -72,6 +82,17 @@ android_app_import {
 	name: "AsusGalleryBurst",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "DiracAudioControlService",
+	owner: "asus",
+	apk: "proprietary/priv-app/DiracAudioControlService/DiracAudioControlService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
