@@ -46,16 +46,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "MobileManagerService",
-	owner: "asus",
-	apk: "proprietary/app/MobileManagerService/MobileManagerService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "AsusCamera",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
@@ -104,17 +94,6 @@ android_app_import {
 	name: "GameBroadcaster",
 	owner: "asus",
 	apk: "proprietary/priv-app/GameBroadcaster/GameBroadcaster.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "MobileManager",
-	owner: "asus",
-	apk: "proprietary/priv-app/MobileManager/MobileManager.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

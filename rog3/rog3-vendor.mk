@@ -11,7 +11,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/etc/hardcore_X3.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_X3.json \
     vendor/asus/rog3/proprietary/etc/hardcore_default.json:$(TARGET_COPY_OUT_SYSTEM)/etc/hardcore_default.json \
     vendor/asus/rog3/proprietary/etc/permissions/asus.software.gamewidget.zenui.rog3.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.gamewidget.zenui.rog3.xml \
-    vendor/asus/rog3/proprietary/etc/permissions/asus.software.marketapp.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.marketapp.xml \
     vendor/asus/rog3/proprietary/etc/permissions/asus.software.project.ZS661KS.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.project.ZS661KS.xml \
     vendor/asus/rog3/proprietary/etc/permissions/asus.software.rog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.rog.xml \
     vendor/asus/rog3/proprietary/etc/permissions/asus.software.sku.WW.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.sku.WW.xml \
@@ -93,8 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/rog3/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflow_inference.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflow_inference.so \
     vendor/asus/rog3/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so \
     vendor/asus/rog3/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
-    vendor/asus/rog3/proprietary/priv-app/MobileManager/lib/arm64/libavast-utils.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MobileManager/lib/arm64/libavast-utils.so \
-    vendor/asus/rog3/proprietary/priv-app/MobileManager/lib/arm64/libavast-vps-interface.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MobileManager/lib/arm64/libavast-vps-interface.so \
     vendor/asus/rog3/proprietary/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/ROGAirTrigger/lib/arm64/libpl_droidsonroids_gif.so \
     vendor/asus/rog3/proprietary/product/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/asus/rog3/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
@@ -307,13 +304,11 @@ PRODUCT_PACKAGES += \
     FocusAppListener \
     GameBroadcasterService \
     HardwareStub \
-    MobileManagerService \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
     DiracAudioControlService \
     GameBroadcaster \
-    MobileManager \
     ROGAirTrigger \
     DeviceStatisticsService \
     HotwordEnrollmentOKGoogleHEXAGON \
