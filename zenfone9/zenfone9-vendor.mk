@@ -247,8 +247,6 @@ PRODUCT_PACKAGES += \
     DeviceInfo \
     DeviceStatisticsService \
     QtiTelephonyService \
-    aptxacu \
-    aptxui \
     colorservice \
     WfdService \
     com.qualcomm.location \
