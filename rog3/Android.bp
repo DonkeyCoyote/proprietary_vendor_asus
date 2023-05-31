@@ -191,28 +191,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "aptxacu",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/aptxacu/aptxacu.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "aptxui",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/aptxui/aptxui.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "colorservice",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
@@ -227,18 +205,6 @@ android_app_import {
 	name: "WfdService",
 	owner: "asus",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "aptxals",
-	owner: "asus",
-	apk: "proprietary/system_ext/priv-app/aptxals/aptxals.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
