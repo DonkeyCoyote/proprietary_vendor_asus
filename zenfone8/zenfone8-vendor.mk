@@ -693,14 +693,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/asus/zenfone8/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd \
     vendor/asus/zenfone8/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/asus/zenfone8/proprietary/vendor/etc/audio/ZS590KS/audio_effects_ZS590KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/ZS590KS/audio_effects_ZS590KS.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/ZS590KS/audio_io_policy_ZS590KS.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/ZS590KS/audio_io_policy_ZS590KS.conf \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/ZS590KS/default_volume_tables_ZS590KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/ZS590KS/default_volume_tables_ZS590KS.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/ZS590KS/mixer_paths_ZS590KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/ZS590KS/mixer_paths_ZS590KS.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/ZS590KS/mixer_paths_ZS590KS_EU.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/ZS590KS/mixer_paths_ZS590KS_EU.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/ZS590KS/r_submix_audio_policy_configuration_ZS590KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/ZS590KS/r_submix_audio_policy_configuration_ZS590KS.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.conf \
-    vendor/asus/zenfone8/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/sku_lahaina/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_io_policy.conf \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info.xml \
     vendor/asus/zenfone8/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_hdk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_hdk.xml \
