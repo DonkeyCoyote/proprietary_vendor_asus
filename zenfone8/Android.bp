@@ -6,9 +6,9 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "AsusCameraApp",
+	name: "AsusCamera",
 	owner: "asus",
-	apk: "proprietary/priv-app/AsusCameraApp/AsusCameraApp.apk",
+	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
