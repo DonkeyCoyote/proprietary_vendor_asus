@@ -6,13 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/asus/zenfone9
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/zenfone9/proprietary/etc/videoeditor/Charming.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Charming.mfim \
-    vendor/asus/zenfone9/proprietary/etc/videoeditor/Dynamic.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Dynamic.mfim \
-    vendor/asus/zenfone9/proprietary/etc/videoeditor/Energetic.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Energetic.mfim \
-    vendor/asus/zenfone9/proprietary/etc/videoeditor/Graceful.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Graceful.mfim \
-    vendor/asus/zenfone9/proprietary/etc/videoeditor/Happy.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Happy.mfim \
-    vendor/asus/zenfone9/proprietary/etc/videoeditor/Lively.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Lively.mfim \
-    vendor/asus/zenfone9/proprietary/etc/videoeditor/Soothing.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Soothing.mfim \
     vendor/asus/zenfone9/proprietary/lib64/DataSet/arch/DIT_List.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/arch/DIT_List.cfg \
     vendor/asus/zenfone9/proprietary/lib64/DataSet/cl/AlignMapping.bin:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/cl/AlignMapping.bin \
     vendor/asus/zenfone9/proprietary/lib64/DataSet/cl/lightart.bin:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/cl/lightart.bin \
@@ -33,108 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
     vendor/asus/zenfone9/proprietary/system_ext/etc/cdma_call_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cdma_call_conf.xml \
     vendor/asus/zenfone9/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/ans_off/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_off/ans_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/ans_on/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_on/ans_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_HDR.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_params.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_config.txt \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_params.txt \
     vendor/asus/zenfone9/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/asus/zenfone9/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/asus/zenfone9/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
@@ -240,7 +131,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 PRODUCT_PACKAGES += \
-    AsusGalleryBurst \
     AudioWizardView \
     DiracAudioControlService \
     HotwordEnrollmentOKGoogleHEXAGON \
