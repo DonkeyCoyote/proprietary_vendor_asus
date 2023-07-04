@@ -241,6 +241,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     AsusGalleryBurst \
+    AudioWizardView \
+    DiracAudioControlService \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
     AntHalService-Soong \
