@@ -440,14 +440,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/qvrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qvrservice \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/sxrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sxrservice \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.pixelworks.hardware.display.iris-service \
-    vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider@2.7-service_64 \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.hardware.eid@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.eid@1.0-service \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
     vendor/asus/zenfone9/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
@@ -496,7 +493,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/bin/init.qti.write.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.write.sh \
     vendor/asus/zenfone9/proprietary/vendor/bin/ipacm:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm \
     vendor/asus/zenfone9/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
-    vendor/asus/zenfone9/proprietary/vendor/bin/irisConfig:$(TARGET_COPY_OUT_VENDOR)/bin/irisConfig \
     vendor/asus/zenfone9/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/asus/zenfone9/proprietary/vendor/bin/lightsensor_calibration_data:$(TARGET_COPY_OUT_VENDOR)/bin/lightsensor_calibration_data \
     vendor/asus/zenfone9/proprietary/vendor/bin/lightsensor_calibration_start:$(TARGET_COPY_OUT_VENDOR)/bin/lightsensor_calibration_start \
@@ -834,8 +830,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
@@ -845,7 +839,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.hardware.eid@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.eid@1.0-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
@@ -873,77 +866,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/ModifyHistory.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/ModifyHistory.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm.lst:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm.lst \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm1.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm10.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm11.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm12.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm13.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm14.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm15.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm16.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm17.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm18.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm19.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm2.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm20.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm21.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm22.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm23.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm23.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm24.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm25.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm26.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm27.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm27.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm28.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm28.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm29.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm29.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm3.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm30.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm30.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm31.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm31.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm32.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm32.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm33.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm33.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm34.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm34.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm35.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm35.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm36.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm36.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm37.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm37.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm38.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm38.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm39.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm39.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm4.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm5.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm6.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm7.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm8.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/inParm9.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/mcfCheck.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/mcfCheck.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2201_mp/mcfCheck_low.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2201_mp/mcfCheck_low.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/Release.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/Release.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm.lst:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm.lst \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm1.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm10.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm11.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm12.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm13.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm14.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm15.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm16.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm17.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm18.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm2.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm3.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm4.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm5.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm6.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm7.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm8.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/inParm9.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/mcfCheck.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/mcfCheck.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/inparm/irissoft/inparm_ai2202_mp/mcfCheck_low.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inparm_ai2202_mp/mcfCheck_low.txt \
-    vendor/asus/zenfone9/proprietary/vendor/etc/iris_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/iris_configs.xml \
-    vendor/asus/zenfone9/proprietary/vendor/etc/irissoft_ASUS_ams592YP01_cmd_mode_dsc_fhd_plus_panel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_ASUS_ams592YP01_cmd_mode_dsc_fhd_plus_panel.dat \
-    vendor/asus/zenfone9/proprietary/vendor/etc/irissoft_ASUS_ams592YP01_cmd_mode_dsc_fhd_plus_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_ASUS_ams592YP01_cmd_mode_dsc_fhd_plus_panel.xml \
-    vendor/asus/zenfone9/proprietary/vendor/etc/irissoft_ASUS_ams678_er2_cmd_mode_dsc_fhd_plus_panel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_ASUS_ams678_er2_cmd_mode_dsc_fhd_plus_panel.dat \
-    vendor/asus/zenfone9/proprietary/vendor/etc/irissoft_ASUS_ams678_er2_cmd_mode_dsc_fhd_plus_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_ASUS_ams678_er2_cmd_mode_dsc_fhd_plus_panel.xml \
-    vendor/asus/zenfone9/proprietary/vendor/etc/irissoft_ai2201.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_ai2201.fw \
     vendor/asus/zenfone9/proprietary/vendor/etc/irissoft_ai2202.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_ai2202.fw \
     vendor/asus/zenfone9/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/asus/zenfone9/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
@@ -2471,15 +2393,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-3.9.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-3.9.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libpsmoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpsmoptfeature.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwirisIoctlWrapper.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwirisPCS.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwiriscalibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwiriscalibrate.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwirisfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwirisfeature.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwirishalwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwirishalwrapper.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwirispq.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwirispq.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwirisservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwirisservice.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwirissoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwirissoft.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpwsoftirisPCS.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libq3dtools_adreno.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_base.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libqc2audio_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_basecodec.so \
@@ -2588,13 +2501,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-colormgr-algo.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-vndapis.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmcore.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmutils.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
@@ -2802,9 +2711,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpese@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfc@2.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfclegacy@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.pixelworks.hardware.display@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.pixelworks.hardware.display@1.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.pixelworks.hardware.feature@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.2.so \
@@ -3605,15 +3511,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-3.9.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libpsmoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpsmoptfeature.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisIoctlWrapper.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisPCS.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwiriscalibrate.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisfeature.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirishalwrapper.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwirispq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirispq.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwirisservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisservice.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirissoft.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwsoftirisPCS.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libq3dtools_adreno.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libqapesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqapesdk.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_base.so \
@@ -3735,13 +3632,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmcore.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libsensor_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_calibration.so \
@@ -3902,9 +3796,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@2.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfclegacy@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.feature@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
@@ -4110,11 +4001,8 @@ PRODUCT_PACKAGES += \
     manifest_non_qmaa_extn \
     memtrack_qti \
     qtiradio-saidl \
-    vendor.pixelworks.hardware.display.iris-service \
-    vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor.qti.diag.hal.service \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.limits-service \
     vendor.qti.hardware.perf \
     vendor.qti.hardware.power.powermodule \
