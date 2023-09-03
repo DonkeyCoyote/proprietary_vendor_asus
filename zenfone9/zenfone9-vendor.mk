@@ -574,7 +574,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/bin/refresh_mbn:$(TARGET_COPY_OUT_VENDOR)/bin/refresh_mbn \
     vendor/asus/zenfone9/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/asus/zenfone9/proprietary/vendor/bin/rtcwake:$(TARGET_COPY_OUT_VENDOR)/bin/rtcwake \
-    vendor/asus/zenfone9/proprietary/vendor/bin/rttutild:$(TARGET_COPY_OUT_VENDOR)/bin/rttutild \
     vendor/asus/zenfone9/proprietary/vendor/bin/sar-vendor-cmd.xml:$(TARGET_COPY_OUT_VENDOR)/bin/sar-vendor-cmd.xml \
     vendor/asus/zenfone9/proprietary/vendor/bin/sec_nvm:$(TARGET_COPY_OUT_VENDOR)/bin/sec_nvm \
     vendor/asus/zenfone9/proprietary/vendor/bin/sensors-qesdk:$(TARGET_COPY_OUT_VENDOR)/bin/sensors-qesdk \
@@ -829,7 +828,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/qttestservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qttestservice.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/qvrd_vndr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qvrd_vndr.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/init/rttutild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rttutild.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
