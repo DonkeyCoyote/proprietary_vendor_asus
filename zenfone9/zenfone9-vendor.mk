@@ -1830,13 +1830,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/asus/zenfone9/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.automotive.watchdog-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.automotive.watchdog-V2-ndk_platform.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.frameworks.cameraservice.common@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.common@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.frameworks.cameraservice.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.device@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.frameworks.cameraservice.device@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.device@2.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.frameworks.cameraservice.service@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.service@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.frameworks.cameraservice.service@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.service@2.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.frameworks.cameraservice.service@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.service@2.2.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.authsecret@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.authsecret@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.automotive.vehicle@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.automotive.vehicle@2.0.so \
@@ -2859,13 +2852,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/DataSet/cl/lightart.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/DataSet/cl/lightart.bin \
     vendor/asus/zenfone9/proprietary/vendor/lib64/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_VENDOR)/lib64/DataSet/ispDB/ParameterDB.db \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.automotive.watchdog-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.automotive.watchdog-V2-ndk_platform.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.frameworks.cameraservice.common@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.common@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.frameworks.cameraservice.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.device@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.frameworks.cameraservice.device@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.device@2.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.service@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.service@2.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.service@2.2.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.atrace@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.atrace@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.authsecret@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.authsecret@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so \
@@ -3227,6 +3213,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libQTEEConnector_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_listener.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libQcelp13SwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQcelp13SwCodec.so \
+    vendor/asus/zenfone9/proprietary/vendor/lib64/libQnnGpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnGpu.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libQnnHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtp.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libQnnHtpPrepare.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpPrepare.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libQnnHtpV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpV69Stub.so \
