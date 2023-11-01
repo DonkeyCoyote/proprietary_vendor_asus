@@ -359,28 +359,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.qti.services.secureui",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "datastatusnotification",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "ims",
 	owner: "asus",
 	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
