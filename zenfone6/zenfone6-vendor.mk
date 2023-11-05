@@ -701,7 +701,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/firmware/goodixfp.mbn:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/goodixfp.mbn \
     vendor/asus/zenfone6/proprietary/vendor/etc/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/goodixfp.mdt \
     vendor/asus/zenfone6/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
-    vendor/asus/zenfone6/proprietary/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
     vendor/asus/zenfone6/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/asus/zenfone6/proprietary/vendor/etc/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml \
