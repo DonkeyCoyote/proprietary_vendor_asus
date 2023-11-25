@@ -662,15 +662,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.boot@1.1",
-	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.cas@1.2-service",
 	owner: "asus",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml",
