@@ -426,7 +426,6 @@ PRODUCT_PACKAGES += \
     DynamicDDSService \
     com.qualcomm.qti.services.secureui \
     com.qualcomm.qti.services.systemhelper \
-    datastatusnotification \
     ims \
     uimgbalibrary \
     uimgbamanagerlibrary \
