@@ -335,9 +335,30 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.server-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.server-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -457,6 +478,13 @@ dex_import {
 }
 
 dex_import {
+	name: "embmslibrary",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "qti-telephony-common",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
@@ -481,6 +509,27 @@ dex_import {
 	name: "vendor.qti.data.factory-V2.1-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.3-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.3-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.4-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.4-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -516,6 +565,13 @@ dex_import {
 	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.1-java.jar"],
 	system_ext_specific: true,
 }
 
