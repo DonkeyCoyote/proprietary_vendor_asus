@@ -744,15 +744,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.cas@1.2-service",
-	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "asus",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
