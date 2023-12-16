@@ -62,12 +62,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/asus/zenfone6/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/asus/zenfone6/proprietary/system_ext/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservice \
-    vendor/asus/zenfone6/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/asus/zenfone6/proprietary/system_ext/etc/cdma_call_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cdma_call_conf.xml \
     vendor/asus/zenfone6/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/asus/zenfone6/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/asus/zenfone6/proprietary/system_ext/etc/init/qvrd_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qvrd_ext.rc \
-    vendor/asus/zenfone6/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/asus/zenfone6/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/asus/zenfone6/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/asus/zenfone6/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -82,7 +80,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/asus/zenfone6/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/asus/zenfone6/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
-    vendor/asus/zenfone6/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/asus/zenfone6/proprietary/system_ext/etc/qvr/cfg/339/0/65536/mtp855.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855.txt \
     vendor/asus/zenfone6/proprietary/system_ext/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml \
     vendor/asus/zenfone6/proprietary/system_ext/etc/qvr/cfg/341/2/65536/svr845.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/341/2/65536/svr845.txt \
@@ -97,47 +94,21 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/system_ext/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvr_hid_device_list.txt \
     vendor/asus/zenfone6/proprietary/system_ext/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvrservice_config.txt \
     vendor/asus/zenfone6/proprietary/system_ext/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/qvr@2.0.policy \
-    vendor/asus/zenfone6/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/asus/zenfone6/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
-    vendor/asus/zenfone6/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/libScenescape.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libScenescape.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cam_cdsp_driver_stub.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cdsp_driver_stub.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_eyetracking_plugin.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrcamera_client.qti.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/libqvrservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdavenhancements.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdclient.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdcommonutils.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdconfigutils.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfddisplayconfig.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmminterface.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsink.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsrc_system.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdnative.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdrtsp.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdservice.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdsinksm.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcinterface.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsink.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/rfsa/adsp/libqvr_dsp_driver_skel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libqvr_dsp_driver_skel.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8150.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libtracker_6dof_skel_8150.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8250.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libtracker_6dof_skel_8250.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.0.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.1.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.constants@1.0.so \
@@ -152,33 +123,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmtcm.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfm-hci.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmdsprpc_system.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrcamera_client.qti.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_client.qti.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_ov7251_hvx_tuning.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_ov9282_hvx_tuning.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdsprpc_system.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdavenhancements.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdclient.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdcommonutils.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdconfigutils.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfddisplayconfig.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmminterface.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmmsink.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmmsrc_system.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdnative.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdrtsp.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdservice.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdsinksm.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcinterface.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsink.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsinkinterface.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrc.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.gnss@1.0.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.gnss@1.1.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.gnss@1.2.so \
@@ -190,8 +140,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
     vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+    vendor/asus/zenfone6/proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.fm@1.0.so
 
 PRODUCT_PACKAGES += \
     AudioWizard \
@@ -205,11 +154,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleWCD9340 \
     AntHalService-Soong \
     QtiTelephonyService \
-    WfdService \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
-    WfdCommon \
     tcmclient \
     audiosphere \
     com.android.hotwordenrollment.common.util \
@@ -549,13 +496,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_VENDOR)/bin/vl53l1_daemon_main \
     vendor/asus/zenfone6/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/asus/zenfone6/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
-    vendor/asus/zenfone6/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
-    vendor/asus/zenfone6/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
-    vendor/asus/zenfone6/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/asus/zenfone6/proprietary/vendor/bin/wpa_cli:$(TARGET_COPY_OUT_VENDOR)/bin/wpa_cli \
     vendor/asus/zenfone6/proprietary/vendor/bin/writekey:$(TARGET_COPY_OUT_VENDOR)/bin/writekey \
     vendor/asus/zenfone6/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
-    vendor/asus/zenfone6/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
     vendor/asus/zenfone6/proprietary/vendor/etc/IMEI_whitelist.txt:$(TARGET_COPY_OUT_VENDOR)/etc/IMEI_whitelist.txt \
     vendor/asus/zenfone6/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/SpeakerCalibrationTest:$(TARGET_COPY_OUT_VENDOR)/etc/SpeakerCalibrationTest \
@@ -712,7 +655,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service_64.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.configstore@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.configstore@1.1-service.rc \
-    vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.clearkey.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
@@ -727,7 +669,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/android.hardware.usb@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.0-service.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
-    vendor/asus/zenfone6/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
@@ -783,7 +724,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
-    vendor/asus/zenfone6/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/asus/zenfone6/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/asus/zenfone6/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -918,9 +858,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/asus/zenfone6/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/asus/zenfone6/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    vendor/asus/zenfone6/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
-    vendor/asus/zenfone6/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
-    vendor/asus/zenfone6/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/asus/zenfone6/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
     vendor/asus/zenfone6/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
     vendor/asus/zenfone6/proprietary/vendor/etc/sensors/config/msmnile_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_ak991x_0.json \
@@ -1058,9 +995,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/asus/zenfone6/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/asus/zenfone6/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
-    vendor/asus/zenfone6/proprietary/vendor/etc/wfdconfig_720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig_720.xml \
-    vendor/asus/zenfone6/proprietary/vendor/etc/wfdconfig_MI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig_MI.xml \
     vendor/asus/zenfone6/proprietary/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/asus/zenfone6/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/asus/zenfone6/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -1396,9 +1330,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/lib/libAsusRGBSensorHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAsusRGBSensorHAL.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libDxHdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDxHdcp.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libEGL_adreno.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGLESv2_adreno.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
@@ -1575,11 +1507,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiracast.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-omxcore.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libnative-api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnative-api.so \
@@ -1724,27 +1653,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/lib/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpptestutils.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libwebrtc_audio_preprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwebrtc_audio_preprocessing.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdaac_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdaac_vendor.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcodecv4l2_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdconfigutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdconfigutils_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfddisplayconfig_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdhdcpservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpservice_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdmminterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmminterface_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdmmservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdmmsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmsrc_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdrtsp_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdrtsp_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdsessionmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsessionmodule.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdsourcesession_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsourcesession_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdsourcesm_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsourcesm_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfduibcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcinterface_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfduibcsink_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsink_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfduibcsinkinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsinkinterface_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/libxditk_DIT_MSMv1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_DIT_MSMv1.so \
@@ -1885,8 +1793,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callcapability@1.0.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callinfo@1.0.so \
     vendor/asus/zenfone6/proprietary/vendor/lib/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.factory@1.0.so \
@@ -2272,7 +2178,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-omxcore.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
@@ -2417,8 +2322,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libwebrtc_audio_preprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwebrtc_audio_preprocessing.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib64/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfddisplayconfig_proprietary.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
@@ -2555,7 +2458,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.hostapd@1.2.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so \
-    vendor/asus/zenfone6/proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/asus/zenfone6/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.0.so \
