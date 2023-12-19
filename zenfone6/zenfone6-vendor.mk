@@ -674,7 +674,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
-    vendor/asus/zenfone6/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/init.asus.record.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.asus.record.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
     vendor/asus/zenfone6/proprietary/vendor/etc/init/init.goodixfp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.goodixfp.rc \
