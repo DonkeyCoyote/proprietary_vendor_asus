@@ -256,7 +256,6 @@ PRODUCT_PACKAGES += \
     DeviceStatisticsService \
     DynamicDDSService \
     colorservice \
-    datastatusnotification \
     uimgbaservice \
     ims \
     com.qti.snapdragon.sdk.display \
