@@ -188,6 +188,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     AsusCamera \
+    AsusGallery \
     AsusGalleryBurst \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
