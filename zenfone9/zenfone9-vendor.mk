@@ -218,7 +218,6 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     uimgbaservice \
     DynamicDDSService \
-    datastatusnotification \
     ims \
     uimgbalibrary \
     uimgbamanagerlibrary \
