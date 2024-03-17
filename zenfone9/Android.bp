@@ -31,6 +31,7 @@ android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "asus",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -43,6 +44,7 @@ android_app_import {
 	name: "HotwordEnrollmentXGoogleHEXAGON",
 	owner: "asus",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

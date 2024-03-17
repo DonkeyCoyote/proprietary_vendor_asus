@@ -42,6 +42,7 @@ android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "asus",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -54,6 +55,7 @@ android_app_import {
 	name: "HotwordEnrollmentXGoogleHEXAGON",
 	owner: "asus",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -695,6 +697,7 @@ android_app_import {
 	name: "com.qualcomm.qti.gpudrivers.lahaina.api30",
 	owner: "asus",
 	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.lahaina.api30/com.qualcomm.qti.gpudrivers.lahaina.api30.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
