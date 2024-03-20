@@ -198,7 +198,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     colorservice \
     WfdService \
-    com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
     QPerformance \

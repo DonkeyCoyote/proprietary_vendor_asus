@@ -92,7 +92,6 @@ PRODUCT_PACKAGES += \
     DeviceStatisticsService \
     QtiTelephonyService \
     colorservice \
-    com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
     QPerformance \
