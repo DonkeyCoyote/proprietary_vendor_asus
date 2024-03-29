@@ -28,9 +28,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleHEXAGON",
+	name: "HotwordEnrollmentOKGoogleHEXAGON_NARROWBAND",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_NARROWBAND/HotwordEnrollmentOKGoogleHEXAGON_NARROWBAND.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
@@ -41,9 +41,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentXGoogleHEXAGON",
+	name: "HotwordEnrollmentXGoogleHEXAGON_NARROWBAND",
 	owner: "asus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_NARROWBAND/HotwordEnrollmentXGoogleHEXAGON_NARROWBAND.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
@@ -57,17 +57,6 @@ android_app_import {
 	name: "AntHalService-Soong",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/AntHalService-Soong/AntHalService-Soong.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "DeviceInfo",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -105,6 +94,18 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.location",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 	system_ext_specific: true,
 }
 
@@ -228,13 +229,6 @@ dex_import {
 }
 
 dex_import {
-	name: "izat.xt.srv",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "qcrilhook",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
@@ -298,17 +292,6 @@ dex_import {
 }
 
 android_app_import {
-	name: "PowerOffAlarm",
-	owner: "asus",
-	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "uimgbaservice",
 	owner: "asus",
 	apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
@@ -323,6 +306,17 @@ android_app_import {
 	name: "DynamicDDSService",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "PowerOffAlarm",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -402,13 +396,6 @@ dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.2-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "embmslibrary",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
 	system_ext_specific: true,
 }
 

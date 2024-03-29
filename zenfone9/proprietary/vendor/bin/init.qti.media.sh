@@ -53,7 +53,7 @@ case "$target" in
         esac
         ;;
     "taro")
-        setprop vendor.mm.target.enable.qcom_parser 979981
+        setprop vendor.mm.target.enable.qcom_parser 975885
         case "$soc_hwid" in
             506|547|564)
                 setprop vendor.media.target_variant "_diwali_v2"
@@ -67,13 +67,13 @@ case "$target" in
                 ;;
             530|531|540)
                 setprop vendor.media.target_variant "_cape"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;
             *)
                 setprop vendor.media.target_variant "_taro"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;

@@ -230,8 +230,8 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x0" Node="/sys/class/kgsl/kgsl-3d0/default_pwrlevel" />
         <Minor OpcodeValue="0x1" Node="/sys/class/kgsl/kgsl-3d0/min_pwrlevel" />
         <Minor OpcodeValue="0x2" Node="/sys/class/kgsl/kgsl-3d0/max_pwrlevel" />
-        <Minor OpcodeValue="0x3" Node="/sys/class/kgsl/kgsl-3d0/devfreq/min_freq" />
-        <Minor OpcodeValue="0x4" Node="/sys/class/kgsl/kgsl-3d0/devfreq/max_freq" />
+        <Minor OpcodeValue="0x3" Node="/sys/class/kgsl/kgsl-3d0/devfreq/min_freq" Supported="no"/>
+        <Minor OpcodeValue="0x4" Node="/sys/class/kgsl/kgsl-3d0/devfreq/max_freq" Supported="no"/>
         <Minor OpcodeValue="0x5" Node="/sys/class/devfreq/soc:qcom,gpubw/min_freq" />
         <Minor OpcodeValue="0x6" Node="/sys/class/devfreq/soc:qcom,gpubw/max_freq" />
         <Minor OpcodeValue="0x7" Node="SPECIAL_NODE - gpu_disable_gpu_nap" />
@@ -239,8 +239,8 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x9" Node="/sys/class/kgsl/kgsl/proc/%d/state" />
         <Minor OpcodeValue="0xA" Node="/sys/class/kgsl/kgsl-3d0/devfreq/mod_percent" />
         <Minor OpcodeValue="0xB" Node="/sys/class/kgsl/kgsl-3d0/idle_timer" />
-        <Minor OpcodeValue="0xC" Node="/sys/class/kgsl/kgsl-3d0/min_clock_mhz" />
-        <Minor OpcodeValue="0xD" Node="/sys/class/kgsl/kgsl-3d0/max_clock_mhz" />
+        <Minor OpcodeValue="0xC" Node="/sys/class/kgsl/kgsl-3d0/min_clock_mhz" Supported="no"/>
+        <Minor OpcodeValue="0xD" Node="/sys/class/kgsl/kgsl-3d0/max_clock_mhz" Supported="no"/>
     <!-- gpu major end -->
 
     <!-- misc major start -->

@@ -34,7 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.location.xml \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/com.qualcomm.qti.izattools.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.izattools.xml \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/izat.xt.srv.xml \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
@@ -85,13 +84,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AudioWizardView \
     DiracAudioControlService \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
+    HotwordEnrollmentOKGoogleHEXAGON_NARROWBAND \
+    HotwordEnrollmentXGoogleHEXAGON_NARROWBAND \
     AntHalService-Soong \
-    DeviceInfo \
     DeviceStatisticsService \
     QtiTelephonyService \
     colorservice \
+    com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
     QPerformance \
@@ -108,7 +107,6 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.constants-V2.0-java \
     com.quicinc.cne.constants-V2.1-java \
     dpmapi \
-    izat.xt.srv \
     qcrilhook \
     vendor.qti.hardware.data.cne.internal.api-V1.0-java \
     vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
@@ -128,8 +126,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms-noship_product_privapp_permissions_qti.xml \
-    vendor/asus/zenfone9/proprietary/system_ext/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms.xml \
-    vendor/asus/zenfone9/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
@@ -194,7 +190,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.0.so \
@@ -214,9 +209,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/system_ext/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
-    PowerOffAlarm \
     uimgbaservice \
     DynamicDDSService \
+    PowerOffAlarm \
     ims \
     uimgbalibrary \
     uimgbamanagerlibrary \
@@ -227,7 +222,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice-V2.0-java \
     com.qualcomm.qti.uceservice-V2.1-java \
     com.qualcomm.qti.uceservice-V2.2-java \
-    embmslibrary \
     qti-telephony-common \
     vendor.qti.data.factory-V1.0-java \
     vendor.qti.data.factory-V2.0-java \
@@ -296,6 +290,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/bin/RestoreCalibrationData:$(TARGET_COPY_OUT_VENDOR)/bin/RestoreCalibrationData \
     vendor/asus/zenfone9/proprietary/vendor/bin/SkuInfo:$(TARGET_COPY_OUT_VENDOR)/bin/SkuInfo \
     vendor/asus/zenfone9/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
+    vendor/asus/zenfone9/proprietary/vendor/bin/TAClient:$(TARGET_COPY_OUT_VENDOR)/bin/TAClient \
     vendor/asus/zenfone9/proprietary/vendor/bin/TrustedUISampleTest:$(TARGET_COPY_OUT_VENDOR)/bin/TrustedUISampleTest \
     vendor/asus/zenfone9/proprietary/vendor/bin/WiFiMaxPower:$(TARGET_COPY_OUT_VENDOR)/bin/WiFiMaxPower \
     vendor/asus/zenfone9/proprietary/vendor/bin/[:$(TARGET_COPY_OUT_VENDOR)/bin/[ \
@@ -305,6 +300,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/bin/agmcompressplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompressplay \
     vendor/asus/zenfone9/proprietary/vendor/bin/agmplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmplay \
     vendor/asus/zenfone9/proprietary/vendor/bin/asus_native_sensor:$(TARGET_COPY_OUT_VENDOR)/bin/asus_native_sensor \
+    vendor/asus/zenfone9/proprietary/vendor/bin/asuskey_wv_install:$(TARGET_COPY_OUT_VENDOR)/bin/asuskey_wv_install \
     vendor/asus/zenfone9/proprietary/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag \
     vendor/asus/zenfone9/proprietary/vendor/bin/audioadsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/audioadsprpcd \
     vendor/asus/zenfone9/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
@@ -653,7 +649,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json \
     vendor/asus/zenfone9/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/asus/zenfone9/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
-    vendor/asus/zenfone9/proprietary/vendor/etc/ecc_list.json:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.json \
     vendor/asus/zenfone9/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/asus/zenfone9/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
     vendor/asus/zenfone9/proprietary/vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted:$(TARGET_COPY_OUT_VENDOR)/etc/face3d/qcnn_concat_file_model-0324_2_encrypted \
@@ -704,8 +699,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-javacard.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-javacard.service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-qti.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service.rc \
+    vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.nfc_snxxx@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc_snxxx@1.2-service.rc \
+    vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.secure_element_snxxx@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element_snxxx@1.2-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.1-service-multihal.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc \
@@ -765,6 +760,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
+    vendor/asus/zenfone9/proprietary/vendor/etc/init/taclient.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/taclient.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
@@ -936,6 +932,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/config/7.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/7.0_config.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/config/8.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/8.0_config.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/config/9.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/9.0_config.sql \
+    vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/config/90.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/90.0_config.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql \
@@ -947,6 +944,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql \
+    vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/other/90_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/90_version_update_ecc_table.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
     vendor/asus/zenfone9/proprietary/vendor/etc/qguard.json:$(TARGET_COPY_OUT_VENDOR)/etc/qguard.json \
     vendor/asus/zenfone9/proprietary/vendor/etc/qvr/cfg/339/0/65536/mtp855.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/339/0/65536/mtp855.txt \
@@ -1485,6 +1483,17 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/firmware/cdsp.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b17 \
     vendor/asus/zenfone9/proprietary/vendor/firmware/cdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.mbn \
     vendor/asus/zenfone9/proprietary/vendor/firmware/cdsp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.mdt \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b00 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b01 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b02 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b03 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b04 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b05 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b06 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b07 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.b08 \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.mbn \
+    vendor/asus/zenfone9/proprietary/vendor/firmware/drmtestapp64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/drmtestapp64.mdt \
     vendor/asus/zenfone9/proprietary/vendor/firmware/dxhdcp2.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/dxhdcp2.b00 \
     vendor/asus/zenfone9/proprietary/vendor/firmware/dxhdcp2.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/dxhdcp2.b01 \
     vendor/asus/zenfone9/proprietary/vendor/firmware/dxhdcp2.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/dxhdcp2.b02 \
@@ -1809,9 +1818,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.keymaster@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@4.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.keymaster@4.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@4.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.media.c2@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.media.c2@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.2.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.radio.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.radio.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.radio.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.2.so \
@@ -2014,10 +2020,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libVkLayer_ADRENO_qprofiler.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/ese_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/ese_client.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/ese_spi_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/ese_spi_nxp.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/ftm_fm_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/ftm_fm_lib.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/hal_libnfc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hal_libnfc.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
@@ -2495,7 +2498,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/modules:$(TARGET_COPY_OUT_VENDOR)/lib/modules \
-    vendor/asus/zenfone9/proprietary/vendor/lib/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci_nxp.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/qcrilInterfaces.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilInterfaces.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/qcrilMarshal.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilMarshal.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/qcrilNrQmiModule.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNrQmiModule.so \
@@ -2621,10 +2623,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmframework.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.libdpmtcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmtcm.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.libmwqemiptablemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libmwqemiptablemgr.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/vendor.nxp.eventprocessor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.eventprocessor@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpese@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfc@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfclegacy@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.2.so \
@@ -3067,10 +3065,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libVkLayer_ADRENO_qprofiler.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/ese_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_client.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/ese_spi_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_spi_nxp.so \
+    vendor/asus/zenfone9/proprietary/vendor/lib64/ese_spi_nxp_snxxx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_spi_nxp_snxxx.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/ftm_fm_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ftm_fm_lib.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/hal_libnfc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hal_libnfc.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
@@ -3107,6 +3103,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
+    vendor/asus/zenfone9/proprietary/vendor/lib64/jcos_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/jcos_client.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/lib-imscommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscommon.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
@@ -3251,7 +3248,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libdigital-dimming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdigital-dimming.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/libdiracgefwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiracgefwrapper.so \
+    vendor/asus/zenfone9/proprietary/vendor/lib64/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdirac.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
@@ -3629,7 +3626,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/libz_stable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libz_stable.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/ls_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ls_client.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp.so \
+    vendor/asus/zenfone9/proprietary/vendor/lib64/nfc_nci_nxp_snxxx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp_snxxx.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/qcrilInterfaces.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilInterfaces.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/qcrilMarshal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilMarshal.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/qcrilNrQmiModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilNrQmiModule.so \
@@ -3639,6 +3636,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/qtiPeripheralMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiPeripheralMgr.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/qtiril-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiril-utils.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/qtiwakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiwakelock.so \
+    vendor/asus/zenfone9/proprietary/vendor/lib64/se_extn_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/se_extn_client.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
@@ -3671,10 +3669,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmframework.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.libdpmtcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmtcm.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.libmwqemiptablemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libmwqemiptablemgr.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.eventprocessor@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfclegacy@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \

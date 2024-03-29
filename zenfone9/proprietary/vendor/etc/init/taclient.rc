@@ -1,0 +1,56 @@
+
+#on property:persist.vendor.keybox.status=11
+#	start TAStart
+
+#on property:persist.vendor.keybox.status=13
+#	start TAStart
+
+#on property:persist.vendor.keybox.status=16
+#	start TAStart
+    
+#on property:persist.vendor.keybox.status=18
+#	start TAStart
+	
+	
+# ASUS REQUEST +++
+on property:persist.sys.keybox.status=0
+    setprop persist.vendor.keybox.status 0
+
+on property:persist.sys.keybox.status=11
+    setprop persist.vendor.keybox.status 11
+
+on property:persist.sys.keybox.status=13
+    setprop persist.vendor.keybox.status 13
+
+on property:persist.sys.keybox.status=16
+    setprop persist.vendor.keybox.status 16
+
+on property:persist.sys.keybox.status=18
+    setprop persist.vendor.keybox.status 18
+# ASUS REQUEST ---
+
+# ASUS REPORT +++
+on property:persist.vendor.keybox.status=12
+    setprop persist.sys.keybox.status 12
+
+on property:persist.vendor.keybox.status=14
+    setprop persist.sys.keybox.status 14
+
+on property:persist.vendor.keybox.status=17
+    setprop persist.sys.keybox.status 17
+
+on property:persist.vendor.keybox.status=19
+    setprop persist.sys.keybox.status 19
+
+on property:persist.vendor.keybox.status=255
+    setprop persist.sys.keybox.status 255
+# ASUS REPORT ---
+
+
+service TAStart /vendor/bin/TAClient
+    seclabel u:r:vendor_dongle:s0
+	class core
+	user system
+	group system drmrpc
+	oneshot
+	disabled

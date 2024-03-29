@@ -1,4 +1,4 @@
-V20221122 0 0 0 0 0 0
+V20231204 0 0 0 0 0 0
 jp.naver.line.android 1 1 0 13 4 -1 1
 com.whatsapp 1 1 0 13 4 -1 1
 com.facebook.orca 0 1 0 13 4 -1 1
@@ -11,9 +11,9 @@ com.tencent.mobileqq 0 1 0 13 4 -1 0
 com.skype.raider 0 1 0 13 4 -1 0
 com.facebook.katana 1 1 0 13 4 -1 1
 com.instagram.android 0 1 0 13 4 -1 1
-com.ss.android.ugc.trill 0 1 0 13 4 -1 0
-com.ss.android.ugc.aweme 0 1 0 13 4 -1 0
-com.zhiliaoapp.musically 0 1 0 13 4 -1 0
+com.ss.android.ugc.trill 1 1 0 15 4 -1 0
+com.ss.android.ugc.aweme 1 1 0 15 4 -1 0
+com.zhiliaoapp.musically 1 1 0 15 4 -1 0
 sg.bigo.live 0 1 0 13 4 -1 0
 com.lang.lang 0 1 0 13 4 -1 0
 com.tencent.wemeet.app 0 1 0 13 4 -1 0

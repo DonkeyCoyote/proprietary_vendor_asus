@@ -15,6 +15,14 @@ service vendor.widevine /vendor/bin/sh /vendor/bin/widevine.sh
     oneshot
 #ASUS_BSP add widevine_daemon service---
 
+service vendor.wv.install /vendor/bin/asuskey_wv_install
+    class late_start
+    user root
+    group root media mediadrm drmrpc system log
+    disabled
+    seclabel u:r:asuskey_wv_install:s0
+    oneshot
+#ASUS_BSP add widevine_daemon service---
 
 #ASUS_BSP: add for key validation +++
 on property:vendor.atd.start.key.install=1
@@ -32,4 +40,38 @@ on property:vendor.debug.check.keybox=1
 #        start vendor.widevine
 
 
+#ASUS_BSP: add for widevine key reprovision +++
+on property:persist.vendor.keybox.status=21
+    chown root system /ADF/REQUEST
+    chmod 0666 /ADF/REQUEST
+	start vendor.wv.install
 
+on property:persist.sys.keybox.status=21
+    setprop persist.vendor.keybox.status 21
+
+on property:persist.vendor.keybox.status=22
+    chown root system /ADF/REPORT 
+    chmod 0666 /ADF/REPORT
+    setprop persist.sys.keybox.status 22
+
+on property:persist.vendor.keybox.status=23
+	 start vendor.wv.install
+
+on property:persist.sys.keybox.status=23
+    setprop persist.vendor.keybox.status 23
+
+on property:persist.vendor.keybox.status=24
+    chown root system /ADF/REPORT 
+    chmod 0666 /ADF/REPORT
+    setprop persist.sys.keybox.status 24
+
+on property:persist.vendor.keybox.status=25
+	 start vendor.wv.install
+
+on property:persist.sys.keybox.status=25
+    setprop persist.vendor.keybox.status 25
+
+on property:persist.vendor.keybox.status=26
+    chown root system /ADF/REPORT 
+    chmod 0666 /ADF/REPORT
+    setprop persist.sys.keybox.status 26
