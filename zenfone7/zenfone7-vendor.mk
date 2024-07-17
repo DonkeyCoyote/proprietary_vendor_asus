@@ -474,6 +474,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig-V2.1-java \
     vendor.qti.latency-V2.0-java \
     vendor.qti.voiceprint-V1.0-java
+
+PRODUCT_PACKAGES += \
+    libimscamera_jni_libimscamera_jni_symlink64 \
+    libimsmedia_jni_libimsmedia_jni_symlink64
 PRODUCT_COPY_FILES += \
     vendor/asus/zenfone7/proprietary/vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so \
     vendor/asus/zenfone7/proprietary/vendor/bin/ALSPS_sensor_module_number:$(TARGET_COPY_OUT_VENDOR)/bin/ALSPS_sensor_module_number \
