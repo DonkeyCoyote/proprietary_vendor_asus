@@ -1504,8 +1504,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone7/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/asus/zenfone7/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/asus/zenfone7/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/asus/zenfone7/proprietary/vendor/etc/wifi/qca6390/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini \
-    vendor/asus/zenfone7/proprietary/vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6490/WCNSS_qcom_cfg.ini \
     vendor/asus/zenfone7/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/asus/zenfone7/proprietary/vendor/firmware/Data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware/Data.msc \
     vendor/asus/zenfone7/proprietary/vendor/firmware/FACE_CDSP_USER_8250.cdsp.prodQ_FACE.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/FACE_CDSP_USER_8250.cdsp.prodQ_FACE.elf \
@@ -1677,10 +1675,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone7/proprietary/vendor/firmware/venus.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b19 \
     vendor/asus/zenfone7/proprietary/vendor/firmware/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mdt \
     vendor/asus/zenfone7/proprietary/vendor/firmware/wigig/wigig.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wigig/wigig.ini \
-    vendor/asus/zenfone7/proprietary/vendor/firmware/wlan/qca_cld/COUNTRY:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/COUNTRY \
-    vendor/asus/zenfone7/proprietary/vendor/firmware/wlan/qca_cld/qca6390/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6390/WCNSS_qcom_cfg.ini \
-    vendor/asus/zenfone7/proprietary/vendor/firmware/wlan/qca_cld/qca6390/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6390/wlan_mac.bin \
-    vendor/asus/zenfone7/proprietary/vendor/firmware/wlan/qca_cld/qca6490/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6490/wlan_mac.bin \
     vendor/asus/zenfone7/proprietary/vendor/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so \
     vendor/asus/zenfone7/proprietary/vendor/lib/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-external.so \
     vendor/asus/zenfone7/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-legacy.so \
