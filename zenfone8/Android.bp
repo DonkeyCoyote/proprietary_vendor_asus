@@ -10,7 +10,7 @@ soong_namespace {
 android_app_import {
 	name: "AsusCamera",
 	owner: "asus",
-	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
+	apk: "proprietary/system/priv-app/AsusCamera/AsusCamera.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -21,7 +21,7 @@ android_app_import {
 android_app_import {
 	name: "AsusGallery",
 	owner: "asus",
-	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
+	apk: "proprietary/system/priv-app/AsusGallery/AsusGallery.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -32,7 +32,7 @@ android_app_import {
 android_app_import {
 	name: "AsusGalleryBurst",
 	owner: "asus",
-	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
+	apk: "proprietary/system/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -160,19 +160,19 @@ android_app_import {
 dex_import {
 	name: "QPerformance",
 	owner: "asus",
-	jars: ["proprietary/framework/QPerformance.jar"],
+	jars: ["proprietary/system/framework/QPerformance.jar"],
 }
 
 dex_import {
 	name: "UxPerformance",
 	owner: "asus",
-	jars: ["proprietary/framework/UxPerformance.jar"],
+	jars: ["proprietary/system/framework/UxPerformance.jar"],
 }
 
 dex_import {
 	name: "tcmclient",
 	owner: "asus",
-	jars: ["proprietary/framework/tcmclient.jar"],
+	jars: ["proprietary/system/framework/tcmclient.jar"],
 }
 
 dex_import {
