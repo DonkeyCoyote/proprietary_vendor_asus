@@ -1412,7 +1412,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/asus/zenfone8/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/asus/zenfone8/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
-    vendor/asus/zenfone8/proprietary/vendor/etc/wifi/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wlan/WCNSS_qcom_cfg.ini \
     vendor/asus/zenfone8/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/asus/zenfone8/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/asus/zenfone8/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
@@ -1713,13 +1712,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone8/proprietary/vendor/firmware/widevine.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mbn \
     vendor/asus/zenfone8/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt \
     vendor/asus/zenfone8/proprietary/vendor/firmware/wigig/wigig.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wigig/wigig.ini \
-    vendor/asus/zenfone8/proprietary/vendor/firmware/wlan/qca_cld/qca6390/COUNTRY:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6390/COUNTRY \
-    vendor/asus/zenfone8/proprietary/vendor/firmware/wlan/qca_cld/qca6390/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6390/wlan_mac.bin \
-    vendor/asus/zenfone8/proprietary/vendor/firmware/wlan/qca_cld/qca6750/COUNTRY:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6750/COUNTRY \
-    vendor/asus/zenfone8/proprietary/vendor/firmware/wlan/qca_cld/qca6750/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6750/wlan_mac.bin \
-    vendor/asus/zenfone8/proprietary/vendor/firmware/wlan/qca_cld/wlan/COUNTRY:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/wlan/COUNTRY \
-    vendor/asus/zenfone8/proprietary/vendor/firmware/wlan/qca_cld/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/wlan/WCNSS_qcom_cfg.ini \
-    vendor/asus/zenfone8/proprietary/vendor/firmware/wlan/qca_cld/wlan/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/wlan/wlan_mac.bin \
     vendor/asus/zenfone8/proprietary/vendor/lib/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-external.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-legacy.so \
     vendor/asus/zenfone8/proprietary/vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0-ScopedWakelock.so \
