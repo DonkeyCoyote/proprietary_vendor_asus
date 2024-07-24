@@ -1593,9 +1593,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/firmware/widevine.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b08 \
     vendor/asus/zenfone9/proprietary/vendor/firmware/widevine.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mbn \
     vendor/asus/zenfone9/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt \
-    vendor/asus/zenfone9/proprietary/vendor/firmware/wlan/qca_cld/qca6490/COUNTRY:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6490/COUNTRY \
-    vendor/asus/zenfone9/proprietary/vendor/firmware/wlan/qca_cld/qca6490/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6490/WCNSS_qcom_cfg.ini \
-    vendor/asus/zenfone9/proprietary/vendor/firmware/wlan/qca_cld/qca6490/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6490/wlan_mac.bin \
     vendor/asus/zenfone9/proprietary/vendor/firmware/wlanmdsp.otaupdate:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp.otaupdate \
     vendor/asus/zenfone9/proprietary/vendor/firmware_waipio/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_waipio/CAMERA_ICP.b00 \
     vendor/asus/zenfone9/proprietary/vendor/firmware_waipio/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_waipio/CAMERA_ICP.b01 \
