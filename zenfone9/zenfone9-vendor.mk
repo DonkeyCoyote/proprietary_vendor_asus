@@ -6,20 +6,20 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/asus/zenfone9
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/zenfone9/proprietary/lib64/DataSet/arch/DIT_List.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/arch/DIT_List.cfg \
-    vendor/asus/zenfone9/proprietary/lib64/DataSet/cl/AlignMapping.bin:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/cl/AlignMapping.bin \
-    vendor/asus/zenfone9/proprietary/lib64/DataSet/cl/lightart.bin:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/cl/lightart.bin \
-    vendor/asus/zenfone9/proprietary/lib64/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ditSCidGen/msgchk.db \
-    vendor/asus/zenfone9/proprietary/lib64/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ispDB/ParameterDB.db \
-    vendor/asus/zenfone9/proprietary/lib64/libxditk_DIT_Manager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_DIT_Manager.so \
-    vendor/asus/zenfone9/proprietary/lib64/libxditk_ISP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ISP.so \
-    vendor/asus/zenfone9/proprietary/lib64/libxditk_LightArt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_LightArt.so \
-    vendor/asus/zenfone9/proprietary/lib64/libxditk_arch.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_arch.so \
-    vendor/asus/zenfone9/proprietary/lib64/libxditk_ditArchLIB.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditArchLIB.so \
-    vendor/asus/zenfone9/proprietary/lib64/libxditk_ditBSP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP.so \
-    vendor/asus/zenfone9/proprietary/lib64/libxditk_ditBSP_JNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP_JNI.so \
     vendor/asus/zenfone9/proprietary/product/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/asus/zenfone9/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/asus/zenfone9/proprietary/system/lib64/DataSet/arch/DIT_List.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/arch/DIT_List.cfg \
+    vendor/asus/zenfone9/proprietary/system/lib64/DataSet/cl/AlignMapping.bin:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/cl/AlignMapping.bin \
+    vendor/asus/zenfone9/proprietary/system/lib64/DataSet/cl/lightart.bin:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/cl/lightart.bin \
+    vendor/asus/zenfone9/proprietary/system/lib64/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ditSCidGen/msgchk.db \
+    vendor/asus/zenfone9/proprietary/system/lib64/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ispDB/ParameterDB.db \
+    vendor/asus/zenfone9/proprietary/system/lib64/libxditk_DIT_Manager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_DIT_Manager.so \
+    vendor/asus/zenfone9/proprietary/system/lib64/libxditk_ISP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ISP.so \
+    vendor/asus/zenfone9/proprietary/system/lib64/libxditk_LightArt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_LightArt.so \
+    vendor/asus/zenfone9/proprietary/system/lib64/libxditk_arch.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_arch.so \
+    vendor/asus/zenfone9/proprietary/system/lib64/libxditk_ditArchLIB.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditArchLIB.so \
+    vendor/asus/zenfone9/proprietary/system/lib64/libxditk_ditBSP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP.so \
+    vendor/asus/zenfone9/proprietary/system/lib64/libxditk_ditBSP_JNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP_JNI.so \
     vendor/asus/zenfone9/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/asus/zenfone9/proprietary/system_ext/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice \
     vendor/asus/zenfone9/proprietary/system_ext/bin/sigma_miracasthalservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice64 \
