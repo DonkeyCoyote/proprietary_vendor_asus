@@ -255,17 +255,7 @@ PRODUCT_PACKAGES += \
     libimscamera_jni_libimscamera_jni_symlink64 \
     libimsmedia_jni_libimsmedia_jni_symlink64
 PRODUCT_COPY_FILES += \
-    vendor/asus/zenfone9/proprietary/vendor/app/CACertService/oat/arm64/CACertService.odex:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/oat/arm64/CACertService.odex \
-    vendor/asus/zenfone9/proprietary/vendor/app/CACertService/oat/arm64/CACertService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/oat/arm64/CACertService.vdex \
     vendor/asus/zenfone9/proprietary/vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti_vendor.so:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti_vendor.so \
-    vendor/asus/zenfone9/proprietary/vendor/app/CneApp/oat/arm64/CneApp.odex:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/oat/arm64/CneApp.odex \
-    vendor/asus/zenfone9/proprietary/vendor/app/CneApp/oat/arm64/CneApp.vdex:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/oat/arm64/CneApp.vdex \
-    vendor/asus/zenfone9/proprietary/vendor/app/IWlanService/oat/arm64/IWlanService.odex:$(TARGET_COPY_OUT_VENDOR)/app/IWlanService/oat/arm64/IWlanService.odex \
-    vendor/asus/zenfone9/proprietary/vendor/app/IWlanService/oat/arm64/IWlanService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/IWlanService/oat/arm64/IWlanService.vdex \
-    vendor/asus/zenfone9/proprietary/vendor/app/TimeService/oat/arm64/TimeService.odex:$(TARGET_COPY_OUT_VENDOR)/app/TimeService/oat/arm64/TimeService.odex \
-    vendor/asus/zenfone9/proprietary/vendor/app/TimeService/oat/arm64/TimeService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/TimeService/oat/arm64/TimeService.vdex \
-    vendor/asus/zenfone9/proprietary/vendor/app/powermodule_java/oat/arm64/powermodule_java.odex:$(TARGET_COPY_OUT_VENDOR)/app/powermodule_java/oat/arm64/powermodule_java.odex \
-    vendor/asus/zenfone9/proprietary/vendor/app/powermodule_java/oat/arm64/powermodule_java.vdex:$(TARGET_COPY_OUT_VENDOR)/app/powermodule_java/oat/arm64/powermodule_java.vdex \
     vendor/asus/zenfone9/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/asus/zenfone9/proprietary/vendor/bin/BackupCalibrationData:$(TARGET_COPY_OUT_VENDOR)/bin/BackupCalibrationData \
     vendor/asus/zenfone9/proprietary/vendor/bin/CameraModule:$(TARGET_COPY_OUT_VENDOR)/bin/CameraModule \
