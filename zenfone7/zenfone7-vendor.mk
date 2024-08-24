@@ -287,7 +287,6 @@ PRODUCT_PACKAGES += \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
-    AsusVisualMaster \
     MotorK \
     MotorService \
     DeviceStatisticsService \
