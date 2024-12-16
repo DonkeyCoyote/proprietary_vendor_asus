@@ -1830,8 +1830,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.soundtrigger@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.soundtrigger@2.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.soundtrigger@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.soundtrigger@2.2.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.soundtrigger@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.soundtrigger@2.3.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.wifi.hostapd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.hostapd@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib/android.hardware.wifi.supplicant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.supplicant@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.allocator@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.memory.block@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib/android.system.net.netd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.system.net.netd@1.0.so \
@@ -2851,15 +2849,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.tetheroffload.control@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.control@1.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.hostapd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.hostapd@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.hostapd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.hostapd@1.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.hostapd@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.hostapd@1.2.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.hostapd@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.hostapd@1.3.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.supplicant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.supplicant@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.supplicant@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.supplicant@1.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.supplicant@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.supplicant@1.2.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.supplicant@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.supplicant@1.3.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi.supplicant@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.supplicant@1.4.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.1.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/android.hardware.wifi@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.2.so \
@@ -3796,13 +3785,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.vpp@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.hostapd@1.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.hostapd@1.2.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.keystore@1.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so \
-    vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.supplicant@2.2.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wificfr@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wificfr@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/asus/zenfone9/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
@@ -3853,7 +3836,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     android.hardware.sensors@2.1-multihal \
     android.hardware.thermal@2.0-service.qti \
-    android.hardware.wifi.supplicant \
     c2_manifest_vendor \
     c2_manifest_vendor_audio \
     dataconnection-saidl \
