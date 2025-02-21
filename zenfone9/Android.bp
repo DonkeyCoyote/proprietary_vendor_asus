@@ -745,7 +745,7 @@ android_app_import {
     owner: "asus",
     apk: "proprietary/vendor/app/CneApp/CneApp.apk",
     required: [
-        "CneApp.libvndfwk_detect_jni.qti_symlink",
+        "CneApp.libvndfwk_detect_jni.qti_vendor_symlink",
     ],
     certificate: "platform",
     dex_preopt: {
