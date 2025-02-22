@@ -46270,15 +46270,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "memtrack_qti.xml",
-    owner: "asus",
-    src: "proprietary/vendor/etc/vintf/manifest/memtrack_qti.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "qtiradio-saidl.xml",
     owner: "asus",
     src: "proprietary/vendor/etc/vintf/manifest/qtiradio-saidl.xml",
@@ -49469,35 +49460,6 @@ cc_prebuilt_binary {
                 "android.hardware.thermal@2.0",
                 "vendor.qti.hardware.limits@1.0",
                 "vendor.qti.hardware.limits@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.hardware.memtrack-service",
-    owner: "asus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.memtrack-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libbinder_ndk",
-                "android.hardware.memtrack-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",

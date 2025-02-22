@@ -273,7 +273,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/mstatdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mstatdaemon.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/mutualex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mutualex.rc \
@@ -2338,7 +2337,6 @@ PRODUCT_PACKAGES += \
     manifest_lahaina_identity.xml \
     manifest_non_qmaa.xml \
     manifest_non_qmaa_extn.xml \
-    memtrack_qti.xml \
     qtiradio-saidl.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
@@ -2474,7 +2472,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.factory@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.limits@1.1-service \
-    vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.perf-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
