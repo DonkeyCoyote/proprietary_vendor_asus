@@ -236,7 +236,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.nfc_snxxx@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc_snxxx@1.2-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.secure_element_snxxx@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element_snxxx@1.2-service.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
-    vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.1-service-multihal.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/bat_bs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bat_bs.rc \
     vendor/asus/zenfone9/proprietary/vendor/etc/init/bat_percent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bat_percent.rc \
@@ -2327,7 +2326,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.neuralnetworks-shim-service-qti.xml \
     android.hardware.security.keymint-service-qti.xml \
-    android.hardware.sensors@2.1-multihal.xml \
     android.hardware.thermal@2.0-service.qti.xml \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
@@ -2454,7 +2452,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     android.hardware.secure_element@1.2-service \
     android.hardware.security.keymint-service-qti \
-    android.hardware.sensors@2.1-service.multihal \
     android.hardware.thermal@2.0-service.qti-v2 \
     capabilityconfigstoretest \
     qconfigservice \
