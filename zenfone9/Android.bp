@@ -11,6 +11,179 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libxditk_DIT_Manager",
+    owner: "asus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libxditk_DIT_Manager.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "liblog",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libxditk_ISP",
+    owner: "asus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libxditk_ISP.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libOpenCL_system",
+                "libz",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libxditk_LightArt",
+    owner: "asus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libxditk_LightArt.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libOpenCL_system",
+                "libz",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libxditk_arch",
+    owner: "asus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libxditk_arch.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libz",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libxditk_ditArchLIB",
+    owner: "asus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libxditk_ditArchLIB.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libOpenCL_system",
+                "libxditk_ISP",
+                "libxditk_arch",
+                "libz",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libxditk_ditBSP",
+    owner: "asus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libxditk_ditBSP.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libxditk_ditArchLIB",
+                "libz",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libxditk_ditBSP_JNI",
+    owner: "asus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libxditk_ditBSP_JNI.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libxditk_ditBSP",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsdmextension",
     owner: "asus",
     strip: {
@@ -246,6 +419,42 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
+}
+
+android_app_import {
+    name: "AsusCamera",
+    owner: "asus",
+    apk: "proprietary/system/priv-app/AsusCamera/AsusCamera.apk",
+    overrides: [
+        "Camera2",
+    ],
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
+    name: "AsusGallery",
+    owner: "asus",
+    apk: "proprietary/system/priv-app/AsusGallery/AsusGallery.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
+    name: "AsusGalleryBurst",
+    owner: "asus",
+    apk: "proprietary/system/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
 }
 
 android_app_import {
@@ -902,6 +1111,31 @@ install_symlink {
     system_ext_specific: true,
     installed_location: "priv-app/ims/lib/arm64/libimsmedia_jni.so",
     symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
+}
+
+cc_prebuilt_library_shared {
+    name: "libOpenCL_system",
+    owner: "asus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libOpenCL_system.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libvndksupport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2612,7 +2846,7 @@ cc_prebuilt_library_shared {
                 "libcamxcommonutils",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "libcutils",
                 "libutils",
                 "libhidlbase",
@@ -2634,7 +2868,7 @@ cc_prebuilt_library_shared {
                 "libcamxcommonutils",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "libcutils",
                 "libutils",
                 "libhidlbase",
@@ -2670,7 +2904,7 @@ cc_prebuilt_library_shared {
                 "libcamxcommonutils",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "libcutils",
                 "liblog",
                 "libc++",
@@ -2688,7 +2922,7 @@ cc_prebuilt_library_shared {
                 "libcamxcommonutils",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "libcutils",
                 "liblog",
                 "libc++",
@@ -3419,7 +3653,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libarcsoft_bokehplus_video",
                 "libmpbase",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "liblog",
                 "libc++",
                 "libc",
@@ -3439,7 +3673,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libarcsoft_bokehplus_video",
                 "libmpbase",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "liblog",
                 "libc++",
                 "libc",
@@ -12608,7 +12842,7 @@ cc_prebuilt_library_shared {
                 "libqmi_encdec",
                 "libsensorslog",
                 "libsnsapi",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "libeva",
                 "libcvp2_1",
                 "libsynx",
@@ -12655,7 +12889,7 @@ cc_prebuilt_library_shared {
                 "libqmi_encdec",
                 "libsensorslog",
                 "libsnsapi",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "libeva",
                 "libcvp2_1",
                 "libsynx",
@@ -33684,7 +33918,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxditk_arch",
+    name: "libxditk_arch_vendor",
+    stem: "libxditk_arch",
     owner: "asus",
     strip: {
         none: true,
@@ -33722,7 +33957,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxditk_ditArchLIB",
+    name: "libxditk_ditArchLIB_vendor",
+    stem: "libxditk_ditArchLIB",
     owner: "asus",
     strip: {
         none: true,
@@ -33739,7 +33975,7 @@ cc_prebuilt_library_shared {
                 "libOpenCL",
                 "libz",
                 "libdl",
-                "libxditk_arch",
+                "libxditk_arch_vendor",
             ],
         },
         android_arm64: {
@@ -33750,8 +33986,8 @@ cc_prebuilt_library_shared {
                 "libm",
                 "liblog",
                 "libOpenCL",
-                "libxditk_ISP",
-                "libxditk_arch",
+                "libxditk_ISP_vendor",
+                "libxditk_arch_vendor",
                 "libz",
                 "libdl",
                 "libc",
@@ -33765,7 +34001,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxditk_ditBSP",
+    name: "libxditk_ditBSP_vendor",
+    stem: "libxditk_ditBSP",
     owner: "asus",
     strip: {
         none: true,
@@ -33779,7 +34016,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "liblog",
-                "libxditk_ditArchLIB",
+                "libxditk_ditArchLIB_vendor",
                 "libz",
                 "libdl",
             ],
@@ -33791,7 +34028,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libm",
                 "liblog",
-                "libxditk_ditArchLIB",
+                "libxditk_ditArchLIB_vendor",
                 "libz",
                 "libdl",
                 "libc",
@@ -44354,7 +44591,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxditk_DIT_Manager",
+    name: "libxditk_DIT_Manager_vendor",
+    stem: "libxditk_DIT_Manager",
     owner: "asus",
     strip: {
         none: true,
@@ -44379,7 +44617,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxditk_ISP",
+    name: "libxditk_ISP_vendor",
+    stem: "libxditk_ISP",
     owner: "asus",
     strip: {
         none: true,
@@ -44406,7 +44645,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxditk_ditBSP_JNI",
+    name: "libxditk_ditBSP_JNI_vendor",
+    stem: "libxditk_ditBSP_JNI",
     owner: "asus",
     strip: {
         none: true,
@@ -44419,7 +44659,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libm",
                 "liblog",
-                "libxditk_ditBSP",
+                "libxditk_ditBSP_vendor",
                 "libdl",
                 "libc",
             ],
@@ -47638,7 +47878,7 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "liblog",
-                "libxditk_ditArchLIB",
+                "libxditk_ditArchLIB_vendor",
                 "libz",
                 "libdl",
             ],
